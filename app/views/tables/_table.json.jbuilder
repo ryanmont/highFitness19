@@ -1,0 +1,2 @@
+json.extract! table, :id, :first_name, :middle_name, :last_name, :date_of_birth, :street_address, :city, :state, :zip_code, :mobile_phone, :email, :preferred_airline, :frequent_flyer_number, :preferred_flight_date, :preferred_departure_time_period, :preferred_departure_airport_code, :seat_preference, :food_allergies, :number_of_beds_requested, :created_at, :updated_at
+json.url table_url(table, format: :json)
