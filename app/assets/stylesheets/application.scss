@@ -7,12 +7,13 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top:  4rem;
+  padding-top:  3rem;
   padding-bottom: 3rem;
-  padding-right: 22rem;
-  padding-left: 22rem;
+  padding-right: 20rem;
+  padding-left: 20rem;
   
-  color: #5a5a5a;
+  color: #A2B9C5;
+  font-weight: 500;
 }
 
 
@@ -21,10 +22,10 @@ body {
 
 /* Carousel base class */
 .carousel {
-  margin-top: 3rem;
+  margin-top: 0rem;
   margin-bottom: 4rem;
-  padding-right: 8rem;
-  padding-left: 8rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -35,7 +36,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 20rem;
-  background-color: #777;
+  background-color: #ffffff;
 }
 .carousel-item > img {
   position: absolute;
@@ -98,4 +99,46 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
+
+
+/* 
+Custom styles
+*/
+
+
+  .inner {
+
+    font-size: 8px;
+
+  }
+
+    .image-size {
+
+  max-width: 220px;
+  max-height: 120px;
+  }
+
+
+  input::placeholder {
+    
+    font-style: italic;
+    font-size: 11px;
+    font-weight: 100;
+    color: red;
+  }
+
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+  
 }

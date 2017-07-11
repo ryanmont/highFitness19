@@ -1,4 +1,4 @@
-<%= form_for(table) do |f| %>
+<%= simple_form_for(table) do |f| %>
   <% if table.errors.any? %>
 
     <div id="error_explanation">
@@ -11,16 +11,36 @@
    
     </div>
   <% end %>
+<div>
+<h3> Please provide the following information for each individual attendee </h3>
+<hr>
+<br>
 
 <div class = "row">
   <div class = "col-md-4">
-    <h2> Attendee Information</h2>
+    <h3 style="color: #12988B;"> Attendee Information:</h3>
       <br>
+          <%= f.input :company  %>
+          <%= f.input :passport_id, label: "Passport Number" %>
+          <%= f.input :first_name, label: "First Name",  placeholder: "*  As printed on Passport" %>
+          <%= f.input :middle_name, label: "Middle Name",  placeholder: "*  As printed on Passport" %>
+          <%= f.input :last_name, label: "Last Name",  placeholder: "*  As printed on Passport" %>
+          <%= f.input :date_of_birth, label: "Date of Birth" %>
+          <%= f.input :street_address %>
+          <%= f.input :state %>
+          <%= f.input :city %>
+          <%= f.input :zip_code %>
+          <%= f.input :mobile_phone %>
+          <%= f.input :email, label: "Email Address" %>
 
+<!--        <div class="form-group">
+          <%= f.label :company %>
+          <%= f.text_field :company, class: 'form-control' %>
+        </div>
 
-        <div class="form-group">
+         <div class="form-group">
           <%= f.label :first_name %>
-          <%= f.text_field :first_name, class: 'form-control' %>
+          <%= f.text_field :first_name, class: 'form-control', hint: "As Printed on Passport" %>
         </div>
 
         <div class="for-group">
@@ -60,19 +80,19 @@
 
         <div class="field">
           <%= f.label :mobile_phone %>
-          <%= f.text_field :mobile_phone, class: 'form-control' %>
+          <%= f.telephone_field :mobile_phone, class: 'form-control' %>
         </div>
 
         <div class="field">
           <%= f.label :email %>
           <%= f.text_field :email, class: 'form-control' %>
-        </div>
+        </div> -->
   </div>
 
 
 
   <div class = "col-md-4">
-      <h2> Flight Information</h2>
+      <h3 style="color: #12988B;"> Flight Information:</h3>
       <br>
 
         <div class="field">
@@ -86,24 +106,25 @@
         </div>
 
         <div class="field">
-          <%= f.label :preferred_flight_date %>
+          <%= f.label :preferred_flight_date, 'Preferred departure date from (SLC-sea)' %>
           <%= f.text_field :preferred_flight_date, class: 'form-control' %>
         </div>
 
-        <div class="field">
+      <!--   <div class="field">
           <%= f.label :preferred_departure_time_period %>
           <%= f.text_field :preferred_departure_time_period, class: 'form-control' %>
-        </div>
+        </div> -->
 
         <div class="field">
-          <%= f.label :preferred_departure_airport_code %>
+           <%= f.label :preferred_departure_airport_code, 'Preferred departure date from (sea-SLC)'  %>
           <%= f.text_field :preferred_departure_airport_code, class: 'form-control' %>
         </div>
 
-        <div class="field">
-          <%= f.label :seat_preference %>
-          <%= f.text_field :seat_preference, class: 'form-control' %>
-        </div>
+
+
+          <%= f.input :seat_preference, label: "Airplane Seat Preference",  placeholder: "*  ie; aisle, window..." %>
+
+         <%= f.input :companion, label: "Input Name of Travel Companion",  placeholder: "*  If no companion type NONE" %>
 
   </div>
 
@@ -111,7 +132,7 @@
 
 
   <div class = "col-md-4">
-      <h2> Other information:</h2>
+      <h3 style="color: #12988B;"> Other information:</h3>
         <br>
 
       <div class="field">
@@ -124,12 +145,17 @@
         <%= f.number_field :number_of_beds_requested,class: 'form-control' %>
       </div>
 
-        <br>
-        <br>
 
-      <div class="actions">
-        <%= f.submit 'Click to Sumbit', class: 'btn btn-primary '%>
+      <div class="field">
+        <%= f.label :additional_comments %>
+        <%= f.text_area :additional_comments ,class: 'form-control', rows: 35 %>
       </div>
+        <br>
+        <br>
+        <%= f.button :submit, 'Click Here to Submit' %>
+     <!--  <div class="actions">
+        <%= f.submit 'Click to Sumbit', class: 'btn btn-primary, background-color: #12988B !'  %>
+      </div> -->
 
   </div>
 </div>
