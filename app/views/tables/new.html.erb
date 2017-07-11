@@ -1,6 +1,98 @@
-<h1 style="color:blue;"> Dentist Direct</h1>
+<h1 style="color: #0275d8" > Dentist Direct</h1>
 <h2>Alaskan Cruise Reward Trip</h2>
 
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+        
+        <!-- First Image -->
+         <%= image_tag "alaska-moose-hunting-banner.jpg" %>
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Dentist Direct</h1>
+              <h3> Alaskan Cruise Reward Trip</h3>
+              <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
+              <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Image -->
+        <div class="carousel-item">
+          <%= image_tag "Brown bears.jpg" %>
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- <h1>2</h1> -->
+             <!--  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Image -->
+        <div class="carousel-item">
+          <%= image_tag "cruise ship.jpg" %>
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block ">
+             <!--  <h1>3</h1> -->
+            <!--   <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
+            </div>
+          </div>
+        </div>
+
+               <div class="carousel-item">
+          <%= image_tag "dentist direct logo.png" %>
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block ">
+              <!-- <h1>4</h1> -->
+              <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
+            </div>
+          </div>
+        </div>
+
+               <div class="carousel-item">
+          <%= image_tag "Orcas.jpg" %>
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block ">
+              <!-- <h1>5</h1> -->
+              <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
+            </div>
+          </div>
+        </div>
+
+               <div class="carousel-item">
+          <%= image_tag "fly fishing.jpg" %>
+          <div class="container">
+            <div class="carousel-caption d-none d-md-block ">
+              <!-- <h1>6</h1> -->
+             <!--  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 <%= render 'form', table: @table %>
 
 <%= link_to 'Back', tables_path %>

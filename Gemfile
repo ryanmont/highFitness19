@@ -53,3 +53,12 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 ruby "2.4.0"
+
+gem 'simple_form', '~> 3.5'
+
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+
+
+
+

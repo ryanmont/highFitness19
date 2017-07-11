@@ -1,107 +1,137 @@
 <%= form_for(table) do |f| %>
   <% if table.errors.any? %>
+
     <div id="error_explanation">
       <h2><%= pluralize(table.errors.count, "error") %> prohibited this table from being saved:</h2>
 
-      <ul>
+   
       <% table.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
-      </ul>
+   
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
+<div class = "row">
+  <div class = "col-md-4">
+    <h2> Attendee Information</h2>
+      <br>
+
+
+        <div class="form-group">
+          <%= f.label :first_name %>
+          <%= f.text_field :first_name, class: 'form-control' %>
+        </div>
+
+        <div class="for-group">
+          <%= f.label :middle_name %>
+          <%= f.text_field :middle_name, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :last_name %>
+          <%= f.text_field :last_name, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :date_of_birth %>
+          <%= f.text_field :date_of_birth, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :street_address %>
+          <%= f.text_field :street_address, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :city %>
+          <%= f.text_field :city, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :state %>
+          <%= f.text_field :state, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :zip_code %>
+          <%= f.number_field :zip_code, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :mobile_phone %>
+          <%= f.text_field :mobile_phone, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :email %>
+          <%= f.text_field :email, class: 'form-control' %>
+        </div>
   </div>
 
-  <div class="field">
-    <%= f.label :middle_name %>
-    <%= f.text_field :middle_name %>
+
+
+  <div class = "col-md-4">
+      <h2> Flight Information</h2>
+      <br>
+
+        <div class="field">
+          <%= f.label :preferred_airline %>
+          <%= f.text_field :preferred_airline, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :frequent_flyer_number %>
+          <%= f.text_field :frequent_flyer_number, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :preferred_flight_date %>
+          <%= f.text_field :preferred_flight_date, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :preferred_departure_time_period %>
+          <%= f.text_field :preferred_departure_time_period, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :preferred_departure_airport_code %>
+          <%= f.text_field :preferred_departure_airport_code, class: 'form-control' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :seat_preference %>
+          <%= f.text_field :seat_preference, class: 'form-control' %>
+        </div>
+
   </div>
 
-  <div class="field">
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
-  </div>
 
-  <div class="field">
-    <%= f.label :date_of_birth %>
-    <%= f.text_field :date_of_birth %>
-  </div>
 
-  <div class="field">
-    <%= f.label :street_address %>
-    <%= f.text_field :street_address %>
-  </div>
 
-  <div class="field">
-    <%= f.label :city %>
-    <%= f.text_field :city %>
-  </div>
+  <div class = "col-md-4">
+      <h2> Other information:</h2>
+        <br>
 
-  <div class="field">
-    <%= f.label :state %>
-    <%= f.text_field :state %>
-  </div>
+      <div class="field">
+        <%= f.label :food_allergies %>
+        <%= f.text_field :food_allergies,class: 'form-control' %>
+      </div>
 
-  <div class="field">
-    <%= f.label :zip_code %>
-    <%= f.number_field :zip_code %>
-  </div>
+      <div class="field">
+        <%= f.label :number_of_beds_requested %>
+        <%= f.number_field :number_of_beds_requested,class: 'form-control' %>
+      </div>
 
-  <div class="field">
-    <%= f.label :mobile_phone %>
-    <%= f.text_field :mobile_phone %>
-  </div>
+        <br>
+        <br>
 
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-  </div>
+      <div class="actions">
+        <%= f.submit 'Click to Sumbit', class: 'btn btn-primary '%>
+      </div>
 
-  <div class="field">
-    <%= f.label :preferred_airline %>
-    <%= f.text_field :preferred_airline %>
   </div>
-
-  <div class="field">
-    <%= f.label :frequent_flyer_number %>
-    <%= f.text_field :frequent_flyer_number %>
-  </div>
-
-  <div class="field">
-    <%= f.label :preferred_flight_date %>
-    <%= f.text_field :preferred_flight_date %>
-  </div>
-
-  <div class="field">
-    <%= f.label :preferred_departure_time_period %>
-    <%= f.text_field :preferred_departure_time_period %>
-  </div>
-
-  <div class="field">
-    <%= f.label :preferred_departure_airport_code %>
-    <%= f.text_field :preferred_departure_airport_code %>
-  </div>
-
-  <div class="field">
-    <%= f.label :seat_preference %>
-    <%= f.text_field :seat_preference %>
-  </div>
-
-  <div class="field">
-    <%= f.label :food_allergies %>
-    <%= f.text_field :food_allergies %>
-  </div>
-
-  <div class="field">
-    <%= f.label :number_of_beds_requested %>
-    <%= f.number_field :number_of_beds_requested %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+</div>
+  
 <% end %>
