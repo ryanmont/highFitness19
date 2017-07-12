@@ -1,18 +1,19 @@
+
+
+
 <div class= "row">
   <div class = "col-md-3">
+      <div class= "sides">
 
-  <br>
-  <br>
+          <!-- <div><%= image_tag "logo-final.png", class: "image-size" %></div> -->
 
-    <!-- <div><%= image_tag "logo-final.png", class: "image-size" %></div> -->
+          <h3 style= "color: #167495;">Alaskan Cruise Reward Trip</h3>
+          <h3 style= "color: #167495;">-Aboard the Celebrity Solstice-</h3>
+      </div>
+  </div>
 
-  <br>
-  <br>
 
-    <h2 style= "color: #167495;">Alaskan Cruise Reward Trip</h2>
-</div>
-
-<div class = "col-md-9">
+<div class = "col-md-6">
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -105,21 +106,36 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    </div>
+  </div>
+
+
+    <div class= "col-md-3">
+        <div class= "sides">
+
+          <h3 style= "color: #167495;">Sail Date: Sept 8,2017</h3>
+          <h3 style= "color: #167495;">Return Date: Sept 15,2017</h3>
+       
+        </div>
+
+  </div>
 </div>    
 <%= render 'form', table: @table %>
 
-<h6> If you have any additional question please contact Kristen with Next Level Events and Marketing</h6>
+<div align="center">
+      <br>
 
-<br>
+      <h6> If you have any additional question please contact Kristen with Next Level Events and Marketing</h6>
 
-<h6> <%= number_to_phone "8014731024" %> </h6>
+      <br>
 
-<br>
+      <h6> <%= number_to_phone "8014731024" %> </h6>
 
-<h6 style="color: #A2B9C5;"> <a href="mailto: kristen@nextleveleventsandandmarketing.com?subject=Alaskan Cruise"> Please Click Here to Email Kristen any Questions</h6>
+      <br>
 
-<br>
+      <h6 style="color: #A2B9C5;"> <a href="mailto: kristen@nextleveleventsandandmarketing.com?subject=Alaskan Cruise"> Please Click Here to Email Kristen any Questions</h6></a>
+
+      <br>
+</div>
 
 <%= link_to 'Click here to go Back', tables_path %>
 

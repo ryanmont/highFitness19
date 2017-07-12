@@ -11,8 +11,12 @@
    
     </div>
   <% end %>
-<div>
+  
+<hr>
+
+<div align="center">
 <h3> Please provide the following information for each individual attendee </h3>
+</div>
 <hr>
 <br>
 
@@ -121,10 +125,15 @@
         </div>
 
 
+      <div class="field">
+        <%= f.label :number_of_beds_requested %>
+        <%= f.number_field :number_of_beds_requested,class: 'form-control' %>
+      </div>
+
 
           <%= f.input :seat_preference, label: "Airplane Seat Preference",  placeholder: "*  ie; aisle, window..." %>
 
-         <%= f.input :companion, label: "Input Name of Travel Companion",  placeholder: "*  If no companion type NONE" %>
+         <%= f.input :companion, label: "Input Name of Travel Companion",  placeholder: "*  If no companion please type NONE" %>
 
   </div>
 
@@ -140,10 +149,7 @@
         <%= f.text_field :food_allergies,class: 'form-control' %>
       </div>
 
-      <div class="field">
-        <%= f.label :number_of_beds_requested %>
-        <%= f.number_field :number_of_beds_requested,class: 'form-control' %>
-      </div>
+        <%= f.input :medical, label: "Medical Conditions" %>
 
 
       <div class="field">
@@ -156,6 +162,7 @@
      <!--  <div class="actions">
         <%= f.submit 'Click to Sumbit', class: 'btn btn-primary, background-color: #12988B !'  %>
       </div> -->
+<br>
 
   </div>
 </div>
