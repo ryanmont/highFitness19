@@ -1,4 +1,21 @@
 <p id="notice"><%= notice %></p>
+<h5> Here is the information you've submitted, if you'd like to change anything click "edit" below -or- if you'd like to register your travel companion click  "Add New Attendee" </h5>
+<br>
+<%= link_to 'Add New Attendee', new_table_path, class: "btn btn-primary"%>
+<br>
+<br>
+<hr>
+
+<p>
+  <strong>Company:</strong>
+  <%= @table.company %>
+</p>
+
+
+<p>
+  <strong>Passport:</strong>
+  <%= @table.passport_id %>
+</p>
 
 <p>
   <strong>First name:</strong>
@@ -61,18 +78,18 @@
 </p>
 
 <p>
-  <strong>Preferred flight date:</strong>
+  <strong>Preferred flight date from SLC:</strong>
   <%= @table.preferred_flight_date %>
 </p>
 
 <p>
-  <strong>Preferred departure time period:</strong>
+  <strong>Preferred departure date from SEA:</strong>
   <%= @table.preferred_departure_time_period %>
 </p>
 
 <p>
-  <strong>Preferred departure airport code:</strong>
-  <%= @table.preferred_departure_airport_code %>
+  <strong>Number of beds requested:</strong>
+  <%= @table.number_of_beds_requested %>
 </p>
 
 <p>
@@ -80,15 +97,29 @@
   <%= @table.seat_preference %>
 </p>
 
+
+<p>
+  <strong>Travel Companion Name:</strong>
+  <%= @table.companion %>
+</p>
+
+
 <p>
   <strong>Food allergies:</strong>
   <%= @table.food_allergies %>
 </p>
 
+
 <p>
-  <strong>Number of beds requested:</strong>
-  <%= @table.number_of_beds_requested %>
+  <strong>Medical Conditions:</strong>
+  <%= @table.medical %>
 </p>
+
+<p>
+  <strong>Additional Comments:</strong>
+  <%= @table.additional_comments %>
+</p>
+
 
 <%= link_to 'Edit', edit_table_path(@table) %> |
 <%= link_to 'Back', tables_path %>

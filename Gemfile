@@ -70,6 +70,8 @@ gem 'pdfkit', '~> 0.8.2'
 
 gem 'wkhtmltopdf-binary', '~> 0.12.3.1'
 
+gem 'dragonfly', '~> 1.1', '>= 1.1.3'
+
 
 
 
