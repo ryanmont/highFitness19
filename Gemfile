@@ -58,6 +58,19 @@ gem 'simple_form', '~> 3.5'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
+gem 'axlsx', '~> 2.0', '>= 2.0.1'
+
+gem 'acts_as_xlsx', '~> 1.0', '>= 1.0.6'
+
+gem 'axlsx_rails', '~> 0.5.1'
+
+gem 'prawn', '~> 2.1'
+
+gem 'pdfkit', '~> 0.8.2'
+
+gem 'wkhtmltopdf-binary', '~> 0.12.3.1'
+
+
 
 
 

@@ -11,11 +11,10 @@
    
     </div>
   <% end %>
-  
+
 <hr>
 
-<div align="center">
-<h3> Please provide the following information for each individual attendee </h3>
+<h3><center> Please provide the following information for each individual attendee </center></h3>
 </div>
 <hr>
 <br>
@@ -24,18 +23,18 @@
   <div class = "col-md-4">
     <h3 style="color: #12988B;"> Attendee Information:</h3>
       <br>
-          <%= f.input :company  %>
-          <%= f.input :passport_id, label: "Passport Number" %>
-          <%= f.input :first_name, label: "First Name",  placeholder: "*  As printed on Passport" %>
-          <%= f.input :middle_name, label: "Middle Name",  placeholder: "*  As printed on Passport" %>
-          <%= f.input :last_name, label: "Last Name",  placeholder: "*  As printed on Passport" %>
-          <%= f.input :date_of_birth, label: "Date of Birth" %>
-          <%= f.input :street_address %>
-          <%= f.input :state %>
-          <%= f.input :city %>
-          <%= f.input :zip_code %>
-          <%= f.input :mobile_phone %>
-          <%= f.input :email, label: "Email Address" %>
+          <%= f.input :company,  placeholder: "*  Required Field"  %>
+          <%= f.input :passport_id, label: "Passport Number",  placeholder: "*  Required Field"  %>
+          <%= f.input :first_name, label: "First Name",  placeholder: "*  Required Field              As printed on Passport" %>
+          <%= f.input :middle_name, label: "Middle Name",  placeholder: "*  Required Field             As printed on Passport" %>
+          <%= f.input :last_name, label: "Last Name",  placeholder: "*  Required Field             As printed on Passport" %>
+          <%= f.input :date_of_birth, label: "Date of Birth",  placeholder: "*  Required Field" %>
+          <%= f.input :street_address,  placeholder: "*  Required Field" %>
+          <%= f.input :state,  placeholder: "*  Required Field" %>
+          <%= f.input :city,  placeholder: "*  Required Field" %>
+          <%= f.input :zip_code,  placeholder: "*  Required Field" %>
+          <%= f.input :mobile_phone,  placeholder: "*  Required Field" %>
+          <%= f.input :email, label: "Email Address",  placeholder: "*  Required Field" %>
 
 <!--        <div class="form-group">
           <%= f.label :company %>

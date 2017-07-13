@@ -4,7 +4,19 @@ class TablesController < ApplicationController
   # GET /tables
   # GET /tables.json
   def index
+
     @tables = Table.all
+    respond_to do |format|
+      format.html
+      format.csv { send_data @tables.to_csv }
+      format.xls { send_data @tables.to_csv(col_sep: "\t") }
+
+      format.pdf do 
+        pdf = Pdf.new
+        send_data pdf.render, filename: "Attendees"
+     end 
+    end
+
   end
 
   # GET /tables/1
@@ -28,7 +40,7 @@ class TablesController < ApplicationController
 
     respond_to do |format|
       if @table.save
-        format.html { redirect_to @table, notice: 'Table was successfully created.' }
+        format.html { redirect_to @table, notice: 'Registraionwas successfully created.' }
         format.json { render :show, status: :created, location: @table }
       else
         format.html { render :new }
@@ -42,7 +54,7 @@ class TablesController < ApplicationController
   def update
     respond_to do |format|
       if @table.update(table_params)
-        format.html { redirect_to @table, notice: 'Table was successfully updated.' }
+        format.html { redirect_to @table, notice: 'Registration was successfully updated.' }
         format.json { render :show, status: :ok, location: @table }
       else
         format.html { render :edit }
@@ -56,7 +68,7 @@ class TablesController < ApplicationController
   def destroy
     @table.destroy
     respond_to do |format|
-      format.html { redirect_to tables_url, notice: 'Table was successfully destroyed.' }
+      format.html { redirect_to tables_url, notice: 'Registration was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

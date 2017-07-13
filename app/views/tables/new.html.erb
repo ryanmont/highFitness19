@@ -1,21 +1,19 @@
 
 
-
+<hr>
 <div class= "row">
   <div class = "col-md-3">
       <div class= "sides">
 
-          <!-- <div><%= image_tag "logo-final.png", class: "image-size" %></div> -->
-
+          <h3 style= "color: #167495;">dentist DIRECT</h3>
           <h3 style= "color: #167495;">Alaskan Cruise Reward Trip</h3>
-          <h3 style= "color: #167495;">-Aboard the Celebrity Solstice-</h3>
       </div>
   </div>
 
 
 <div class = "col-md-6">
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval= "3000" >
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -29,7 +27,7 @@
         <div class="carousel-item active">
         
         <!-- First Image -->
-         <%= image_tag "logo-final.png" %>
+         <%= image_tag "resize-logo-final.jpg", class: "carousel-inner" %>
           <div class="container">
             <div class="carousel-caption d-none d-md-block">
               <!-- <h1>Dentist Direct</h1>
@@ -42,7 +40,7 @@
 
         <!-- Second Image -->
         <div class="carousel-item">
-          <%= image_tag "Brown bears.jpg" %>
+          <%= image_tag "Brown bears", class: "carousel-inner" %>
           <div class="container">
             <div class="carousel-caption d-none d-md-block">
               <!-- <h1>2</h1> -->
@@ -53,8 +51,10 @@
         </div>
 
         <!-- Third Image -->
+        
         <div class="carousel-item">
-          <%= image_tag "celebrity_solstice.jpg" %>
+       
+          <%= image_tag "celebrity_solstice.jpg", class: "carousel-inner"  %>
           <div class="container">
             <div class="carousel-caption d-none d-md-block ">
              <!--  <h1>3</h1> -->
@@ -63,9 +63,12 @@
             </div>
           </div>
         </div>
+        
 
                <div class="carousel-item">
-          <%= image_tag "alaska-moose-hunting-banner.jpg" %>
+          <%= image_tag "alaska-moose-hunting-banner.jpg", class: "carousel-inner" %>
+          
+
           <div class="container">
             <div class="carousel-caption d-none d-md-block ">
               <!-- <h1>4</h1> -->
@@ -76,7 +79,7 @@
         </div>
 
                <div class="carousel-item">
-          <%= image_tag "Orcas.jpg" %>
+          <%= image_tag "Orcas.jpg", class: "carousel-inner" %>
           <div class="container">
             <div class="carousel-caption d-none d-md-block ">
               <!-- <h1>5</h1> -->
@@ -87,7 +90,7 @@
         </div>
 
                <div class="carousel-item">
-          <%= image_tag "fly fishing.jpg" %>
+          <%= image_tag "fly fishing.jpg", class: "carousel-inner"%>
           <div class="container">
             <div class="carousel-caption d-none d-md-block ">
               <!-- <h1>6</h1> -->
@@ -120,11 +123,13 @@
   </div>
 </div>    
 <%= render 'form', table: @table %>
+<br>
+<hr>
 
 <div align="center">
       <br>
 
-      <h6> If you have any additional question please contact Kristen with Next Level Events and Marketing</h6>
+      <h6> If you have any additional question please contact Kristen Montgomery with Next Level Events and Marketing</h6>
 
       <br>
 
@@ -132,7 +137,7 @@
 
       <br>
 
-      <h6 style="color: #A2B9C5;"> <a href="mailto: kristen@nextleveleventsandandmarketing.com?subject=Alaskan Cruise"> Please Click Here to Email Kristen any Questions</h6></a>
+      <h6 style="color: #A2B9C5;"> <a href="mailto: kristen@nextleveleventsandandmarketing.com?subject=Alaskan Cruise"> Please Click Here to Email Kristen any Event Related Questions</h6></a>
 
       <br>
 </div>
