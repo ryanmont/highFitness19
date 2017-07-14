@@ -29,67 +29,13 @@
           <%= f.input :middle_name, label: "Middle Name",  placeholder: "*  Required Field             As printed on Passport" %>
           <%= f.input :last_name, label: "Last Name",  placeholder: "*  Required Field             As printed on Passport" %>
           <%= f.input :date_of_birth, label: "Date of Birth",  placeholder: "*  Required Field" %>
-          <%= f.input :street_address,  placeholder: "*  Required Field" %>
+          <%= f.input :street_address, label: "Street Address", placeholder: "*  Required Field" %>
           <%= f.input :state,  placeholder: "*  Required Field" %>
           <%= f.input :city,  placeholder: "*  Required Field" %>
-          <%= f.input :zip_code,  placeholder: "*  Required Field" %>
-          <%= f.input :mobile_phone,  placeholder: "*  Required Field" %>
+          <%= f.input :zip_code, label: "Zip Code", placeholder: "*  Required Field" %>
+          <%= f.input :mobile_phone, label: "Mobile Phone",  placeholder: "*  Required Field" %>
           <%= f.input :email, label: "Email Address",  placeholder: "*  Required Field" %>
 
-<!--        <div class="form-group">
-          <%= f.label :company %>
-          <%= f.text_field :company, class: 'form-control' %>
-        </div>
-
-         <div class="form-group">
-          <%= f.label :first_name %>
-          <%= f.text_field :first_name, class: 'form-control', hint: "As Printed on Passport" %>
-        </div>
-
-        <div class="for-group">
-          <%= f.label :middle_name %>
-          <%= f.text_field :middle_name, class: 'form-control' %>
-        </div>
-
-        <div class="field">
-          <%= f.label :last_name %>
-          <%= f.text_field :last_name, class: 'form-control' %>
-        </div>
-
-        <div class="field">
-          <%= f.label :date_of_birth %>
-          <%= f.text_field :date_of_birth, class: 'form-control' %>
-        </div>
-
-        <div class="field">
-          <%= f.label :street_address %>
-          <%= f.text_field :street_address, class: 'form-control' %>
-        </div>
-
-        <div class="field">
-          <%= f.label :city %>
-          <%= f.text_field :city, class: 'form-control' %>
-        </div>
-
-        <div class="field">
-          <%= f.label :state %>
-          <%= f.text_field :state, class: 'form-control' %>
-        </div>
-
-        <div class="field">
-          <%= f.label :zip_code %>
-          <%= f.number_field :zip_code, class: 'form-control' %>
-        </div>
-
-        <div class="field">
-          <%= f.label :mobile_phone %>
-          <%= f.telephone_field :mobile_phone, class: 'form-control' %>
-        </div>
-
-        <div class="field">
-          <%= f.label :email %>
-          <%= f.text_field :email, class: 'form-control' %>
-        </div> -->
   </div>
 
 
@@ -99,41 +45,35 @@
       <br>
 
         <div class="field">
-          <%= f.label :preferred_airline %>
+          <%= f.label :preferred_airline, "Preferred Airline" %>
           <%= f.text_field :preferred_airline, class: 'form-control' %>
         </div>
 
         <div class="field">
-          <%= f.label :frequent_flyer_number %>
+          <%= f.label :frequent_flyer_number, "Frequent Flyer Number" %>
           <%= f.text_field :frequent_flyer_number, class: 'form-control' %>
         </div>
 
-        <div class="field">
-          <%= f.label :preferred_flight_date, 'Preferred departure date from (SLC-sea)' %>
-          <%= f.text_field :preferred_flight_date, class: 'form-control' %>
-        </div>
 
-      <!--   <div class="field">
-          <%= f.label :preferred_departure_time_period %>
-          <%= f.text_field :preferred_departure_time_period, class: 'form-control' %>
-        </div> -->
 
-        <div class="field">
-           <%= f.label :preferred_departure_airport_code, 'Preferred departure date from (sea-SLC)'  %>
-          <%= f.text_field :preferred_departure_airport_code, class: 'form-control' %>
-        </div>
+        <%= f.input :seat_preference, label: "Airplane Seat Preference",  placeholder: "*  ie; aisle, window..." %>
 
+
+
+        <%= f.input :preferred_flight_date, label: 'Preferred Departure Date from (SLC-sea)',  placeholder: "*  Designat only if prior to Sept 8th" %>
+
+
+        <%= f.input :preferred_departure_time_period, label: 'Preferred Departure Date from (SEA-slc)',  placeholder: "*  Designate only if after to Sept 15th" %>
+
+    
 
       <div class="field">
-        <%= f.label :number_of_beds_requested %>
-        <%= f.number_field :number_of_beds_requested,class: 'form-control' %>
+        <%= f.label :number_of_beds_requested, 'Number of Beds Requested in Cabin' %>
+        <%= f.number_field :number_of_beds_requested, class: 'form-control' %>
       </div>
 
 
-          <%= f.input :seat_preference, label: "Airplane Seat Preference",  placeholder: "*  ie; aisle, window..." %>
-
          <%= f.input :companion, label: "Input Name of Travel Companion",  placeholder: "*  If no companion please type NONE" %>
-
 
 
   </div>
@@ -145,7 +85,7 @@
         <br>
 
       <div class="field">
-        <%= f.label :food_allergies %>
+        <%= f.label :food_allergies, "Food Allergies"%>
         <%= f.text_field :food_allergies,class: 'form-control' %>
       </div>
 
@@ -153,7 +93,7 @@
 
 
       <div class="field">
-        <%= f.label :additional_comments %>
+        <%= f.label :additional_comments, "Additional Comments" %>
         <%= f.text_area :additional_comments ,class: 'form-control', rows: 35 %>
       </div>
         <br>

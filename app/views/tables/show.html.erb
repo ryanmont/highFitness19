@@ -1,17 +1,29 @@
 <p id="notice"><%= notice %></p>
-<h7> Congratulations!  You've successfully Registered for the Dentist Direct Alaskan Reward Trip.</h7>
+
 <br>
 <h7>Below is the information you've submitted:</h7>
+<br>
 <br>
  <h7>If you'd like to change anything click  <font color="#0275d8">"Edit Information"</font>   below -or- if you'd like to register your travel companion click  <font color="#0275d8">""Add New Attendee" </font>  </h7>
 <br>
 <br>
-
 <hr>
 <div>
 Registation Information for : 
 <p style= "color:#0275d8;"> <%= @table.first_name.upcase %> <%= @table.last_name.upcase %>
 </div>
+
+<hr>
+
+<%= link_to 'Add New Attendee', new_table_path, class: "btn btn-primary"%> 
+<br>
+<br>
+        -OR-
+<br>
+<br>
+ <%= link_to 'Edit Information', edit_table_path(@table), class: "btn btn-primary" %> 
+<br>
+<br>
 
 <hr>
 
@@ -27,27 +39,27 @@ Registation Information for :
 </p>
 
 <p>
-  <strong>First name:</strong>
+  <strong>First Name:</strong>
   <%= @table.first_name %>
 </p>
 
 <p>
-  <strong>Middle name:</strong>
+  <strong>Middle Name:</strong>
   <%= @table.middle_name %>
 </p>
 
 <p>
-  <strong>Last name:</strong>
+  <strong>Last Name:</strong>
   <%= @table.last_name %>
 </p>
 
 <p>
-  <strong>Date of birth:</strong>
+  <strong>Date of Birth:</strong>
   <%= @table.date_of_birth %>
 </p>
 
 <p>
-  <strong>Street address:</strong>
+  <strong>Street Address:</strong>
   <%= @table.street_address %>
 </p>
 
@@ -62,47 +74,47 @@ Registation Information for :
 </p>
 
 <p>
-  <strong>Zip code:</strong>
+  <strong>Zip Code:</strong>
   <%= @table.zip_code %>
 </p>
 
 <p>
-  <strong>Mobile phone:</strong>
+  <strong>Mobile Phone:</strong>
   <%= @table.mobile_phone %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong>Email Address:</strong>
   <%= @table.email %>
 </p>
 
 <p>
-  <strong>Preferred airline:</strong>
+  <strong>Preferred Airline:</strong>
   <%= @table.preferred_airline %>
 </p>
 
 <p>
-  <strong>Frequent flyer number:</strong>
+  <strong>Frequent Flyer Number:</strong>
   <%= @table.frequent_flyer_number %>
 </p>
 
 <p>
-  <strong>Preferred flight date from SLC:</strong>
+  <strong>Preferred Depature Date from SLC:</strong>
   <%= @table.preferred_flight_date %>
 </p>
 
 <p>
-  <strong>Preferred departure date from SEA:</strong>
+  <strong>Preferred Departure Date from SEA:</strong>
   <%= @table.preferred_departure_time_period %>
 </p>
 
 <p>
-  <strong>Number of beds requested:</strong>
+  <strong>Number of Beds Requested:</strong>
   <%= @table.number_of_beds_requested %>
 </p>
 
 <p>
-  <strong>Seat preference:</strong>
+  <strong>Seat Preference:</strong>
   <%= @table.seat_preference %>
 </p>
 
@@ -114,7 +126,7 @@ Registation Information for :
 
 
 <p>
-  <strong>Food allergies:</strong>
+  <strong>Food Allergies:</strong>
   <%= @table.food_allergies %>
 </p>
 
@@ -132,14 +144,5 @@ Registation Information for :
 
 <hr>
 
-<%= link_to 'Add New Attendee', new_table_path, class: "btn btn-primary"%> 
-<br>
-<br>
-        -OR-
-<br>
-<br>
- <%= link_to 'Edit Information', edit_table_path(@table), class: "btn btn-primary" %> 
-<br>
-<br>
 
 
