@@ -1,5 +1,5 @@
 class TablesController < ApplicationController
-  before_action :set_table, only: [:show, :edit, :update, :delete]
+  before_action :set_table, only: [:show, :edit, :update, :destroy]
 
   # GET /tables
   # GET /tables.json
