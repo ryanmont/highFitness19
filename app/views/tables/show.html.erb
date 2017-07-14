@@ -1,9 +1,18 @@
 <p id="notice"><%= notice %></p>
-<h5> Here is the information you've submitted, if you'd like to change anything click "edit" below -or- if you'd like to register your travel companion click  "Add New Attendee" </h5>
+<h7> Congratulations!  You've successfully Registered for the Dentist Direct Alaskan Reward Trip.</h7>
 <br>
-<%= link_to 'Add New Attendee', new_table_path, class: "btn btn-primary"%>
+<h7>Below is the information you've submitted:</h7>
+<br>
+ <h7>If you'd like to change anything click  <font color="#0275d8">"Edit Information"</font>   below -or- if you'd like to register your travel companion click  <font color="#0275d8">""Add New Attendee" </font>  </h7>
 <br>
 <br>
+
+<hr>
+<div>
+Registation Information for : 
+<p style= "color:#0275d8;"> <%= @table.first_name.upcase %> <%= @table.last_name.upcase %>
+</div>
+
 <hr>
 
 <p>
@@ -121,5 +130,16 @@
 </p>
 
 
-<%= link_to 'Edit', edit_table_path(@table) %> |
-<%= link_to 'Back', tables_path %>
+<hr>
+
+<%= link_to 'Add New Attendee', new_table_path, class: "btn btn-primary"%> 
+<br>
+<br>
+        -OR-
+<br>
+<br>
+ <%= link_to 'Edit Information', edit_table_path(@table), class: "btn btn-primary" %> 
+<br>
+<br>
+
+

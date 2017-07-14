@@ -68,7 +68,7 @@ class TablesController < ApplicationController
   def destroy
     @table.destroy
     respond_to do |format|
-      format.html { redirect_to tables_url, notice: 'Registration was successfully destroyed.' }
+      format.html { redirect_to tables_url, notice: 'Registration was successfully deleted.' }
       format.json { head :no_content }
     end
   end

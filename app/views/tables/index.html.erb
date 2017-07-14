@@ -2,69 +2,78 @@
 
 <h1>Registered Attendee Report</h1>
 <br>
-<table >
-  <thead>
 
-      <th>Company </th>
-      <th>Passport </th>
-      <th>First </th>
-  <!--     <th>Middle </th> -->
-      <th>Last </th>
-  <!--     <th>DOB</th>
-      <th>Address</th> -->
-      <th>City</th>
-<!--       <th>St</th>
-      <th>Zip code</th> -->
-      <th>Phone</th>
-      <th>Email</th>
-<!--       <th>Preferred airline</th>
-      <th>Frequent flyer number</th>
-      <th>Preferred flight date</th>
-      <th>Preferred departure time period</th>
-      <th>Preferred departure airport code</th>
-      <th>Seat preference</th>
-      <th>Food allergies</th>
-      <th>Number of beds requested</th> -->
-      <th>Companion Name</th>
-     <!--  <th>Medial Conditions<th> -->
-     <!--  <th>Additional Comments<th> -->
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <div style="overflow-x:auto;">
+    <table >
 
-  <tbody>
-    <% @tables.each do |table| %>
-      <tr>
-        <td><%= table.company %></td>
-        <td><%= table.passport_id %></td>
-        <td><%= table.first_name %></td>
-      <!--   <td><%= table.middle_name %></td> -->
-        <td><%= table.last_name %></td>
- <!--        <td><%= table.date_of_birth %></td>
-        <td><%= table.street_address %></td> -->
-        <td><%= table.city %></td>
-<!--         <td><%= table.state %></td>
-        <td><%= table.zip_code %></td> -->
-        <td><%= table.mobile_phone %></td>
-        <td><%= table.email %></td>
- <!--        <td><%= table.preferred_airline %></td>
-        <td><%= table.frequent_flyer_number %></td>
-        <td><%= table.preferred_flight_date %></td>
-        <td><%= table.preferred_departure_time_period %></td>
-        <td><%= table.preferred_departure_airport_code %></td>
-        <td><%= table.seat_preference %></td>
-        <td><%= table.food_allergies %></td>
-        <td><%= table.number_of_beds_requested %></td> -->
-        <td><%= table.companion %></td> 
-<!--         <td><%= table.medical %></td> 
-        <td><%= table.additional_comments %></td>   -->
-        <td><%= link_to 'Click here for full info', table %></td>
-        <td><%= link_to 'Edit', edit_table_path(table) %></td>
-        <td><%= link_to 'Destroy', table, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <thead>
+          <th>Full Information</th>
+          <th>Company </th>
+          <th>Passport </th>
+          <th>First </th>
+      <!--     <th>Middle </th> -->
+          <th>Last </th>
+      <!--     <th>DOB</th>
+          <th>Address</th> -->
+          <th>City</th>
+    <!--       <th>St</th>
+          <th>Zip code</th> -->
+          <th>Phone</th>
+          <th>Email</th>
+    <!--       <th>Preferred airline</th>
+          <th>Frequent flyer number</th>
+          <th>Preferred flight date</th>
+          <th>Preferred departure time period</th>
+          <th>Preferred departure airport code</th>
+          <th>Seat preference</th>
+          <th>Food allergies</th>
+          <th>Number of beds requested</th> -->
+          <th>Companion Name</th>
+          
+
+         <!--  <th>Medial Conditions<th> -->
+         <!--  <th>Additional Comments<th> -->
+          <th colspan="5"></th>
+        </tr>
+      </thead>
+      
+
+      <tbody>
+        <% @tables.each do |table| %>
+          <tr>
+
+            <td><%= link_to 'Detailed info', table %></td>
+            <td><%= table.company %></td>
+            <td><%= table.passport_id %></td>
+            <td><%= table.first_name %></td>
+          <!--   <td><%= table.middle_name %></td> -->
+            <td><%= table.last_name %></td>
+     <!--        <td><%= table.date_of_birth %></td>
+            <td><%= table.street_address %></td> -->
+            <td><%= table.city %></td>
+    <!--         <td><%= table.state %></td>
+            <td><%= table.zip_code %></td> -->
+            <td><%= table.mobile_phone %></td>
+            <td><%= table.email %></td>
+     <!--        <td><%= table.preferred_airline %></td>
+            <td><%= table.frequent_flyer_number %></td>
+            <td><%= table.preferred_flight_date %></td>
+            <td><%= table.preferred_departure_time_period %></td>
+            <td><%= table.preferred_departure_airport_code %></td>
+            <td><%= table.seat_preference %></td>
+            <td><%= table.food_allergies %></td>
+            <td><%= table.number_of_beds_requested %></td> -->
+            <td><%= table.companion %></td> 
+    <!--         <td><%= table.medical %></td> 
+            <td><%= table.additional_comments %></td>   -->
+            
+            <td><%= link_to 'Edit', edit_table_path(table) %></td>
+            <td><%= link_to 'Delete', table, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>  
 <br>
 <br>
 <br>
