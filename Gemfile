@@ -72,6 +72,8 @@ gem 'wkhtmltopdf-binary', '~> 0.12.3.1'
 
 gem 'dragonfly', '~> 1.1', '>= 1.1.3'
 
+gem 'gritter', '~> 1.2'
+
 
 
 
