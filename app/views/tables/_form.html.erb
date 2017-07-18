@@ -60,12 +60,18 @@
 
 
 
-        <%= f.input :preferred_flight_date, label: 'Preferred Departure Date from (SLC-sea)',  placeholder: "*  Designat only if prior to Sept 8th" %>
+        <%= f.input :preferred_flight_date, label: 'Preferred Departure Date from (SLC-sea)',  placeholder: "*  Designate only if prior to Sept 8th" %>
 
 
         <%= f.input :preferred_departure_time_period, label: 'Preferred Departure Date from (SEA-slc)',  placeholder: "*  Designate only if after to Sept 15th" %>
 
-    
+        <br>
+        <br>
+        
+        <h3 style="color: #12988B;"> Cruise Information:</h3>
+      <br>
+
+
 
       <div class="field">
         <%= f.label :number_of_beds_requested, 'Number of Beds Requested in Cabin' %>
@@ -76,6 +82,18 @@
          <%= f.input :companion, label: "Input Name of Travel Companion",  placeholder: "*  If no companion please type NONE" %>
 
 
+
+         <br>
+         <br>
+
+         <h3 style="color: #12988B;"> Juneau Excurision Choice:</h3>
+         <h8 style="color: black; font-size: 16px; "> <center><em> dentist DIRECT Group Activity </em></center></h8>
+      <br>
+      <br>
+  
+
+          <%= f.input :juneau_excursion, label: "", collection: ["   Sea Plane/Fly Fishing Tour ", "   Sea Plane/Nature tour/Dinner "],  as: :radio_buttons %>
+          
   </div>
 
 

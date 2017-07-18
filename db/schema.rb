@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170713044223) do
+ActiveRecord::Schema.define(version: 20170718202010) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20170713044223) do
     t.string   "medical"
     t.string   "asset_uid"
     t.string   "asset_name"
+    t.string   "juneau_excursion"
   end
 
 end
