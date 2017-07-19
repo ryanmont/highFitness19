@@ -1,6 +1,20 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Registered Attendee Report</h1>
+<h2><center>- Registered Attendee Report -</center></h2>
+<br>
+
+
+ <!-- search box form -->
+<div align= "right">
+  <%= form_tag(tables_path, :method => "get", id: "search-form") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search for Attendees"%>
+      <%= submit_tag "Search", :name => nil, class: "btn btn-primary" %>
+
+      
+  <% end %>
+</div>
+
+
 <br>
 
   <div style="overflow-x:auto;">
@@ -16,8 +30,8 @@
       <!--     <th>DOB</th>
           <th>Address</th> -->
           <th>City</th>
-    <!--       <th>St</th>
-          <th>Zip code</th> -->
+          <th>State</th>
+         <!--  <th>Zip code</th> -->
           <th>Phone</th>
           <th>Email</th>
     <!--       <th>Preferred airline</th>
@@ -29,6 +43,7 @@
           <th>Food allergies</th>
           <th>Number of beds requested</th> -->
           <th>Companion </th>
+          <th>Excursion </th>
           
 
          <!--  <th>Medial Conditions<th> -->
@@ -51,8 +66,8 @@
      <!--        <td><%= table.date_of_birth %></td>
             <td><%= table.street_address %></td> -->
             <td><%= table.city %></td>
-    <!--         <td><%= table.state %></td>
-            <td><%= table.zip_code %></td> -->
+            <td><%= table.state %></td>
+            <!-- <td><%= table.zip_code %></td> --> 
             <td><%= table.mobile_phone %></td>
             <td><%= table.email %></td>
      <!--        <td><%= table.preferred_airline %></td>
@@ -64,6 +79,8 @@
             <td><%= table.food_allergies %></td>
             <td><%= table.number_of_beds_requested %></td> -->
             <td><%= table.companion %></td> 
+            <td><%= table.juneau_excursion %></td> 
+
     <!--         <td><%= table.medical %></td> 
             <td><%= table.additional_comments %></td>   -->
             
@@ -88,4 +105,4 @@ Click here to download Attendee Report:
 <br>
 
 
-<%= link_to 'Add New Attendee', new_table_path %>
+<%= link_to 'Add New Attendee', new_table_path, class: "btn btn-primary" %>

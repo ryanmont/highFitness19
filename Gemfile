@@ -74,7 +74,12 @@ gem 'dragonfly', '~> 1.1', '>= 1.1.3'
 
 gem 'gritter', '~> 1.2'
 
-gem 'gritter', '~> 1.2'
+
+
+
+
+
+
 
 
 

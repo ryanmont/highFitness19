@@ -1,146 +1,187 @@
 <p id="notice"><%= notice %></p>
 
 <br>
-<h7>Below is the information you've submitted:</h7>
+<h7 style= "color:#0275d8;">Below is the information you've submitted:</h7>
 <br>
 <br>
- <h7>If you'd like to change anything click  <font color="#0275d8">"Edit Information"</font>   below -or- if you'd like to register your travel companion click  <font color="#0275d8">""Add New Attendee" </font>  </h7>
+ <h7>If you'd like to change anything click  <font color="#0275d8">"Edit Information"</font>  
+ 
+          -OR- 
+
+if you'd like to register your travel companion click  <font color="#0275d8">""Add New Attendee" </font>  </h7>
 <br>
 <br>
 <hr>
-<div>
-Registation Information for : 
-<p style= "color:#0275d8;"> <%= @table.first_name.upcase %> <%= @table.last_name.upcase %>
+<div class = "row">
+
+  <div class = "col-md-3">
+  
+      Registation Information for : 
+    <p style= "color:#0275d8;"> <%= @table.first_name.upcase %> <%= @table.last_name.upcase %></p>
+  </div>
+
+      <div class= "col-md-3">
+         <%= link_to 'Edit Information', edit_table_path(@table), class: "btn btn-primary" %> 
+       </div>
+
+
+    <div class= "col-md-3">
+        <%= link_to 'Add New Attendee', new_table_path, class: "btn btn-primary"%> 
+    </div>
+
+
+    
+
+        <div class = "col-md-3">
+        </div>
+    
+  </div>
+<hr>
+
+
+
+<hr>
+
+
+
+
+<div class= "row">
+
+  <div class= "col-md-3">
+
+    <p>
+      <strong class= "cool">Company:</strong>
+      <%= @table.company %>
+    </p>
+
+
+    <p>
+      <strong class= "cool">Passport:</strong>
+      <%= @table.passport_id %>
+    </p>
+
+    <p>
+      <strong class= "cool">First Name:</strong>
+      <%= @table.first_name %>
+    </p>
+
+    <p>
+      <strong class= "cool">Middle Name:</strong>
+      <%= @table.middle_name %>
+    </p>
+
+    <p>
+      <strong class= "cool">Last Name:</strong>
+      <%= @table.last_name %>
+    </p>
+
+    <p>
+      <strong class= "cool">Date of Birth:</strong>
+      <%= @table.date_of_birth %>
+    </p>
+
+    <p>
+      <strong class= "cool">Street Address:</strong>
+      <%= @table.street_address %>
+    </p>
+
+    <p>
+      <strong class= "cool">City:</strong>
+      <%= @table.city %>
+    </p>
+
+    <p>
+      <strong class= "cool">State:</strong>
+      <%= @table.state %>
+    </p>
+
+    <p>
+      <strong class= "cool">Zip Code:</strong>
+      <%= @table.zip_code %>
+    </p>
+
+    <p>
+      <strong class= "cool">Mobile Phone:</strong>
+      <%= @table.mobile_phone %>
+    </p>
+
+    <p>
+      <strong class= "cool">Email Address:</strong>
+      <%= @table.email %>
+    </p>
+
+  </div>
+
+    <!-- Image in center -->
+     <div class= "col-md-4">
+
+        <%= image_tag "resize-logo-final.jpg", class: "carousel-inner" %>
+
+     </div>
+
+
+
+  <div class= "col-md-5">
+
+
+    <p>
+      <strong class= "cool">Preferred Airline:</strong>
+      <%= @table.preferred_airline %>
+    </p>
+
+    <p>
+      <strong class= "cool">Frequent Flyer Number:</strong>
+      <%= @table.frequent_flyer_number %>
+    </p>
+
+    <p>
+      <strong class= "cool">Preferred Depature Date from SLC:</strong>
+      <%= @table.preferred_flight_date %>
+    </p>
+
+    <p>
+      <strong class= "cool">Preferred Departure Date from SEA:</strong>
+      <%= @table.preferred_departure_time_period %>
+    </p>
+
+    <p>
+      <strong class= "cool">Number of Beds Requested:</strong>
+      <%= @table.number_of_beds_requested %>
+    </p>
+
+    <p>
+      <strong class= "cool">Seat Preference:</strong>
+      <%= @table.seat_preference %>
+    </p>
+
+
+    <p>
+      <strong class= "cool">Travel Companion Name:</strong>
+      <%= @table.companion %>
+    </p>
+
+    <p>
+      <strong class= "cool">Juneau Excursion Choice:</strong>
+      <%= @table.juneau_excursion %>
+    </p>
+
+    <p>
+      <strong class= "cool">Food Allergies:</strong>
+      <%= @table.food_allergies %>
+    </p>
+
+
+    <p>
+      <strong class= "cool">Medical Conditions:</strong>
+      <%= @table.medical %>
+    </p>
+
+    <p>
+      <strong class= "cool">Additional Comments:</strong>
+      <%= @table.additional_comments %>
+    </p>
+  </div>
 </div>
-
-<hr>
-
-<%= link_to 'Add New Attendee', new_table_path, class: "btn btn-primary"%> 
-<br>
-<br>
-        -OR-
-<br>
-<br>
- <%= link_to 'Edit Information', edit_table_path(@table), class: "btn btn-primary" %> 
-<br>
-<br>
-
-<hr>
-
-<p>
-  <strong>Company:</strong>
-  <%= @table.company %>
-</p>
-
-
-<p>
-  <strong>Passport:</strong>
-  <%= @table.passport_id %>
-</p>
-
-<p>
-  <strong>First Name:</strong>
-  <%= @table.first_name %>
-</p>
-
-<p>
-  <strong>Middle Name:</strong>
-  <%= @table.middle_name %>
-</p>
-
-<p>
-  <strong>Last Name:</strong>
-  <%= @table.last_name %>
-</p>
-
-<p>
-  <strong>Date of Birth:</strong>
-  <%= @table.date_of_birth %>
-</p>
-
-<p>
-  <strong>Street Address:</strong>
-  <%= @table.street_address %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @table.city %>
-</p>
-
-<p>
-  <strong>State:</strong>
-  <%= @table.state %>
-</p>
-
-<p>
-  <strong>Zip Code:</strong>
-  <%= @table.zip_code %>
-</p>
-
-<p>
-  <strong>Mobile Phone:</strong>
-  <%= @table.mobile_phone %>
-</p>
-
-<p>
-  <strong>Email Address:</strong>
-  <%= @table.email %>
-</p>
-
-<p>
-  <strong>Preferred Airline:</strong>
-  <%= @table.preferred_airline %>
-</p>
-
-<p>
-  <strong>Frequent Flyer Number:</strong>
-  <%= @table.frequent_flyer_number %>
-</p>
-
-<p>
-  <strong>Preferred Depature Date from SLC:</strong>
-  <%= @table.preferred_flight_date %>
-</p>
-
-<p>
-  <strong>Preferred Departure Date from SEA:</strong>
-  <%= @table.preferred_departure_time_period %>
-</p>
-
-<p>
-  <strong>Number of Beds Requested:</strong>
-  <%= @table.number_of_beds_requested %>
-</p>
-
-<p>
-  <strong>Seat Preference:</strong>
-  <%= @table.seat_preference %>
-</p>
-
-
-<p>
-  <strong>Travel Companion Name:</strong>
-  <%= @table.companion %>
-</p>
-
-
-<p>
-  <strong>Food Allergies:</strong>
-  <%= @table.food_allergies %>
-</p>
-
-
-<p>
-  <strong>Medical Conditions:</strong>
-  <%= @table.medical %>
-</p>
-
-<p>
-  <strong>Additional Comments:</strong>
-  <%= @table.additional_comments %>
-</p>
-
 
 <hr>
 

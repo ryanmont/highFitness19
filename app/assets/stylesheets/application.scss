@@ -124,10 +124,11 @@ Custom styles
 
   input::placeholder {
     
+    text-align: center;
     font-style: italic;
     font-size: 11px;
     font-weight: 100;
-    color: red;
+    color: #0275d8;
   }
 
 
@@ -158,6 +159,7 @@ transform: translate(-50%, -50%);
     text-align: center;
     img {
         margin: 0 auto;
+      
     }
 }
 
@@ -173,7 +175,7 @@ table {
 
 
 th {
-    height: 50px;
+    height: 30px;
 }
 
 tr:hover {background-color: #f2f2f2}
@@ -185,7 +187,7 @@ th {
 
 
 th, td {
-    padding: 15px;
+    padding: 11px;
     text-align: left;
 }
 
@@ -194,10 +196,13 @@ th {
   
 }
 
+td {
+  font-size: 12px;
+}
 
 .cool {
   
-  color: blue;
+  color: #167495;
 }
 
 }

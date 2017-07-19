@@ -5,7 +5,17 @@ class TablesController < ApplicationController
   # GET /tables.json
   def index
 
-    @tables = Table.all
+   
+      @tables = Table.all
+      if params[:search]
+        @tables = Table.search(params[:search]).order("created_at DESC")
+      else
+        @tables = Table.all.order("created_at DESC")
+    end
+
+
+
+
     respond_to do |format|
       format.html
       format.csv { send_data @tables.to_csv }
