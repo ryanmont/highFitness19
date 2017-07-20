@@ -50,7 +50,7 @@ class TablesController < ApplicationController
 
     respond_to do |format|
       if @table.save
-        format.html { redirect_to @table, notice: "CONGRATULATIONS! You've successfully completed registration" }
+        format.html { redirect_to @table, notice: "CONGRATULATIONS! You've successfully completed registration." }
         format.json { render :show, status: :created, location: @table }
       else
         format.html { render :new }
