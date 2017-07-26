@@ -11,7 +11,8 @@ class Table < ApplicationRecord
                         :state, 
                         :zip_code, 
                         :mobile_phone, 
-                        :email 
+                        :email, 
+                        :juneau_excursion 
 
     # dragonfly_accessor :image 
 
