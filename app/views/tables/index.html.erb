@@ -1,8 +1,14 @@
 <p id="notice"><%= notice %></p>
 
+<div style="background-color:#f6f6f6">
+<br>
 <h2><center>- Registered Attendee Report -</center></h2>
+
+<br>
+</div>
 <br>
 
+<%= link_to 'Add New Attendee', new_table_path, class: "btn btn-primary" %>
 
  <!-- search box form -->
 <div align= "right">
@@ -21,7 +27,7 @@
     <table >
 
       <thead>
-          <th>Full Information</th>
+          <th>Full Record</th>
           <th>Company </th>
           <th>Passport </th>
           <th>First </th>
@@ -44,6 +50,8 @@
           <th>Number of beds requested</th> -->
           <th>Companion </th>
           <th>Excursion </th>
+          <th>Edit </th>
+         
           
 
          <!--  <th>Medial Conditions<th> -->
@@ -93,7 +101,7 @@
   </div>  
 <br>
 <br>
-<br>
+
 
 <p>
 Click here to download Attendee Report:
@@ -105,4 +113,4 @@ Click here to download Attendee Report:
 <br>
 
 
-<%= link_to 'Add New Attendee', new_table_path, class: "btn btn-primary" %>
+
