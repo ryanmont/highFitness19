@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "gritter";
+@import "font-awesome";
 
 
 
@@ -8,7 +9,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top:  3rem;
+  padding-top:  2rem;
   padding-bottom: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -232,6 +233,23 @@ form {
 background-color: #f6f6f6;
 padding: 25px;
 }
+
+hr {
+  
+   border: none;
+    height: 1px;
+
+    /* Set the hr color */
+    /* Modern Browsers */
+
+    background-color: #12988B; 
+}
+
+.footer {
+  font-size: 13px;
+
+}
+
 
 }
 
