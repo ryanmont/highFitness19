@@ -91,9 +91,13 @@
          
       <br>
       <br>
-  
 
-          <%= f.input :juneau_excursion, label: "", collection: ["   Sea Plane/Fly Fishing Tour ", "   Sea Plane/Nature tour/Dinner "]   %>
+          
+  
+        <%= f.input :juneau_excursion, label: "", collection: ["   Sea Plane/Fly Fishing Tour ", "   Sea Plane/Nature tour/Dinner "],  as: :radio_buttons %>
+
+
+      
         
         <h8 style="color: black; font-size: 12px; "> <center><em> * Required Field </em></center></h8>  
   </div>
