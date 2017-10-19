@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'pages/atv'
+
+  get 'pages/motorcycle'
+
+  get 'pages/sxs'
+
+  get 'pages/other'
+
   resources :tables
   
 
