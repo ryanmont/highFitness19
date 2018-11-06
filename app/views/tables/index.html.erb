@@ -9,17 +9,15 @@
 <br>
 
 
-
  <!-- search box form -->
 <div align= "right">
   <%= form_tag(tables_path, :method => "get", id: "search-form") do %>
       <%= text_field_tag :search, params[:search], placeholder: "Search for Attendees"%>
       <%= submit_tag "Search", :name => nil, class: "btn btn-primary" %>
 
-      
   <% end %>
 </div>
-
+ 
 
 <br>
 
@@ -59,7 +57,6 @@
           <th colspan="5"></th>
         </tr>
       </thead>
-      
 
       <tbody>
         <% @tables.each do |table| %>
