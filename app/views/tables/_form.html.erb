@@ -12,9 +12,14 @@
     </div>
   <% end %>
 
-<hr>
+<br>
 <div style= "color: #167495">
-<h3><center> Please provide the following information for "each" individual attendee </center></h3>
+  <center> 
+<h3>
+  Please provide the following information for "each" individual attendee 
+</h3>
+
+
 </div>
 <hr>
 <br>
@@ -22,7 +27,7 @@
 <div class = "grey">
 <div class = "row">
 
-  <div class = "col-md-4">
+  <div class = "col-sm-6">
     <h3 style="color: #12988B;"> Attendee Information:</h3>
       <br>
           <%= f.input :company,  placeholder: "*  Required Field"  %>
@@ -38,18 +43,10 @@
           <%= f.input :mobile_phone, label: "Mobile Phone",  placeholder: "*  Required Field" %>
           <%= f.input :email, label: "Email Address",  placeholder: "*  Required Field" %>
 
-  </div>
 
-
-
-  <div class = "col-md-4">
       <h3 style="color: #12988B;"> Flight Information:</h3>
       <br>
 
-        <div class="field">
-          <%= f.label :preferred_airline, "Preferred Airline" %>
-          <%= f.text_field :preferred_airline, class: 'form-control' %>
-        </div>
 
         <div class="field">
           <%= f.label :frequent_flyer_number, "Frequent Flyer Number" %>
@@ -59,52 +56,18 @@
 
 
         <%= f.input :seat_preference, label: "Airplane Seat Preference",  placeholder: "*  ie; aisle, window..." %>
+        <%= f.input :companion, label: "Companion Name" %>
 
-
-
-        <%= f.input :preferred_flight_date, label: 'Preferred Departure Date from (SLC-sea)',  placeholder: "*  Designate only if prior to Sept 8th" %>
-
-
-        <%= f.input :preferred_departure_time_period, label: 'Preferred Departure Date from (SEA-slc)',  placeholder: "*  Designate only if after to Sept 15th" %>
-
-        <br>
-        <br>
-
-        <h3 style="color: #12988B;"> Cruise Information:</h3>
-      <br>
-
-
-
-      <div class="field">
-        <%= f.label :number_of_beds_requested, 'Number of Beds Requested in Cabin' %>
-        <%= f.number_field :number_of_beds_requested, class: 'form-control' %>
-      </div>
-
-
-         <%= f.input :companion, label: "Input Name of Travel Companion",  placeholder: "* Required Field  |  If no companion please type NONE" %>
-
-
-
-         <br>
-         <br>
-
-         <h3 style="color: #12988B;"> Excursion Choice:</h3>
-         <h8 style="color: black; font-size: 16px; "> <center> dentist DIRECT Group Activity </center></h8>
-         
-      <br>
-      
-         <div align ="center"> 
-        <%= f.input :juneau_excursion, label: "", collection: ["   Sea Plane/Fly Fishing Tour -  Ketchikan  (Sunday, 9/10) ", "  Sea Plane/Nature tour/Dinner -  Juneau (Monday, 9/11)"],  as: :radio_buttons %>
-        </div>
-
-      
-        
-        <h8 style="color: black; font-size: 12px; "> <center><em> * Required Field </em></center></h8>  
   </div>
 
 
 
-  <div class = "col-md-4">
+
+
+
+
+
+  <div class = "col-sm-6">
       <h3 style="color: #12988B;"> Other information:</h3>
         <br>
 
@@ -112,21 +75,26 @@
         <%= f.label :food_allergies, "Food Allergies"%>
         <%= f.text_field :food_allergies,class: 'form-control' %>
       </div>
+      
+      <br>
 
+      <div class="field">
         <%= f.input :medical, label: "Medical Conditions" %>
-
+      </div>
 
       <div class="field">
         <%= f.label :additional_comments, "Additional Comments" %>
-        <%= f.text_area :additional_comments ,class: 'form-control', rows: 35 %>
+        <%= f.text_area :additional_comments ,class: 'form-control', rows: 17 %>
       </div>
         <br>
         <br>
-        <%= f.button :submit, 'Click Here to Submit Your Registration Form',class: "btn btn-primary"  %>
+        <%= f.button :submit, 'Click Here to Submit',class: "btn btn-primary"  %>
 </div>
 <br>
 
   </div>
 </div>
+</div>
+</center>
   
 <% end %>

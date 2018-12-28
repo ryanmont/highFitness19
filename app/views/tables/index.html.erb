@@ -9,14 +9,7 @@
 <br>
 
 
- <!-- search box form -->
-<div align= "right">
-  <%= form_tag(tables_path, :method => "get", id: "search-form") do %>
-      <%= text_field_tag :search, params[:search], placeholder: "Search for Attendees"%>
-      <%= submit_tag "Search", :name => nil, class: "btn btn-primary" %>
 
-  <% end %>
-</div>
  
 
 <br>
@@ -102,9 +95,7 @@
 
 <p>
 Click here to download Attendee Report:
-<%= link_to "Comma Seperated Values (CSV)", tables_path(format: "csv") %> | 
-<%= link_to "Excel Spreadsheet", tables_path(format: "xls") %> |
-<%= link_to "PDF Sheet", tables_path(format: "pdf") %> 
+
 </p>
 
 <br>

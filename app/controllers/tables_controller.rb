@@ -7,25 +7,7 @@ class TablesController < ApplicationController
 
    
       @tables = Table.all
-      if params[:search]
-        @tables = Table.search(params[:search]).order("created_at DESC")
-      else
-        @tables = Table.all.order("created_at DESC")
-    end
 
-
-
-
-    respond_to do |format|
-      format.html
-      format.csv { send_data @tables.to_csv }
-      format.xls { send_data @tables.to_csv(col_sep: "\t") }
-
-      format.pdf do 
-        pdf = Pdf.new
-        send_data pdf.render, filename: "Attendees"
-     end 
-    end
 
   end
 
@@ -91,6 +73,6 @@ class TablesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def table_params
-      params.require(:table).permit(:company, :passport_id, :first_name, :middle_name, :last_name, :date_of_birth, :street_address, :city, :state, :zip_code, :mobile_phone, :email, :preferred_airline, :frequent_flyer_number, :preferred_flight_date, :preferred_departure_time_period, :preferred_departure_airport_code, :seat_preference, :food_allergies, :number_of_beds_requested, :companion, :medical, :additional_comments, :juneau_excursion)
+      params.require(:table).permit(:company, :passport_id, :first_name, :middle_name, :last_name, :date_of_birth, :street_address, :city, :state, :zip_code, :mobile_phone, :email, :preferred_airline, :frequent_flyer_number, :preferred_flight_date, :preferred_departure_time_period, :preferred_departure_airport_code, :seat_preference, :food_allergies, :number_of_beds_requested, :companion, :medical, :additional_comments, )
     end
 end

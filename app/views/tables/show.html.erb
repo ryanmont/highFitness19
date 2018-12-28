@@ -18,26 +18,21 @@ if you'd like to register your travel companion click  <font color="#0275d8">""A
 
 <div class = "row">
  
-  <div class = "col-md-3">
+  <div class = "col-md-4">
   
       Registation Information for : 
     <p style= "color:#0275d8;"> <%= @table.first_name.upcase %> <%= @table.last_name.upcase %></p>
   </div>
 
-      <div class= "col-md-3">
+      <div class= "col-md-4">
          <%= link_to 'Edit Information', edit_table_path(@table), class: "btn btn-primary" %> 
        </div>
 
 
-    <div class= "col-md-3">
+    <div class= "col-md-4">
         <%= link_to 'Add New Attendee', new_table_path, class: "btn btn-primary"%> 
     </div>
 
-
-    
-
-        <div class = "col-md-3">
-        </div>
     
   </div>
 <hr>
@@ -47,7 +42,7 @@ if you'd like to register your travel companion click  <font color="#0275d8">""A
 
 <div class= "row">
 
-  <div class= "col-md-3">
+  <div class= "col-md-4">
 
     <p>
       <strong class= "cool">Company:</strong>
@@ -115,39 +110,23 @@ if you'd like to register your travel companion click  <font color="#0275d8">""A
     <!-- Image in center -->
      <div class= "col-md-4">
 
-        <%= image_tag "resize-logo-final.jpg", class: "carousel-inner" %>
+        <%= image_tag "https://s3-us-west-1.amazonaws.com/mont-general/Emerald/Img1.jpg", style: "width:300px; margin-bottom:30px" %>
 
      </div>
 
 
 
-  <div class= "col-md-5">
+  <div class= "col-md-4">
 
 
-    <p>
-      <strong class= "cool">Preferred Airline:</strong>
-      <%= @table.preferred_airline %>
-    </p>
+  
 
     <p>
       <strong class= "cool">Frequent Flyer Number:</strong>
       <%= @table.frequent_flyer_number %>
     </p>
 
-    <p>
-      <strong class= "cool">Preferred Depature Date from SLC:</strong>
-      <%= @table.preferred_flight_date %>
-    </p>
-
-    <p>
-      <strong class= "cool">Preferred Departure Date from SEA:</strong>
-      <%= @table.preferred_departure_time_period %>
-    </p>
-
-    <p>
-      <strong class= "cool">Number of Beds Requested:</strong>
-      <%= @table.number_of_beds_requested %>
-    </p>
+  
 
     <p>
       <strong class= "cool">Seat Preference:</strong>
@@ -160,10 +139,10 @@ if you'd like to register your travel companion click  <font color="#0275d8">""A
       <%= @table.companion %>
     </p>
 
-    <p>
+ <!--    <p>
       <strong class= "cool">Excursion Choice:</strong>
       <%= @table.juneau_excursion %>
-    </p>
+    </p> -->
 
     <p>
       <strong class= "cool">Food Allergies:</strong>
