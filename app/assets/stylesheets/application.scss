@@ -231,18 +231,12 @@ th {
 
 
 th, td {
-    padding: 8px;
-    text-align: left;
+    padding: 4px;
+    text-align: center;
+    font-size: 10pt
 }
 
-th {
-  text-align: center;
-  
-}
 
-td {
-  font-size: 12px;
-}
 
 .cool {
   
@@ -267,8 +261,6 @@ td {
 
 form {
    width: 1100px;
-
-  
    margin: auto;
    position: relative;
  }
@@ -293,7 +285,10 @@ hr {
 .footer {
   font-size: 13px;
 
+
 }
+
+
 
 }
 

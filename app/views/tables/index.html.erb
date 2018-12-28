@@ -58,15 +58,15 @@
           <tr>
 
             <td><%= link_to 'Detailed info', table %></td>
-            <td><%= table.company %></td>
+            <td><%= table.company.upcase %></td>
             <td><%= table.passport_id %></td>
-            <td><%= table.first_name %></td>
+            <td><%= table.first_name.titleize %></td>
           <!--   <td><%= table.middle_name %></td> -->
-            <td><%= table.last_name %></td>
+            <td><%= table.last_name.titleize %></td>
      <!--        <td><%= table.date_of_birth %></td>
             <td><%= table.street_address %></td> -->
-            <td><%= table.city %></td>
-            <td><%= table.state %></td>
+            <td><%= table.city.titleize %></td>
+            <td><%= table.state.upcase %></td>
             <!-- <td><%= table.zip_code %></td> --> 
             <td><%= table.mobile_phone %></td>
             <td><%= table.email %></td>
@@ -78,7 +78,7 @@
             <td><%= table.seat_preference %></td>
             <td><%= table.food_allergies %></td>
             <td><%= table.number_of_beds_requested %></td> -->
-            <td><%= table.companion %></td> 
+            <td><%= table.companion.titleize %></td> 
         
 
     <!--         <td><%= table.medical %></td> 
@@ -96,7 +96,7 @@
 
 
 <p>
-Click here to download Attendee Report:
+Click to download Attendee Report: <br>
 <%= link_to "EXCEL REPORT", tables_path(format: "xls") %>
 
 </p>
