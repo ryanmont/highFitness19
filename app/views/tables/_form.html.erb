@@ -30,12 +30,14 @@
   <div class = "col-sm-6">
     <h3 style="color: #12988B;"> Attendee Information:</h3>
       <br>
-          <%= f.input :company,  placeholder: "*  Required Field"  %>
+          <%= f.input :company,  label: "Company Name", placeholder: "*  Required Field"  %>
           <%= f.input :passport_id, label: "Passport Number",  placeholder: "*  Required Field"  %>
+          <%= f.input :preferred_airline, label: "Passport Expiration Date",  placeholder: "*  Required Field         Passport Expiraton Date"  %>
+          <%= f.input :date_of_birth, label: "Date of Birth",  placeholder: "*  Required Field  MM/DD/YYYY" %>
+
           <%= f.input :first_name, label: "First Name",  placeholder: "*  Required Field              As printed on Passport" %>
           <%= f.input :middle_name, label: "Middle Name",  placeholder: "*  Required Field             As printed on Passport" %>
           <%= f.input :last_name, label: "Last Name",  placeholder: "*  Required Field             As printed on Passport" %>
-          <%= f.input :date_of_birth, label: "Date of Birth",  placeholder: "*  Required Field  MM/DD/YYYY" %>
           <%= f.input :street_address, label: "Street Address", placeholder: "*  Required Field" %>
           <%= f.input :city,  placeholder: "*  Required Field" %>
           <%= f.input :state,  placeholder: "*  Required Field" %>

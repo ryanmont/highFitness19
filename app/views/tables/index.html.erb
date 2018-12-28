@@ -40,14 +40,16 @@
           <th>Food allergies</th>
           <th>Number of beds requested</th> -->
           <th>Companion </th>
-          <th>Excursion </th>
+      
           <th>Edit </th>
+          <th>Delete </th>
+     
          
           
 
          <!--  <th>Medial Conditions<th> -->
          <!--  <th>Additional Comments<th> -->
-          <th colspan="5"></th>
+    
         </tr>
       </thead>
 
@@ -77,7 +79,7 @@
             <td><%= table.food_allergies %></td>
             <td><%= table.number_of_beds_requested %></td> -->
             <td><%= table.companion %></td> 
-            <td><%= table.juneau_excursion %></td> 
+        
 
     <!--         <td><%= table.medical %></td> 
             <td><%= table.additional_comments %></td>   -->
@@ -95,6 +97,7 @@
 
 <p>
 Click here to download Attendee Report:
+<%= link_to "EXCEL REPORT", tables_path(format: "xls") %>
 
 </p>
 
