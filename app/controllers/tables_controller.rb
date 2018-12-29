@@ -1,6 +1,15 @@
 class TablesController < ApplicationController
   before_action :set_table, only: [:show, :edit, :update, :destroy]
 
+
+  http_basic_authenticate_with name: "admin", password: "Kristen15", except: [:new, :congrats, :create]
+
+ 
+
+
+def congrats
+end
+
   # GET /tables
   # GET /tables.json
   def index
@@ -38,8 +47,8 @@ class TablesController < ApplicationController
 
     respond_to do |format|
       if @table.save
-        format.html { redirect_to @table, notice: "CONGRATULATIONS! You've successfully completed registration." }
-        format.json { render :show, status: :created, location: @table }
+        format.html { redirect_to tables_congrats_path, notice: "CONGRATULATIONS! You've successfully completed registration." }
+      
       else
         format.html { render :new }
         format.json { render json: @table.errors, status: :unprocessable_entity }

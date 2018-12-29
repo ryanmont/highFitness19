@@ -5,7 +5,9 @@ Rails.application.routes.draw do
 
   get 'pages/sxs'
 
-  get 'pages/other'
+  get 'pages/congratulations'
+
+  get 'tables/congrats'
 
   resources :tables
   
