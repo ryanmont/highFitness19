@@ -30,6 +30,40 @@ img {
 }
 
 
+
+
+.faq-button
+{
+text-align: center;
+  margin-left:40px;
+  color:white;
+  height:40px;
+  width: 80px;
+  background-color: #0175D8;
+  border-radius: 12px;
+  padding:7px;
+}
+
+.faq-button a{
+  color:white;
+  text-decoration:none
+}
+
+.faq-button:hover{
+  text-decoration: none;
+}
+
+
+.question{
+font-size:12pt;
+color: #12988B;
+margin: 2px 8% 2px 8%;
+}
+.question span{
+  color:#2F7496;
+  font-size: 12pt;
+  margin-left:12px;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 

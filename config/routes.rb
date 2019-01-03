@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   get 'pages/atv'
 
-  get 'pages/motorcycle'
-
-  get 'pages/sxs'
+  get 'pages/faq'
 
   get 'pages/congratulations'
 

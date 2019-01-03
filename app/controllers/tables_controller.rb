@@ -1,10 +1,8 @@
 class TablesController < ApplicationController
-  before_action :set_table, only: [:show, :edit, :update, :destroy]
+  before_action :set_table, only: [:show, :edit, :update, :destroy, :faq]
 
 
   http_basic_authenticate_with name: "admin", password: "Kristen15", except: [:new, :congrats, :create]
-
- 
 
 
 def congrats
