@@ -45,6 +45,7 @@ end
 
     respond_to do |format|
       if @table.save
+        NotifyMailer.notify_kristen(@table).deliver
         format.html { redirect_to tables_congrats_path, notice: "CONGRATULATIONS! You've successfully completed registration." }
       
       else

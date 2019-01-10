@@ -29,19 +29,36 @@ img {
   height: auto;
 }
 
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+
+// FAQ page styles
 
 
+.congrats{
+  font-family: 'Great Vibes', cursive;
+  font-size:32pt;
+  text-align: center
+}
 
 .faq-button
 {
 text-align: center;
-  margin-left:40px;
+  margin-left:20px;
+  margin-bottom: 20px;
   color:white;
   height:40px;
-  width: 80px;
-  background-color: #0175D8;
-  border-radius: 12px;
-  padding:7px;
+  width: 125px;
+  font-size:12pt;
+  background-color:#2F7496; 
+  border: solid 2px #12988B;
+  border-radius: 9px;
+  padding:6px;
+  display:inline-block
 }
 
 .faq-button a{
@@ -49,8 +66,14 @@ text-align: center;
   text-decoration:none
 }
 
+.faq-button a:hover{
+  text-decoration: none;
+  opacity:0.7
+}
+
 .faq-button:hover{
   text-decoration: none;
+  opacity:0.8
 }
 
 
@@ -64,6 +87,97 @@ margin: 2px 8% 2px 8%;
   font-size: 12pt;
   margin-left:12px;
 }
+
+.faq-images{
+  display:inline-block;
+  width:32%;
+  margin:0px;
+  padding:0px;
+}
+
+.info-buttons{
+text-align:center;
+margin:10px;
+
+}
+
+
+// FAQ page styles end
+
+
+// accordion styles
+
+.accordion {
+  background-color:white ;
+  color: #12988B;
+  cursor: pointer;
+  padding: 10px;
+  width: 90%;
+  border: 2px solid #2F7496;
+  border-radius: 4px;
+  text-align: left;
+  outline: none;
+  font-size: 12pt;
+  transition: 0.4s;
+}
+
+
+.panel {
+margin-left:65px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  text-align: left;
+}
+
+
+.panel p{
+    font-size:12pt;
+    color: #12988B;
+    width:90%;
+    text-align:left;
+    margin-top:20px;
+    margin-bottom:20px
+}
+
+.panel li{
+  font-size:12pt;
+  color: #12988B;
+  text-align: left;
+  width:90%;
+  margin-left:20px;
+}
+
+.panel span{
+  font-size:12pt;
+  color: #12988B;
+  text-align: left;
+  width:90%;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+button{
+    margin-top:20px;
+}
+
+
+
+// accordion styles end
+
+
+
+
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -135,6 +249,15 @@ margin: 2px 8% 2px 8%;
     line-height: 1.4;
   }
 
+  .faq-images{
+    display:none;
+  }
+
+  .single_image{
+width:95%
+  }
+
+
   .featurette-heading {
     font-size: 50px;
   }
@@ -182,6 +305,45 @@ body{
 
     background-color: #12988B; 
 }
+.panel{
+margin-left:5px;
+}
+
+.panel p{
+  font-size:10pt;
+  color: #12988B;
+  width:100%;
+  margin-top:20px;
+  margin-bottom:20px
+}
+
+.panel li{
+font-size:10pt;
+color: #12988B;
+text-align: left;
+width:100%;
+margin-left:0px;
+}
+
+.panel span{
+font-size:10pt;
+color: #12988B;
+text-align: left;
+width:100%;
+}
+
+.accordion {
+
+  width: 100%;
+  border: 2px solid #2F7496;
+  text-align: left;
+  font-size: 11pt;
+  transition: 0.4s;
+}
+
+.congrats{
+  font-size:20pt;
+}
 
 }
 
@@ -190,7 +352,10 @@ body{
     margin-top: 7rem;
   }
 
-
+  .single_image{
+    display:none;
+      }
+  
 
 /* 
 Custom styles
@@ -318,16 +483,18 @@ hr {
 
 .footer {
   font-size: 13px;
+  }
 
 
 }
 
 
 
-}
+@media (min-width: 600px) {
 
-
-
-
-
+  .single_image{
+    display:none;
+      }
+  
+    }
 

@@ -78,6 +78,8 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 
 gem 'rename', '~> 1.0', '>= 1.0.6'
 
+gem 'dotenv-rails', '~> 2.5'
+
 
 
 
