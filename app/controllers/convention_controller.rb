@@ -8,7 +8,13 @@ class ConventionController < ApplicationController
   def register
   end
 
-  def agenda
+  def agenda_one
+  end
+
+  def agenda_two
+  end
+
+  def agenda_three
   end
 
   def faq

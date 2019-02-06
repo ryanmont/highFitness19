@@ -6,7 +6,11 @@ Rails.application.routes.draw do
 
   get 'convention/register'
 
-  get 'convention/agenda'
+  get 'convention/agenda_one'
+
+  get 'convention/agenda_two'
+
+  get 'convention/agenda_three'
 
   get 'convention/faq'
 
