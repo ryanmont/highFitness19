@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'convention/venue'
+
+  get 'convention/home'
+
+  get 'convention/register'
+
+  get 'convention/agenda'
+
+  get 'convention/faq'
+
   get 'pages/faq'
 
   get 'pages/congratulations'
@@ -9,7 +19,7 @@ Rails.application.routes.draw do
   resources :tables
   
 
-  root to: 'tables#new'
+  root to: 'convention#home'
 end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 

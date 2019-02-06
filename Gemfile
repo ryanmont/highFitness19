@@ -56,7 +56,7 @@ ruby "2.4.0"
 
 gem 'simple_form', '~> 3.5'
 
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.2', '>= 4.2.1'
 
 gem 'axlsx', '~> 2.0', '>= 2.0.1'
 

@@ -6,8 +6,8 @@
 
     <!-- favicon -->
 
-    <link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/mont-general/Emerald/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="https://s3-us-west-1.amazonaws.com/mont-general/Emerald/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/mont-general/highfitness/highfavicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://s3-us-west-1.amazonaws.com/mont-general/highfitness/highfavicon.ico" type="image/x-icon">
 
     <!-- favicon end -->
 
@@ -15,7 +15,7 @@
 
     <%# google fonts %>
 
-   <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans| Raleway" rel="stylesheet">
 
    
       <!-- google analytics code start-->
@@ -30,7 +30,7 @@
 
 
 
-      <title>High Fitness 2019</title>
+      <title>High Instructor Convention</title>
         <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -39,6 +39,7 @@
 
   <body>
   
+    <%= render 'shared/nav' %>
     <%= yield %>
 
     <%= render 'shared/alerts' %>

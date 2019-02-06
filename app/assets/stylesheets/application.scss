@@ -11,11 +11,16 @@
 body {
   padding-top:  2rem;
   padding-bottom: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: #A2B9C5;
-  font-weight: 500;
+
+
+  background-color: gainsboro;
+  font-family: 'Raleway', sans-serif;
+ /* background for stripes 100px wide starting on the left side  */
+/* background: repeating-linear-gradient(to right, white, white 100px, grey 100px, grey 200px); */
+
 }
+
+
 
 .parent {
   width: 80%;
@@ -23,7 +28,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+
   height: auto;
 }
 
@@ -33,7 +38,7 @@ a{
 }
 a:hover{
   text-decoration: none;
-  color: #2F7496;
+  color: #F8E910;
 }
 
 
@@ -45,9 +50,10 @@ ul {
 
 
 .congrats{
-  font-family: 'Great Vibes', cursive;
-  font-size:32pt;
-  text-align: center
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+color:white;
+
 }
 
 .faq-button
@@ -59,8 +65,8 @@ text-align: center;
   height:40px;
   width: 125px;
   font-size:12pt;
-  background-color:#2F7496; 
-  border: solid 2px #12988B;
+  background-color:#EC549E; 
+  border: solid 2px white;
   border-radius: 9px;
   padding:6px;
   display:inline-block
@@ -71,14 +77,12 @@ text-align: center;
   text-decoration:none
 }
 
-.faq-button a:hover{
-  text-decoration: none;
-  opacity:0.7
-}
+
 
 .faq-button:hover{
   text-decoration: none;
-  opacity:0.8
+  opacity:0.8;
+  color:#48484A;
 }
 
 .weather-button{
@@ -102,6 +106,7 @@ font-size:12pt;
 color: #12988B;
 margin: 2px 8% 2px 8%;
 }
+
 .question span{
   color:#12988B;
   font-size: 12pt;
@@ -121,19 +126,154 @@ margin:10px;
 
 }
 
+.footer{
+  background-color: #48484A;
+  border: 2px solid #EC549E; 
+  border-radius: 11px;
+  color:white;
+  text-align: center;
+  font-size:12pt;
+  font-family: 'Raleway', sans-serif;
+}
 
-// FAQ page styles end
+
+/* Nav bar */
+.navbar-light .navbar-brand {
+   text-align: center;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    text-align: center;
+}
 
 
-// accordion styles
+.navbar-light .navbar-nav .nav-link {
+
+    font-family: 'Raleway', sans-serif;
+    color: #EC549E;
+    border-bottom: 2px solid #48484A;
+    text-align: center
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #fff !important;
+    border-bottom: 2px solid #EC549E
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+.custom-toggler.navbar-toggler {
+  border-color: #EC549E;
+} 
+/* Nav bar end */
+
+
+/* // FAQ page styles end */
+
+
+
+
+
+/* VENUE PAGE theLOCALE */
+
+.venue-one{
+width:90%;
+
+}
+
+.venue-two{
+height:40px;
+width:300px;
+background-color: #1CA18B;
+color:white;
+font-size: 17pt;
+border-radius: 5px;
+font-family: 'Raleway', sans-serif;
+margin:20px;
+border: 3px solid white;
+}
+
+
+.transportation{
+  width: 40%;
+}
+.venue-two a{
+  text-decoration: none;
+  color:white;
+}
+
+.venue-two a:hover{
+background-color: #ffffff;
+color:#1CA18B;
+}
+.venue-two:hover{
+  background-color:white;
+  border: 3px solid #1CA18B;
+}
+
+.venue-three{
+margin:50px 15% 10px 15%;
+display:grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 25px;
+justify-items: center;
+align-content: space-between;
+font-family: 'Raleway', sans-serif;
+font-size:13pt;
+}
+
+.venue-three span{
+font-weight: bold;
+}
+
+.venue-four{
+width:80%;
+}
+
+.venue-four hr{
+background-color: #1CA18B;
+height: 3px;
+border:none;
+}
+
+.venue-five{
+width:320px;
+margin-bottom:30px;
+}
+
+.venue-five span{
+font-weight: bold;
+font-size: 9pt;
+}
+
+/* VENUE END */
+
+.img-container{
+  width: 90%;
+  border:6px solid white;
+  border-radius: 8px;
+  box-shadow: 2px 3px 15px grey;
+  padding:0px;
+  margin:0px;
+
+}
+
+.ven{
+  width:70%;
+}
+
+/* // accordion styles */
 
 .accordion {
   background-color:white ;
-  color: #12988B;
+  color: #48484A;
   cursor: pointer;
   padding: 9px;
   width: 100%;
-  border: 2px solid #2F7496;
+  border: 2px solid #EC549E;
   border-radius: 4px;
   text-align: left;
   outline: none;
@@ -198,7 +338,29 @@ span1{
 span1 ul li{
   color: #2F7496;
 }
-// accordion styles end
+
+.btn-custom{
+  background-color:#EC549E;
+  color:#48484A;
+  padding:10px;
+  font-weight: bold;
+  font-family: 'Raleway Italic', sans-serif;
+  text-decoration: none;
+  border: 3px solid #EC549E;
+  border-radius: 7px;
+}
+
+
+.btn-custom:hover{
+  background-color:#ffffff;
+  color:#EC549E;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid #EC549E;
+}
+
+
+/* // accordion styles end */
 
 
 
@@ -207,29 +369,9 @@ span1 ul li{
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
-/* Carousel base class */
-.carousel {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
- 
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-  bottom: 3rem;
-}
+.carousel-indicators li { 
+  display: none; }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 25rem;
-  background-color: #ffffff;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  min-width: 10%;
-  height: 25rem;
-}
 
 
 /* MARKETING CONTENT
@@ -280,10 +422,37 @@ span1 ul li{
   }
 
   .single_image{
-width:95%
+    width:95%
   }
 
+.venue-three{
+margin:40px 5% 10px 5%;
+display:grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 15px;
+justify-items: center;
+align-content: space-between;
+font-family: 'Raleway', sans-serif;
+font-size:11pt;
+}
 
+
+.ven{
+  width:95%;
+}
+
+
+.footer{
+  background-color: #48484A;
+  color:white;
+  text-align: center;
+  font-size:9pt;
+  font-family: 'Raleway', sans-serif
+}
+
+.footer2{
+  font-size: 9pt
+}
   .featurette-heading {
     font-size: 50px;
   }
@@ -329,7 +498,7 @@ body{
     /* Set the hr color */
     /* Modern Browsers */
 
-    background-color: #12988B; 
+    background-color: white; 
 }
 .panel{
 margin-left:5px;
@@ -504,12 +673,8 @@ hr {
     /* Set the hr color */
     /* Modern Browsers */
 
-    background-color: #12988B; 
+    background-color: white; 
 }
-
-.footer {
-  font-size: 13px;
-  }
 
 
 }
@@ -522,5 +687,7 @@ hr {
     display:none;
       }
   
+
+
     }
 
