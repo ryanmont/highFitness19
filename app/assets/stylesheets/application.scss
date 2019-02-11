@@ -276,8 +276,20 @@ span8{
   padding:25px 130px 45px 130px;
   line-height: 1.8;
  
+}
+
+
+
+.high-footer{
+  width:220px;
 
 }
+
+.accommodations{
+  width:45%;
+}
+
+
 /* VENUE PAGE theLOCALE */
 
 .venue-one{
@@ -610,6 +622,11 @@ span7{
   font-size: 10pt;
 }
 
+.high-footer{
+  width:120px;
+
+}
+
 .agenda3{
   width:100%;
   background-color:#48484A;
@@ -619,6 +636,11 @@ span7{
   border-top: 20px solid #EC549E;
 }
 
+
+.accommodations{
+  width:75%;
+ 
+}
 
   .featurette-heading {
     font-size: 50px;
@@ -665,7 +687,7 @@ body{
     /* Set the hr color */
     /* Modern Browsers */
 
-    background-color: white; 
+    background-color: #EC549E; 
 }
 .panel{
 margin-left:5px;
@@ -840,7 +862,7 @@ hr {
     /* Set the hr color */
     /* Modern Browsers */
 
-    background-color: white; 
+    background-color: #EC549E; 
 }
 
 
