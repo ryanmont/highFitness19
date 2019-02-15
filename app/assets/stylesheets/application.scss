@@ -221,7 +221,15 @@ span8{
   background-color:#48484A;
   color:white;
   padding:45px;
-  border-top: 20px solid #EC549E;
+  border-top: 15px solid #EC549E;
+}
+
+.agenda4{
+  width:100%;
+  background-color:white;
+  color:#48484A;
+  padding:45px;
+  border-bottom: 15px solid #EC549E;
 }
 
 /* // FAQ page styles end */
@@ -268,8 +276,8 @@ span8{
   border-bottom: 2px solid white;
 }
 .event_description{
-  background-color: #EC549E;
-  color:black;
+  background-color: #48484A;
+  color:white;
   width:100%;
   text-align: left;
   font-family: 'Raleway', sans-serif;
@@ -278,7 +286,29 @@ span8{
  
 }
 
+.address{
+  background-color:#EC549E;
+  color:white;
+  font-size: 17pt;
+  width: 100%;
+  padding:20px;
+}
 
+.included{
+background-color: #EC549E;
+color:white;
+font-size: 13pt;
+width:100%;
+padding:30px;
+font-family: 'Raleway', sans-serif;
+
+}
+.included-title{
+  color:white;
+font-size: 25pt;
+font-family: 'Raleway', sans-serif;
+
+}
 
 .high-footer{
   width:220px;
@@ -289,6 +319,23 @@ span8{
   width:45%;
 }
 
+
+.segment1 {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+}
+.segment1 .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.segment1:hover .img-top {
+  display: inline;
+}
 
 /* VENUE PAGE theLOCALE */
 
@@ -591,9 +638,13 @@ span5{
 
 }
 
+.address{
+  font-size: 10pt;
+
+}
 
 span7{
-  color:white;
+  color:#EC549E;
   font-size: 25pt;
 
 }
@@ -641,6 +692,20 @@ span7{
   width:75%;
  
 }
+
+
+
+.included{
+font-size: 10pt;
+
+}
+
+.included-title{
+  color:white;
+  font-size: 18pt;
+
+}
+
 
   .featurette-heading {
     font-size: 50px;
