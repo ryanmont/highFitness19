@@ -9,7 +9,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-top:  2rem;
+
   padding-bottom: 3rem;
 
 
@@ -136,6 +136,17 @@ margin:10px;
   font-family: 'Raleway', sans-serif;
 }
 
+
+.lighten:hover{
+  filter: brightness(120%)
+}
+
+.lighten{
+ -webkit-transition: all 0.7s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.7s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.7s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.7s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
 
 /* Nav bar */
 .navbar-light .navbar-brand {
@@ -326,6 +337,8 @@ font-family: 'Raleway', sans-serif;
   height: auto;
   position: relative;
 
+
+
 }
 .segment1 .img-top {
   display: none;
@@ -333,11 +346,21 @@ font-family: 'Raleway', sans-serif;
   top: 0;
   left: 0;
   z-index: 99;
+
+
 }
 .segment1:hover .img-top {
   display: inline;
+ 
 }
 
+
+.segment1:after {
+ -webkit-transition: all 0.8s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: all 0.8s ease-out;  /* Firefox 4-15 */
+       -o-transition: all 0.8s ease-out;  /* Opera 10.50–12.00 */
+          transition: all 0.8s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
 /* VENUE PAGE theLOCALE */
 
 .venue-one{
@@ -520,6 +543,31 @@ span1 ul li{
   border: 3px solid #EC549E;
 }
 
+
+
+.btn-custom2{
+  background-color:#EC549E;
+  color:#48484A;
+  padding:10px;
+  font-weight: bold;
+  font-family: 'Raleway Italic', sans-serif;
+  text-decoration: none;
+  border: 3px solid #EC549E;
+  border-radius: 7px;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  z-index: 1;
+}
+
+
+.btn-custom2:hover{
+  background-color:#ffffff;
+  color:#EC549E;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid #EC549E;
+}
 
 /* // accordion styles end */
 
@@ -717,7 +765,7 @@ padding:30px 20px 25px 5px;
   }
 
 body{ 
-      padding-top:  2rem;
+  
       padding-bottom: 3rem;
       padding-left: 2px;
       padding-right: 2px;
