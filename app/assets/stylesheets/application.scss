@@ -103,12 +103,12 @@ text-align: center;
 
 .question{
 font-size:12pt;
-color: #12988B;
+color: #EC549E;
 margin: 2px 8% 2px 8%;
 }
 
 .question span{
-  color:#12988B;
+  color:#EC549E;
   font-size: 12pt;
   margin-left:12px;
 }
@@ -496,8 +496,14 @@ font-size: 9pt;
   width:70%;
 }
 
-/* // accordion styles */
 
+
+
+
+
+
+
+/* Accordion content */
 .accordion {
   background-color:white ;
   color: #48484A;
@@ -569,6 +575,67 @@ span1{
 span1 ul li{
   color: #2F7496;
 }
+
+
+
+.agenda-background{
+background-color: #48484A;
+font-family: 'Raleway', sans-serif;
+font-size:12pt;
+padding: 15px;
+border-radius: 0px 0px 8px 8px;
+
+}
+
+
+.bio-image{
+  display: flex;
+  flex: right;
+  height: 100px;
+  margin: 5px 20px 10px 10px ;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.bio-image img{
+  image-rendering: -moz-crisp-edges;         /* Firefox */
+  image-rendering:   -o-crisp-edges;         /* Opera */
+  image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+
+}
+
+ .bio-image span{
+  padding-left: 35px;
+  font-size: 11pt;
+ }
+
+
+.bio-section{
+  display: flex;
+   align-items: center;
+
+}
+
+.bio-image-name-title{
+  display: flex;
+  flex:left;
+  font-family: 'Raleway', sans-serif;
+  font-size:11pt;
+  padding: 10px;
+
+}
+.bio-description{
+ font-family: 'Raleway', sans-serif;
+ color:white;
+  font-size:11pt;
+
+}
+
+
+/* 
+Accordion end */
 
 .btn-custom{
   background-color:#EC549E;
@@ -694,6 +761,67 @@ span1 ul li{
     font-size: 1.25rem;
     line-height: 1.4;
   }
+
+
+
+
+
+
+
+
+
+          .agenda-bio{
+            background-color:white ;
+            color: #304560;
+            cursor: pointer;
+            padding: 9px;
+            width: 99%;
+            text-align: left;
+            outline: none;
+            transition: 0.6s;
+          }
+
+          .bio-button{
+            width: 100%;
+            background-color: white;
+            height: auto;
+            color: #304560;
+            text-align: center;
+            font-size: 10pt;
+            padding: 10px 1px 10px 1px;
+            border: 1px solid #E7E7E8;
+
+          }
+
+          .bio-non-button{
+            width:96%;
+            font-size: 10pt;
+
+          }
+
+            .bio-hr{
+              width: 96%;
+
+            }
+            .agenda-background{
+           background-color: #48484A;
+            font-family: 'Raleway', sans-serif;
+            font-size:11pt;
+            padding: 15px;
+
+            }
+
+            .bio-image-name-title{
+              font-size:9pt;
+            
+
+            }
+            .bio-description{
+              font-size:9pt;
+
+            }
+
+
 
   .faq-images{
     display:none;
@@ -903,7 +1031,7 @@ margin-left:5px;
 
 .panel p{
   font-size:10pt;
-  color: #12988B;
+  color: #EC549E;
   width:100%;
   margin-top:20px;
   margin-bottom:20px
@@ -911,7 +1039,7 @@ margin-left:5px;
 
 .panel li{
 font-size:10pt;
-color: #12988B;
+color: #EC549E;
 text-align: left;
 width:100%;
 margin-left:0px;
@@ -919,7 +1047,7 @@ margin-left:0px;
 
 .panel span{
 font-size:10pt;
-color: #12988B;
+color: #EC549E;
 text-align: left;
 width:100%;
 }
@@ -927,7 +1055,7 @@ width:100%;
 .accordion {
 
   width: 100%;
-  border: 2px solid #2F7496;
+  border: 2px solid #ec54ab;
   text-align: left;
   font-size: 11pt;
   transition: 0.4s;
@@ -940,6 +1068,9 @@ width:100%;
 }
 
 @media (min-width: 62em) {
+ 
+
+
   .featurette-heading {
     margin-top: 7rem;
   }
