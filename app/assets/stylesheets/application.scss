@@ -504,6 +504,21 @@ font-size: 9pt;
 
 
 /* Accordion content */
+
+
+.non-accordion {
+  background-color:white ;
+  color: #48484A;
+  padding: 9px;
+  width: 100%;
+  border: 2px solid #EC549E;
+  border-radius: 4px;
+  text-align: left;
+  outline: none;
+  font-size: 12pt;
+  transition: 0.6s;
+}
+
 .accordion {
   background-color:white ;
   color: #48484A;

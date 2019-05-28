@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get 'convention/faq'
 
+  get 'convention/sponsors'
+
   get 'pages/faq'
 
   get 'pages/congratulations'
