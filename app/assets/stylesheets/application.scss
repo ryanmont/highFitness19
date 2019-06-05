@@ -723,8 +723,31 @@ Accordion end */
 /* // accordion styles end */
 
 
+/* SPONSORS PAGE */
 
 
+.sponsor-container{
+margin:40px 5% 10px 5%;
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 15px;
+justify-items: center;
+align-content: space-between;
+font-family: 'Raleway', sans-serif;
+font-size:10pt;
+}
+
+
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -780,7 +803,10 @@ Accordion end */
 
 
 
-
+.sponsor-container{
+  grid-template-columns: 1fr;
+  font-size:8pt;
+}
 
 
 
