@@ -5,17 +5,18 @@
   <strong>Attendee:</strong>
   <%= @qa.name %>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
 
   <strong>Email:</strong>
   <%= @qa.email %>
 </div>
 
-<br>
+<hr>
 
 <p>
   <strong>Question:</strong>
-  <%= @qa.question %>
+  <br>
+  "<%= @qa.question %>"
 </p>
 
 
@@ -23,7 +24,7 @@
   <strong>Other:</strong>
   <%#= @qa.other %>
 </p> -->
-<br>
+
 <hr>
 <br>
 <%= link_to 'Edit', edit_qa_path(@qa) %> |

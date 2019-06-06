@@ -61,7 +61,7 @@ layout 'form'
   def destroy
     @qa.destroy
     respond_to do |format|
-      format.html { redirect_to qas_url, notice: 'Question was successfully destroyed.' }
+      format.html { redirect_to qas_url, notice: 'Question was successfully deleted.' }
       format.json { head :no_content }
     end
   end
