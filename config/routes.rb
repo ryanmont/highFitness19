@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :qas, :path => 'qa'
+
   get 'convention/venue'
 
   get 'convention/home'
@@ -21,6 +23,10 @@ Rails.application.routes.draw do
   get 'pages/congratulations'
 
   get 'tables/congrats'
+
+  get 'qa/congrats'
+
+
 
   resources :tables
   

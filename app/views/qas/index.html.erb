@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Conference Questions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Other</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @qas.each do |qa| %>
+      <tr>
+        <td><%= qa.question %></td>
+        <td><%= qa.name %></td>
+        <td><%= qa.email %></td>
+        <td><%= qa.other %></td>
+        <td><%= link_to 'Show', qa %></td>
+        <td><%= link_to 'Edit', edit_qa_path(qa) %></td>
+        <td><%= link_to 'Destroy', qa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Ask Question', new_qa_path %>
