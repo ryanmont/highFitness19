@@ -3,6 +3,8 @@ class QasController < ApplicationController
 
   http_basic_authenticate_with name: "admin", password: "Kristen15", except: [ :new, :create ]
 
+layout 'form'
+
   # GET /qas
   # GET /qas.json
   def index
@@ -13,10 +15,6 @@ class QasController < ApplicationController
   # GET /qas/1.json
   def show
   end
-
-
-def congrats
-end
 
 
   # GET /qas/new

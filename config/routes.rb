@@ -24,9 +24,6 @@ Rails.application.routes.draw do
 
   get 'tables/congrats'
 
-  get 'qa/congrats'
-
-
 
   resources :tables
   

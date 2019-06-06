@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+
+
+    <!-- favicon -->
+
+    <link rel="shortcut icon" href="https://s3-us-west-1.amazonaws.com/mont-general/highfitness/highfavicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://s3-us-west-1.amazonaws.com/mont-general/highfitness/highfavicon.ico" type="image/x-icon">
+
+    <!-- favicon end -->
+
+
+
+    <%# google fonts %>
+
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans| Raleway" rel="stylesheet">
+
+   
+      <!-- google analytics code start-->
+
+      <%= render 'shared/google_analytics' %>
+
+    <!-- google analytics code end-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+
+
+
+      <title>High Instructor Convention</title>
+        <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%= render 'shared/upper_form' %>
+  
+    <%= yield %>
+
+    <%= render 'shared/alerts' %>
+
+ <%= render 'shared/lower_form' %>
+
+  </body>
+
+  
+  
+</html>
