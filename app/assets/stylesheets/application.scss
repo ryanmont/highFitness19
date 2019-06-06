@@ -20,6 +20,34 @@ body {
 
 }
 
+table, th, td {
+   border: 1px solid black;
+
+}
+
+table {
+    width: 100%;
+}
+
+
+
+th {
+    height: 18px;
+}
+
+tr:hover {background-color: #f2f2f2}
+
+th {
+    background-color: #0275d8;
+    color: white;
+}
+
+
+th, td {
+    padding: 4px;
+    text-align: center;
+    font-size: 10pt
+}
 
 
 .parent {
@@ -1170,34 +1198,6 @@ height:80%;
 
 }
 
-table, th, td {
-   border: 1px solid black;
-
-}
-
-table {
-    width: 100%;
-}
-
-
-
-th {
-    height: 18px;
-}
-
-tr:hover {background-color: #f2f2f2}
-
-th {
-    background-color: #0275d8;
-    color: white;
-}
-
-
-th, td {
-    padding: 4px;
-    text-align: center;
-    font-size: 10pt
-}
 
 
 
@@ -1206,19 +1206,7 @@ th, td {
   color: #167495;
 }
 
-    table.form {
-    width: 100%;
-    }
-
-
-    td.label {
-    white-space: nowrap;
-    }
-
-
-    td.input{
-    width: 100%;
-    }
+ 
 
 
 

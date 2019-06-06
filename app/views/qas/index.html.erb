@@ -5,14 +5,15 @@
 </center>
 
 <div style= "margin:20px">
+  <center>
   <table >
     <thead >
       <tr>
         <th style= "background-color: #EC549E">Question</th>
         <th style= "background-color: #EC549E">Name</th>
-        <th style= "background-color: #EC549E">Email</th>
-        <th style= "background-color: #EC549E">Other</th>
-        <th style= "background-color: #EC549E" colspan="3"></th>
+<!--         <th style= "background-color: #EC549E">Email</th>
+        <th style= "background-color: #EC549E">Other</th> -->
+        <th style= "background-color: #EC549E" colspan="2"></th>
       </tr>
     </thead>
 
@@ -21,15 +22,16 @@
         <tr>
           <td><%= qa.question %></td>
           <td><%= qa.name %></td>
-          <td><%= qa.email %></td>
-          <td><%= qa.other %></td>
+    <!--       <td><%= qa.email %></td>
+          <td><%= qa.other %></td> -->
           <td><%= link_to 'Show', qa %></td>
-          <td><%= link_to 'Edit', edit_qa_path(qa) %></td>
-          <td><%= link_to 'Destroy', qa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <!-- <td><%#= link_to 'Edit', edit_qa_path(qa) %></td> -->
+          <td><%= link_to 'Delete', qa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
       <% end %>
     </tbody>
   </table>
+</center>
 <br>
 
 <%= link_to 'Ask Question', new_qa_path %>
