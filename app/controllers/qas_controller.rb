@@ -9,6 +9,7 @@ layout 'form'
   # GET /qas.json
   def index
     @qas = Qa.all
+    @count= Qa.all.count
   end
 
   # GET /qas/1

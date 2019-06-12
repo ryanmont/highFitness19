@@ -1,0 +1,2 @@
+module ChoreoRegsHelper
+end

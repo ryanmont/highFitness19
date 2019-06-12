@@ -1,0 +1,32 @@
+<%= simple_form_for(@vote) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+ Group 1
+ <br>
+    <%= f.radio_button "a1", "Group 1"%>
+  </div>
+
+<br>
+    <div class="form-inputs">
+Group 2
+<br>
+    <%= f.radio_button "a1", "Group 2" %>
+  </div>
+
+<br>
+
+    <div class="form-inputs">
+      Group 3
+      <br>
+    <%= f.radio_button "a1", "Group 3" %>
+  </div>
+
+<br>
+
+ <button style ="background-color: #EC549E">
+    <%= f.button :submit, "Submit" %>
+  </button>
+<% end %>
+
+<br>

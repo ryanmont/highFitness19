@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Song:</strong>
+  <%= @choreo_reg.song %>
+</p>
+
+<p>
+  <strong>Names:</strong>
+  <%= @choreo_reg.names %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @choreo_reg.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @choreo_reg.phone %>
+</p>
+
+<p>
+  <strong>Other:</strong>
+  <%= @choreo_reg.other %>
+</p>
+
+<%= link_to 'Edit', edit_choreo_reg_path(@choreo_reg) %> |
+<%= link_to 'Back', choreo_regs_path %>

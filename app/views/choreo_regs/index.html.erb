@@ -1,0 +1,78 @@
+<center>
+<div style = "padding:20px;max-width: 900px">
+
+        <p id="notice"><%= notice %></p>
+
+        <h4>High Fitness Choreography Contest</h4>
+        <br>
+            
+              Register today ~ 25 Spots available
+              <br>
+         
+
+              Spots Remaining: <%= 25 - @count %>
+              <br>
+              <br>
+
+
+        <table>
+          <thead>
+            <tr >
+
+              <th style= "background-color: #EC549E"> </th>
+                <th style= "background-color: #EC549E">Song</th>
+              <th style= "background-color: #EC549E">Name(s)</th>
+            <!--   <th style= "background-color: #EC549E">Email</th>
+              <th style= "background-color: #EC549E">Phone</th>
+              <th style= "background-color: #EC549E">Other</th -->
+              <!-- <th style= "background-color: #EC549E" colspan="3"></th> -->
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <% @choreo_regs.each_with_index do |choreo_reg, i| %>
+          
+          
+
+              <tr>
+                <td> <%= i +1 %></td>
+                <td><%= choreo_reg.song %></td>
+                <td><%= choreo_reg.names %></td>
+          <!--       <td><%#= choreo_reg.email %></td>
+                <td><%#= choreo_reg.phone %></td>
+                <td><%#= choreo_reg.other %></td> -->
+ <!--                <td><%#= link_to 'Show', choreo_reg %></td>
+                <td><%#= link_to 'Edit', edit_choreo_reg_path(choreo_reg) %></td>
+                <td><%#= link_to 'Destroy', choreo_reg, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+        <br>
+        <hr>
+        <hr>
+
+
+</div>
+</center>
+        <%#= link_to 'New Choreo Reg', new_choreo_reg_path %>
+
+
+ <% if @count >= 25 %> 
+
+<center>
+      Sorry Registation is Full
+</center>
+
+<br>
+
+  <% else %>
+
+<%= render 'form', choreo_reg: @choreo_reg %>
+
+<%end%>
+
+
+

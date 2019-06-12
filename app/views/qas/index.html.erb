@@ -1,39 +1,59 @@
-<p id="notice"><%= notice %></p>
+<div style = "padding:20px">
+      <p id="notice"><%= notice %></p>
 
-<center>
-<h3>Conference Questions</h3>
-</center>
+      <center>
+      <h3>Conference Questions</h3>
+      </center>
 
-<div style= "margin:20px">
-  <center>
-  <table >
-    <thead >
-      <tr>
-        <th style= "background-color: #EC549E">Question</th>
-        <th style= "background-color: #EC549E">Name</th>
-<!--         <th style= "background-color: #EC549E">Email</th>
-        <th style= "background-color: #EC549E">Other</th> -->
-        <th style= "background-color: #EC549E" colspan="2"></th>
-      </tr>
-    </thead>
+      Count: <%= @count %>
 
-    <tbody>
-      <% @qas.each do |qa| %>
-        <tr>
-          <td><%= qa.question %></td>
-          <td><%= qa.name %></td>
-    <!--       <td><%= qa.email %></td>
-          <td><%= qa.other %></td> -->
-          <td><%= link_to 'Show', qa %></td>
-          <!-- <td><%#= link_to 'Edit', edit_qa_path(qa) %></td> -->
-          <td><%= link_to 'Delete', qa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
-</center>
-<br>
 
-<%= link_to 'Ask Question', new_qa_path %>
+      Spots Remaining: <%= 25 - @count %>
+      <br>
+      <br>
+      <br>
 
+      <% if @count >= 4 %> 
+
+
+      Sorry Registation is Full
+
+      <% else %>
+
+      <div style= "margin:20px">
+        <center>
+        <table >
+          <thead >
+            <tr>
+              <th style= "background-color: #EC549E">Question</th>
+              <th style= "background-color: #EC549E">Name</th>
+      <!--         <th style= "background-color: #EC549E">Email</th>
+              <th style= "background-color: #EC549E">Other</th> -->
+              <th style= "background-color: #EC549E" colspan="2"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <% @qas.each do |qa| %>
+              <tr>
+                <td><%= qa.question %></td>
+                <td><%= qa.name %></td>
+          <!--       <td><%= qa.email %></td>
+                <td><%= qa.other %></td> -->
+                <td><%= link_to 'Show', qa %></td>
+                <!-- <td><%#= link_to 'Edit', edit_qa_path(qa) %></td> -->
+                <td><%= link_to 'Delete', qa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </center>
+      <br>
+
+
+
+      <%= link_to 'Ask Question', new_qa_path %>
+
+      </div>
+      <%end%>
 </div>

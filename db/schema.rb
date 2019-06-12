@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190606150448) do
+ActiveRecord::Schema.define(version: 20190612171730) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "choreo_regs", force: :cascade do |t|
+    t.string   "song"
+    t.string   "names"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "other"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "qas", force: :cascade do |t|
     t.string   "question"
@@ -53,6 +63,16 @@ ActiveRecord::Schema.define(version: 20190606150448) do
     t.string   "asset_uid"
     t.string   "asset_name"
     t.string   "juneau_excursion"
+  end
+
+  create_table "votes", force: :cascade do |t|
+    t.string   "a1"
+    t.string   "a2"
+    t.string   "a3"
+    t.string   "a4"
+    t.string   "a5"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

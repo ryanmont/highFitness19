@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :votes
+  resources :scaffolds
+  resources :choreo_regs
   resources :qas, :path => 'qa'
 
   get 'convention/venue'
@@ -21,6 +24,8 @@ Rails.application.routes.draw do
   get 'pages/faq'
 
   get 'pages/congratulations'
+
+  get 'pages/vote_counted'
 
   get 'tables/congrats'
 

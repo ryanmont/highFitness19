@@ -1,0 +1,19 @@
+
+
+    <%= simple_form_for(@choreo_reg) do |f| %>
+      <%= f.error_notification %>
+<center>
+      <div class="form-inputs" style= "max-width:900px">
+        <%= f.input :song, label: "* Song" %>
+        <%= f.input :names, label: "* Name(s)", placeholder: 'Individual or names of  "all participants" in group'%>
+        <%= f.input :email, label: "* Email" %>
+        <%= f.input :phone, label: "* Phone" %>
+        <%#= f.input :other %>
+      </div>
+
+      <button style="background-color: #EC549E">
+        <%= f.button :submit, "Submit" %>
+      </button>
+    <% end %>
+
+</center>
