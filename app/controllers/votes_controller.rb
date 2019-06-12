@@ -8,7 +8,7 @@ class VotesController < ApplicationController
 
      @votecount = Vote&.count
 
-     @vote1 =Vote.where(:a1 = "Group 1")
+     # @vote1 =Vote.where(:a1 = "Group 1")
   end
 
   # GET /votes/1
