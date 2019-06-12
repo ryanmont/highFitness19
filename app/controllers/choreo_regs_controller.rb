@@ -1,7 +1,6 @@
 class ChoreoRegsController < ApplicationController
   before_action :set_choreo_reg, only: [:show, :edit, :update, :destroy]
 
-    http_basic_authenticate_with name: "admin", password: "Kristen15", except: [ :new, :create ]
 
 layout 'form'
 
