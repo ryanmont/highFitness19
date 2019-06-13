@@ -1,0 +1,190 @@
+<div style = "padding:30px">
+    <p id="notice"><%= notice %></p>
+
+    <h1>Surveys</h1>
+    <br>
+    <br>
+    <br>
+  <div style= "color:#EC549E;font-size: 10pt"><%= Question.q1%>:&nbsp;&nbsp;&nbsp;</div>
+
+    <%=pie_chart Survey.group(:a1).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <br>
+
+
+  <div style= "color:#EC549E;font-size: 10pt"><%= Question.q2%>:&nbsp;&nbsp;&nbsp;</div>
+
+    <%=pie_chart Survey.group(:a2).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <br>
+
+
+      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q3%>:&nbsp;&nbsp;&nbsp;</div>
+
+    <%=pie_chart Survey.group(:a3).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <br>
+
+
+      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q4%>:&nbsp;&nbsp;&nbsp;</div>
+
+    <%=pie_chart Survey.group(:a4).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <br>
+
+
+      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q5%>:&nbsp;&nbsp;&nbsp;</div>
+
+    <%=pie_chart Survey.group(:a5).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <br>
+
+
+      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q6%>:&nbsp;&nbsp;&nbsp;</div>
+
+    <%=pie_chart Survey.group(:a6).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <br>
+
+  
+    <br>
+    <br>
+    <br>
+  
+
+      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q7%>:&nbsp;&nbsp;&nbsp;</div><br>
+          <%= q7 %>
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q8%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q9%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q10%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q11%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q12%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q13%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q14%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q15%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q16%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q17%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q18%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q19%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q20%>:&nbsp;&nbsp;&nbsp;</div><br>
+
+
+
+
+
+
+
+
+
+    <table>
+      <thead>
+        <tr>
+          <th style = "background-color: #EC549E">A1</th>
+          <th style = "background-color: #EC549E">A2</th>
+          <th style = "background-color: #EC549E">A3</th>
+          <th style = "background-color: #EC549E">A4</th>
+          <th style = "background-color: #EC549E">A5</th>
+          <th style = "background-color: #EC549E">A6</th>
+          <th style = "background-color: #EC549E">A7</th>
+          <th style = "background-color: #EC549E">A8</th>
+          <th style = "background-color: #EC549E">A9</th>
+          <th style = "background-color: #EC549E">A10</th>
+          <th style = "background-color: #EC549E">A11</th>
+          <th style = "background-color: #EC549E">A12</th>
+          <th style = "background-color: #EC549E">A13</th>
+          <th style = "background-color: #EC549E">A14</th>
+          <th style = "background-color: #EC549E">A15</th>
+          <th style = "background-color: #EC549E">A16</th>
+          <th style = "background-color: #EC549E">A17</th>
+          <th style = "background-color: #EC549E">A18</th>
+          <th style = "background-color: #EC549E">A19</th>
+          <th style = "background-color: #EC549E">A20</th>
+          <th style = "background-color: #EC549E">A21</th>
+          <th style = "background-color: #EC549E">A22</th>
+          <th style = "background-color: #EC549E">A23</th>
+          <th style = "background-color: #EC549E">A24</th>
+          <th style = "background-color: #EC549E">A25</th>
+          <th style = "background-color: #EC549E">A26</th>
+          <th style = "background-color: #EC549E">A27</th>
+          <th style = "background-color: #EC549E">A28</th>
+          <th style = "background-color: #EC549E">A29</th>
+          <th style = "background-color: #EC549E">A30</th>
+          <th style = "background-color: #EC549E" colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @surveys.each do |survey| %>
+          <tr>
+            <td><%= survey.a1 %></td>
+            <td><%= survey.a2 %></td>
+            <td><%= survey.a3 %></td>
+            <td><%= survey.a4 %></td>
+            <td><%= survey.a5 %></td>
+            <td><%= survey.a6 %></td>
+            <td><%= survey.a7 %></td>
+            <td><%= survey.a8 %></td>
+            <td><%= survey.a9 %></td>
+            <td><%= survey.a10 %></td>
+            <td><%= survey.a11 %></td>
+            <td><%= survey.a12 %></td>
+            <td><%= survey.a13 %></td>
+            <td><%= survey.a14 %></td>
+            <td><%= survey.a15 %></td>
+            <td><%= survey.a16 %></td>
+            <td><%= survey.a17 %></td>
+            <td><%= survey.a18 %></td>
+            <td><%= survey.a19 %></td>
+            <td><%= survey.a20 %></td>
+            <td><%= survey.a21 %></td>
+            <td><%= survey.a22 %></td>
+            <td><%= survey.a23 %></td>
+            <td><%= survey.a24 %></td>
+            <td><%= survey.a25 %></td>
+            <td><%= survey.a26 %></td>
+            <td><%= survey.a27 %></td>
+            <td><%= survey.a28 %></td>
+            <td><%= survey.a29 %></td>
+            <td><%= survey.a30 %></td>
+            <td><%= link_to 'Show', survey %></td>
+            <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
+            <td><%= link_to 'Destroy', survey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <br>
+
+      <%= link_to 'New Survey', new_survey_path %>
+</div>

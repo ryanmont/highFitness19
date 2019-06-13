@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :surveys
   resources :votes
   resources :scaffolds
   resources :choreo_regs

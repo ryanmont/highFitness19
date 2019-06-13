@@ -80,6 +80,8 @@ gem 'rename', '~> 1.0', '>= 1.0.6'
 
 gem 'dotenv-rails', '~> 2.5'
 
+gem 'chartkick', '~> 3.2'
+
 
 
 

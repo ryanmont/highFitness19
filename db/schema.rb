@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190612171730) do
+ActiveRecord::Schema.define(version: 20190612215652) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,41 @@ ActiveRecord::Schema.define(version: 20190612171730) do
     t.string   "name"
     t.string   "email"
     t.string   "other"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "surveys", force: :cascade do |t|
+    t.string   "a1"
+    t.string   "a2"
+    t.string   "a3"
+    t.string   "a4"
+    t.string   "a5"
+    t.string   "a6"
+    t.string   "a7"
+    t.string   "a8"
+    t.string   "a9"
+    t.string   "a10"
+    t.string   "a11"
+    t.string   "a12"
+    t.string   "a13"
+    t.string   "a14"
+    t.string   "a15"
+    t.string   "a16"
+    t.string   "a17"
+    t.string   "a18"
+    t.string   "a19"
+    t.string   "a20"
+    t.string   "a21"
+    t.string   "a22"
+    t.string   "a23"
+    t.string   "a24"
+    t.string   "a25"
+    t.string   "a26"
+    t.string   "a27"
+    t.string   "a28"
+    t.string   "a29"
+    t.string   "a30"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

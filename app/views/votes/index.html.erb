@@ -3,50 +3,57 @@
 
 <p id="notice"><%= notice %></p>
 
-<h3>Votes</h3>
-
-Total: &nbsp; <%= @votecount %>
-<br>
-
-<br>
-Group 1: <%= @vote1 %> 
-<br>
-Group 2: <%= @vote2 %>
-<br>
-Group 3: <%= @vote3 %>
+<h3 style = "color: #EC549E">Votes</h3>
 <br>
 <br>
 
-<table>
+<%=pie_chart Vote.group(:a1).count, colors: ["yellow","#EC549E","#48484A"], width: "200px", legend: "bottom", donut: "true" %>
+
+<br>
+<br>
+
+<!-- Total: &nbsp; <%= @votecount %>
+<br>
+
+
+Group 1: <%#= @vote1 %> 
+<br>
+Group 2: <%#= @vote2 %>
+<br>
+Group 3: <%#= @vote3 %>
+<br>
+<br> -->
+
+<!-- <table>
   <thead>
     <tr>
       <th style = "background-color: #EC549E">VOTES</th>
-   <!--    <th>A2</th> -->
-<!--       <th>A3</th>
+      <th>A2</th> 
+<     <th>A3</th>
       <th>A4</th>
-      <th>A5</th> -->
-      <!-- <th colspan="3"></th> -->
+      <th>A5</th> 
+       <th colspan="3"></th> 
     </tr>
   </thead>
 
   <tbody>
-    <% @votes.each do |vote| %>
+    <%# @votes.each do |vote| %>
       <tr>
-        <td><%= vote.a1 %></td>
-       <!--  <td><%#= vote.a2 %></td> -->
+        <td><%#= vote.a1 %></td>
+        <td><%#= vote.a2 %></td> -->
         <!-- <td><%#= vote.a3 %></td> -->
         <!-- <td><%#= vote.a4 %></td> -->
         <!-- <td><%#= vote.a5 %></td> -->
         <!-- <td><%#= link_to 'Show', vote %></td> -->
         <!-- <td><%#= link_to 'Edit', edit_vote_path(vote) %></td> -->
-        <!-- <td><%#= link_to 'Destroy', vote, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+        <!-- <td><%#= link_to 'Destroy', vote, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
       </tr>
-    <% end %>
+    <%# end %>
   </tbody>
-</table>
+</table> -
 
 <br>
 
-<%= link_to 'New Vote', new_vote_path %>
+<%#= link_to 'New Vote', new_vote_path %>
 </div>
 </center>

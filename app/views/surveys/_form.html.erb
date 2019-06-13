@@ -1,0 +1,902 @@
+<%= simple_form_for(@survey) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    
+<!-- QUESTION 1 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q1%> </div>
+    <br>
+      <div style ="font-size: 9pt">
+             FEMALE
+             <br>
+        <%= f.radio_button "a1", "FEMALE"%>
+      </div>
+
+
+       <div style ="font-size: 9pt">
+            MALE
+            <br>
+        <%= f.radio_button "a1", "MALE" %>
+      </div>
+  </div>
+
+<br>
+
+<!-- QUESTION 2 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q2%> </div>
+<br>
+  <div style ="font-size: 9pt">
+ 18-25
+ <br>
+    <%= f.radio_button "a2", "18-25"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+26-35
+<br>
+    <%= f.radio_button "a2", "26-35" %>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+36-45
+<br>
+    <%= f.radio_button "a2", "26-35" %>
+  </div>
+
+
+     <div style ="font-size: 9pt">
+46-55
+<br>
+    <%= f.radio_button "a2", "26-35" %>
+  </div>
+<br>
+
+
+<!-- QUESTION 3 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q3%> </div>
+<br>
+  <div style ="font-size: 9pt">
+ Less Than 1 Year
+ <br>
+    <%= f.radio_button "a3", "Less Than 1 Year"%>
+  </div>
+
+  <div style ="font-size: 9pt">
+ 1-2 Years
+ <br>
+    <%= f.radio_button "a3", "1-2 Years"%>
+  </div>
+
+    <div style ="font-size: 9pt">
+ 2-3 Year
+ <br>
+    <%= f.radio_button "a3", "2-3 Years"%>
+  </div>
+
+   <div style ="font-size: 9pt">
+More than 3 Years
+<br>
+    <%= f.radio_button "a3", "More than 3 Years" %>
+  </div>
+
+<br>
+
+
+<!-- QUESTION 4 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q4%> </div>
+<br>
+  <div style ="font-size: 9pt">
+ Less Than 1 Year
+ <br>
+    <%= f.radio_button "a4", "Less Than 1 Year"%>
+  </div>
+
+  <div style ="font-size: 9pt">
+ 1-2 Years
+ <br>
+    <%= f.radio_button "a4", "1-2 Years"%>
+  </div>
+
+    <div style ="font-size: 9pt">
+ 2-3 Year
+ <br>
+    <%= f.radio_button "a4", "2-3 Years"%>
+  </div>
+
+   <div style ="font-size: 9pt">
+More than 3 Years
+<br>
+    <%= f.radio_button "a4", "More than 3 Years" %>
+  </div>
+
+<br>
+
+
+<!-- QUESTION 5 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q5%> </div>
+<br>
+  <div style ="font-size: 9pt">
+    1-2
+ <br>
+    <%= f.radio_button "a5", "1-2"%>
+  </div>
+  <div style ="font-size: 9pt">
+     2-3
+ <br>
+    <%= f.radio_button "a5", "2-3"%>
+  </div>
+  <div style ="font-size: 9pt">
+    3-4
+ <br>
+    <%= f.radio_button "a5", "3-4"%>
+  </div>
+  <div style ="font-size: 9pt">
+    5 or More
+ <br>
+    <%= f.radio_button "a5", "5 or More"%>
+  </div>
+<br>
+
+<!-- QUESTION 6 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q6%> </div>
+<br>
+  <div style ="font-size: 9pt">
+    1-2
+ <br>
+    <%= f.radio_button "a6", "1-2"%>
+  </div>
+  <div style ="font-size: 9pt">
+     2-3
+ <br>
+    <%= f.radio_button "a6", "2-3"%>
+  </div>
+  <div style ="font-size: 9pt">
+    3-4
+ <br>
+    <%= f.radio_button "a6", "3-4"%>
+  </div>
+  <div style ="font-size: 9pt">
+    5 or More
+ <br>
+    <%= f.radio_button "a6", "5 or More"%>
+  </div>
+
+<br>
+<hr>
+
+ <div style ="color:grey; font-size: 9pt">
+    Day 1: 
+    <hr>
+    <br>
+    On a a scale of 1-5  how helpful was the content you learned in the following Day 1 sessions? 
+
+</div>
+<br>
+<!-- QUESTION 7 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q7%> </div>
+            <br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a7", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a7", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+   
+       3
+           
+      <%= f.radio_button "a7", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    
+      4
+             
+      <%= f.radio_button "a7", "4" %>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a7", "5" %>
+    </div>
+              <br>
+
+
+<!-- QUESTION 8 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q8%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a8", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a8", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a8", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a8", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a8", "5" %>
+    </div>
+              <br>
+
+<!-- QUESTION 9 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q9%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a9", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a9", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a9", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a9", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a9", "5" %>
+    </div>
+              <br>
+
+
+<!-- QUESTION 10 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q10%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a10", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a10", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a10", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a10", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a10", "5" %>
+    </div>
+              <br>
+
+
+<!-- QUESTION 11 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q11%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a11", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a11", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a11", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a11", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a11", "5" %>
+    </div>
+              <br>
+
+<!-- QUESTION 12 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q12%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a12", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a12", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a12", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a12", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a12", "5" %>
+    </div>
+              <br>
+
+
+<!-- QUESTION 13 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q13%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a13", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a13", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a13", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a13", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a13", "5" %>
+    </div>
+              <br>
+
+<!-- QUESTION 14 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q14%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a14", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a14", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a14", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a14", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a14", "5" %>
+    </div>
+              <br>
+
+<!-- QUESTION 15 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q15%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a15", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a15", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a15", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a15", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a15", "5" %>
+    </div>
+              <br>
+
+
+ <div style ="color:grey; font-size: 9pt">
+    Day 2: 
+    <hr>
+    <br>
+    On a a scale of 1-5  how helpful was the content you learned in the following Day 2 sessions? 
+
+</div>
+
+
+<!-- QUESTION 16 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q16%> </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a16", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a16", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a16", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a16", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a16", "5" %>
+    </div>
+              <br>
+
+<!-- QUESTION 17 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q17%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a17", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a17", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a17", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a17", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a17", "5" %>
+    </div>
+              <br>
+
+
+<!-- QUESTION 18 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q18%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a18", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a18", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a18", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a18", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a18", "5" %>
+    </div>
+              <br>
+
+
+<!-- QUESTION 19 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q19%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a19", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a19", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a19", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a19", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a19", "5" %>
+    </div>
+              <br>
+
+
+<!-- QUESTION 20 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q20%> </div>
+<br>
+
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a20", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a20", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a20", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a20", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a20", "5" %>
+    </div>
+              <br>
+
+
+<!-- QUESTION 21 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q21%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a21", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a21", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a21", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a21", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a21", "5" %>
+    </div>
+              <br>
+
+
+<!-- QUESTION 22 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q22%> </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     1
+            <br>
+    <%= f.radio_button "a22", "1"%>
+  </div>
+
+
+   <div style ="font-size: 9pt">
+    2
+            <br>
+    <%= f.radio_button "a22", "2" %>
+  </div>
+
+
+    <div style ="font-size: 9pt">
+       3
+              <br>
+      <%= f.radio_button "a22", "3"%>
+    </div>
+
+
+     <div style ="font-size: 9pt">
+      4
+              <br>
+      <%= f.radio_button "a22", "4" %>
+    </div>
+
+     <div style ="font-size: 9pt">
+      5
+              <br>
+      <%= f.radio_button "a22", "5" %>
+    </div>
+              <br>
+
+
+<!-- QUESTION 23 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q23%> </div>
+<br>
+    <%= f.input :a23 %>
+
+
+
+    <br>
+
+
+<!-- QUESTION 24 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q24%> </div>
+<br>
+    <%= f.input :a24 %>
+  
+
+    <br>
+
+
+    <!-- QUESTION 25 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q25%> </div>
+<br>
+  <%= f.input :a25 %>
+
+
+    <br>
+
+
+    <!-- QUESTION 26 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q26%> </div>
+<br>
+  <%= f.input :a26 %>
+
+<br>
+<br>
+<br>
+
+
+    <br>
+
+    <%#= f.input :a2 %>
+    <%#= f.input :a3 %>
+    <%#= f.input :a4 %>
+    <%#= f.input :a5 %>
+    <%#= f.input :a6 %>
+    <%#= f.input :a7 %>
+    <%#= f.input :a8 %>
+    <%#= f.input :a9 %>
+    <%#= f.input :a10 %>
+    <%#= f.input :a11 %>
+    <%#= f.input :a12 %>
+    <%#= f.input :a13 %>
+    <%#= f.input :a14 %>
+    <%#= f.input :a15 %>
+    <%#= f.input :a16 %>
+    <%#= f.input :a17 %>
+    <%#= f.input :a18 %>
+    <%#= f.input :a19 %>
+    <%#= f.input :a20 %>
+    <%#= f.input :a21 %>
+    <%#= f.input :a22 %>
+    <%#= f.input :a23 %>
+    <%#= f.input :a24 %>
+    <%#= f.input :a25 %>
+    <%#= f.input :a26 %>
+    <%#= f.input :a27 %>
+    <%#= f.input :a28 %>
+    <%#= f.input :a29 %>
+    <%#= f.input :a30 %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
