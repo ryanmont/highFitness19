@@ -82,6 +82,8 @@ gem 'dotenv-rails', '~> 2.5'
 
 gem 'chartkick', '~> 3.2'
 
+gem 'awesome_print', '~> 1.8'
+
 
 
 

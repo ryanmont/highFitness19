@@ -4,9 +4,90 @@ class SurveysController < ApplicationController
   # GET /surveys
   # GET /surveys.json
   def index
-    @surveys = Survey.all
+      @surveys = Survey.all
 
-     @q7 = Survey.a7.sum
+    # Q7
+      @total7 = Survey.sum(:a7)
+      @count7 = Survey.count(:a7) 
+      @avg7  =  @total7.to_f  / @count7.to_f
+
+
+    # Q8
+      @total8 = Survey.sum(:a8)
+      @count8 = Survey.count(:a8) 
+      @avg8  =  @total8.to_f  / @count8.to_f
+
+    # Q9
+      @total9 = Survey.sum(:a9)
+      @count9 = Survey.count(:a9) 
+      @avg9  =  @total9.to_f  / @count9.to_f
+
+    # Q10
+      @total10 = Survey.sum(:a10)
+      @count10 = Survey.count(:a10) 
+      @avg10  =  @total10.to_f  / @count10.to_f
+
+     # Q11
+      @total11 = Survey.sum(:a11)
+      @count11 = Survey.count(:a11) 
+      @avg11  =  @total11.to_f  / @count11.to_f
+
+     # Q12
+      @total12 = Survey.sum(:a12)
+      @count12 = Survey.count(:a12) 
+      @avg12  =  @total12.to_f  / @count12.to_f
+
+    # Q13
+      @total13 = Survey.sum(:a13)
+      @count13 = Survey.count(:a13) 
+      @avg13  =  @total13.to_f  / @count13.to_f
+
+    # Q14
+      @total14 = Survey.sum(:a14)
+      @count14 = Survey.count(:a14) 
+      @avg14  =  @total14.to_f  / @count14.to_f
+
+    # Q15
+      @total15 = Survey.sum(:a15)
+      @count15 = Survey.count(:a15) 
+      @avg15  =  @total15.to_f  / @count15.to_f
+
+     # Q16
+      @total16 = Survey.sum(:a16)
+      @count16 = Survey.count(:a16) 
+      @avg16  =  @total16.to_f  / @count16.to_f
+
+     # Q17
+      @total17 = Survey.sum(:a17)
+      @count17 = Survey.count(:a17) 
+      @avg17  =  @total17.to_f  / @count17.to_f
+
+    # Q18
+     @total18 = Survey.sum(:a18)
+     @count18 = Survey.count(:a18) 
+     @avg18  =  @total18.to_f  / @count18.to_f
+
+
+     # Q19
+      @total19 = Survey.sum(:a19)
+      @count19 = Survey.count(:a19) 
+      @avg19  =  @total19.to_f  / @count19.to_f
+
+    # Q20
+     @total20 = Survey.sum(:a20)
+     @count20 = Survey.count(:a20) 
+     @avg20  =  @total20.to_f  / @count20.to_f
+
+     # Q21
+      @total21 = Survey.sum(:a21)
+      @count21 = Survey.count(:a21) 
+      @avg21  =  @total21.to_f  / @count21.to_f
+
+    # Q22
+      @total22 = Survey.sum(:a22)
+      @count22 = Survey.count(:a22) 
+      @avg22  =  @total22.to_f  / @count22.to_f
+
 
   end
 

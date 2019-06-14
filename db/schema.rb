@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190612215652) do
+ActiveRecord::Schema.define(version: 20190614000914) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,22 +41,22 @@ ActiveRecord::Schema.define(version: 20190612215652) do
     t.string   "a4"
     t.string   "a5"
     t.string   "a6"
-    t.string   "a7"
-    t.string   "a8"
-    t.string   "a9"
-    t.string   "a10"
-    t.string   "a11"
-    t.string   "a12"
-    t.string   "a13"
-    t.string   "a14"
-    t.string   "a15"
-    t.string   "a16"
-    t.string   "a17"
-    t.string   "a18"
-    t.string   "a19"
-    t.string   "a20"
-    t.string   "a21"
-    t.string   "a22"
+    t.integer  "a7"
+    t.integer  "a8"
+    t.integer  "a9"
+    t.integer  "a10"
+    t.integer  "a11"
+    t.integer  "a12"
+    t.integer  "a13"
+    t.integer  "a14"
+    t.integer  "a15"
+    t.integer  "a16"
+    t.integer  "a17"
+    t.integer  "a18"
+    t.integer  "a19"
+    t.integer  "a20"
+    t.integer  "a21"
+    t.integer  "a22"
     t.string   "a23"
     t.string   "a24"
     t.string   "a25"
