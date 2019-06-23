@@ -19,6 +19,8 @@ layout 'form'
   def show
   end
 
+
+
   # GET /choreo_regs/new
   def new
     @choreo_reg = ChoreoReg.new

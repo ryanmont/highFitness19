@@ -1,18 +1,81 @@
 module Question
 extend ActiveSupport::Concern
 
+  
+
+
+
+
+
+
+"
+
+
+
+
+
+a.    1-5
+2)   Would you register again next year?
+a.    Y or N
+b.    If NO, why not?
+3)   Would you recommend the convention to other HIGH Instructors?
+Keynote Speakers:
+1)   On a scale of 1-5, how satisfied were you with the Keynote presentations (opening & closing)?
+2)   On a scale of 1-5, how helpful and/or applicable was the content of the Keynote presentations? 
+3)   Comments:
+Sessions: 
+Day 1 – Breakout Session Timeslot #1
+1)   Which breakout session did you attend?
+2)   On a scale of 1-5, what was your overall satisfaction with this session?
+3)   How applicable was the content of the session for you, as an instructor? 
+4)   Comments:
+Day 1 – Breakout Session Timeslot #2
+1)   Which breakout session did you attend?
+2)   On a scale of 1-5, what was your overall satisfaction with this session?
+3)   How applicable was the content of the session for you, as an instructor? 
+4)   Comments:
+Day 1 – F.I.T. Camp
+1)   On a scale of 1-5, what was your overall satisfaction with this session?
+2)   How applicable was the content of the session for you, as an instructor? 
+3)   Comments:
+Day 1 – Stretch Session
+1)   On a scale of 1-5, what was your overall satisfaction with this session?
+2)   Did you feel this session was beneficial to offer? Why or why not? 
+3)   Comments:
+____________________________
+Day 2 – Understanding the Formula
+1)   On a scale of 1-5, what was your overall satisfaction with this session?
+2)   How applicable was the content of the session for you, as an instructor? 
+3)   Comments:
+Day 2 – Cool Downs
+1)   On a scale of 1-5, what was your overall satisfaction with this session?
+2)   How applicable was the content of the session for you, as an instructor? 
+3)   Comments:
+Day 2 – Pro Skills
+1)   On a scale of 1-5, what was your overall satisfaction with this session?
+2)   How applicable was the content of the session for you, as an instructor? 
+3)   Comments:
+Follow up:
+1)   Are there any session topics you felt were missing from the overall content? Please list.
+2)   In one or two words, how did the conference leave you feeling?
+3)   Share your top two take-aways that you are excited to bring home with you:
+4)   General suggestions or comments:
+Product survey:
+1)   After trying the HIGH Glow Collagen, would this product be something you would be interested in purchasing? Y or N"
+
     def self.q1
-      "Gender?"
-    end
-
-
-    def self.q2
       "Your age group?"
     end
 
 
+    def self.q2
+      "How long have you been a 'HIGH Fitness' Instructor? "
+    end
+
+
+
     def self.q3
-      "How long have you been a 'High Fitness' Instructor? "
+     "How long have you been teaching group fitness in general"
     end
 
 
@@ -22,7 +85,7 @@ extend ActiveSupport::Concern
 
 
     def self.q5
-      "How many Conventions have you been to before?"
+      "How many Conventions have you attended?"
     end
 
 
@@ -32,11 +95,20 @@ extend ActiveSupport::Concern
 
 
     def self.q7
-      "Epic Class"
-    end
+      "Overall, how satisfied were you with the 2019 HIGH Fitness Instructor Convention?"
+    end 
 
 
     def self.q8
+      "Would you register again next year?"
+    end 
+
+    def self.q9
+      "Would you recommend the convention to other HIGH Instructors?"
+    end
+
+
+    def self.q10
       "Social Media Tips"
     end
 
@@ -112,22 +184,23 @@ extend ActiveSupport::Concern
 
 
     def self.q23
-      "What could have been better"
+     
     end
 
 
     def self.q24
-      "Will you come back next year"
+     
     end
 
 
     def self.q25
-      "Overall how would you rate it"
+    
 
     end
 
 
     def self.q26
+      "After trying the HIGH Glow Collagen, would this product be something you would be interested in purchasing? Y or N"
     end
 
 

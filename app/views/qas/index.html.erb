@@ -8,11 +8,11 @@
    
 
       <div style= "margin:20px">
-        <center>
         <table >
           <thead >
             <tr>
               <th style= "background-color: #EC549E">Question</th>
+              <center>
               <th style= "background-color: #EC549E">Name</th>
       <!--         <th style= "background-color: #EC549E">Email</th>
               <th style= "background-color: #EC549E">Other</th> -->
@@ -23,7 +23,7 @@
           <tbody>
             <% @qas.each do |qa| %>
               <tr>
-                <td><%= qa.question %></td>
+                <td style= "text-align: left"><%= qa.question %></td>
                 <td><%= qa.name %></td>
           <!--       <td><%= qa.email %></td>
                 <td><%= qa.other %></td> -->

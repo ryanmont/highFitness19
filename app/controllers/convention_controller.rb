@@ -24,5 +24,9 @@ class ConventionController < ApplicationController
       def sponsors
       end
 
+      def choreo_full
+       @choreo_regs = ChoreoReg.all
+      end
+
 
 end

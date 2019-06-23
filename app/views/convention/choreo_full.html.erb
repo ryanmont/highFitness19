@@ -1,0 +1,68 @@
+<center>
+<div style = "padding:20px;max-width: 900px">
+
+        <p id="notice"><%= notice %></p>
+
+        <h4>High Fitness Choreography Contest</h4>
+        <br>
+            
+
+
+        <table>
+          <thead>
+            <tr >
+
+              <th style= "background-color: #EC549E"> </th>
+                <th style= "background-color: #EC549E">Song</th>
+              <th style= "background-color: #EC549E">Name(s)</th>
+             <th style= "background-color: #EC549E">Email</th>
+              <th style= "background-color: #EC549E">Phone</th>
+              <th style= "background-color: #EC549E">Other</th -->
+               <th style= "background-color: #EC549E" colspan="3"></th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <% @choreo_regs.each_with_index do |choreo_reg, i| %>
+          
+          
+
+              <tr>
+                <td> <%= i +1 %></td>
+                <td><%= choreo_reg.song %></td>
+                <td><%= choreo_reg.names %></td>
+                <td><%= choreo_reg.email %></td>
+                <td><%= choreo_reg.phone %></td>
+                <td><%= choreo_reg.other %></td> 
+                <td><%= link_to 'Show', choreo_reg %></td>
+                <td><%= link_to 'Edit', edit_choreo_reg_path(choreo_reg) %></td>
+                <td><%= link_to 'Destroy', choreo_reg, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+
+        <br>
+        <hr>
+        <hr>
+
+
+<br>
+<br>
+<table>
+  <tr>
+ <th style= "background-color: #EC549E"> Email Addresses</th>
+</tr>
+</table>
+<br>
+
+ <% @choreo_regs.each do |choreo_reg| %><br>
+
+ <%= choreo_reg.email %>
+
+<%end%>
+
+
+</div>
+</center>
