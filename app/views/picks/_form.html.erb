@@ -1,0 +1,21 @@
+<%= simple_form_for(@pick) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+  </div>
+
+<%=f.collection_select(:prize_id, Prize.all, :id, :category,
+                        {
+                          selected: pick.prize_id,
+                          include_blank: true,
+                        }
+
+
+  ) %>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

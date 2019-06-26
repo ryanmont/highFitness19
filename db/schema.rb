@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190614000914) do
+ActiveRecord::Schema.define(version: 20190626032107) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,21 @@ ActiveRecord::Schema.define(version: 20190614000914) do
     t.string   "email"
     t.string   "phone"
     t.string   "other"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "picks", force: :cascade do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "prize_id"
+    t.index ["prize_id"], name: "index_picks_on_prize_id", using: :btree
+  end
+
+  create_table "prizes", force: :cascade do |t|
+    t.string   "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -110,4 +125,5 @@ ActiveRecord::Schema.define(version: 20190614000914) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "picks", "prizes"
 end

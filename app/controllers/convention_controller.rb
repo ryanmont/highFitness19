@@ -28,5 +28,17 @@ class ConventionController < ApplicationController
        @choreo_regs = ChoreoReg.all
       end
 
+      def winner
+        @winner = Pick.all
+        @array = @choreo_regs = Pick.where(prize_id: "1")
+        @grab = @array.sample(1)
+        @count = Pick.where(prize_id: "1").count
+        @already_picked = Pick.where(prize_id: "2").order("updated_at DESC")
+        @already_picked_count = Pick.where(prize_id: "2").count
+
+
+      end
+
+
 
 end

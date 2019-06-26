@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :prizes
+  resources :picks do
+    collection { post :import}
+  end
+
+  
   resources :surveys
   resources :votes
   resources :scaffolds
@@ -18,7 +24,9 @@ Rails.application.routes.draw do
 
   get 'convention/agenda_two'
 
-  get 'convention/agenda_three'
+  get 'convention/agenda_three'  
+
+  get 'convention/winner'
 
   get 'convention/faq'
 

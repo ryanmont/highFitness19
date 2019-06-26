@@ -1,58 +1,71 @@
 <%= simple_form_for(@survey) do |f| %>
   <%= f.error_notification %>
-
+<div style= "margin:20px">
   <div class="form-inputs">
     
 <!-- QUESTION 1 -->
 
 <div style="color:#EC549E;font-size: 10pt"> <%= Question.q1%> </div>
-    <br>
-      <div style ="font-size: 9pt">
-             FEMALE
-             <br>
-        <%= f.radio_button "a1", "FEMALE"%>
-      </div>
-
-
-       <div style ="font-size: 9pt">
-            MALE
-            <br>
-        <%= f.radio_button "a1", "MALE" %>
-      </div>
-  </div>
-
-<br>
-
-<!-- QUESTION 2 -->
-
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q2%> </div>
+  
 <br>
   <div style ="font-size: 9pt">
  18-25
  <br>
-    <%= f.radio_button "a2", "18-25"%>
+    <%= f.radio_button "a1", "18-25"%>
   </div>
 
 
    <div style ="font-size: 9pt">
 26-35
 <br>
-    <%= f.radio_button "a2", "26-35" %>
+    <%= f.radio_button "a1", "26-35" %>
   </div>
 
 
    <div style ="font-size: 9pt">
 36-45
 <br>
-    <%= f.radio_button "a2", "26-35" %>
+    <%= f.radio_button "a1", "36-45" %>
   </div>
 
 
      <div style ="font-size: 9pt">
 46-55
 <br>
-    <%= f.radio_button "a2", "26-35" %>
+    <%= f.radio_button "a1", "46-55" %>
   </div>
+<br>
+  </div>
+
+
+
+<!-- QUESTION 2 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%= Question.q2%> </div>
+<br>
+  <div style ="font-size: 9pt">
+ Less Than 1 Year
+ <br>
+    <%= f.radio_button "a2", "Less Than 1 Year"%>
+  </div>
+
+  <div style ="font-size: 9pt">
+ 1-2 Years
+ <br>
+    <%= f.radio_button "a2", "1-2 Years"%>
+  </div>
+
+    <div style ="font-size: 9pt">
+ 2-3 Year
+ <br>
+    <%= f.radio_button "a2", "2-3 Years"%>
+  </div>
+
+   <div style ="font-size: 9pt">
+More than 3 Years
+<br>
+    <%= f.radio_button "a2", "More than 3 Years" %>
+<br>
 <br>
 
 
@@ -172,14 +185,6 @@ More than 3 Years
 <br>
 <hr>
 
- <div style ="color:grey; font-size: 9pt">
-    Day 1: 
-    <hr>
-    <br>
-    On a a scale of 1-5  how helpful was the content you learned in the following Day 1 sessions? 
-
-</div>
-<br>
 <!-- QUESTION 7 -->
 
 <div style="color:#EC549E;font-size: 10pt"> <%= Question.q7%> </div>
@@ -187,34 +192,33 @@ More than 3 Years
   <div style ="font-size: 9pt">
      1
     <%= f.radio_button "a7", "1"%>
-&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
     2
           
     <%= f.radio_button "a7", "2" %>
-&nbsp;&nbsp;&nbsp;&nbsp;
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
    
        3
            
       <%= f.radio_button "a7", "3"%>
-&nbsp;&nbsp;&nbsp;&nbsp;
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
     
       4
              
       <%= f.radio_button "a7", "4" %>
-  &nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
      
       5
              
       <%= f.radio_button "a7", "5" %>
     </div>
-              <br>
+   <br>
+   <br>
 
 
 <!-- QUESTION 8 -->
@@ -223,38 +227,34 @@ More than 3 Years
 <br>
 
   <div style ="font-size: 9pt">
-     1
+     Yes
             <br>
     <%= f.radio_button "a8", "1"%>
   </div>
 
+<br>
 
    <div style ="font-size: 9pt">
-    2
+    No
             <br>
     <%= f.radio_button "a8", "2" %>
   </div>
 
-
-    <div style ="font-size: 9pt">
-       3
-              <br>
-      <%= f.radio_button "a8", "3"%>
-    </div>
+   <br>
 
 
-     <div style ="font-size: 9pt">
-      4
-              <br>
-      <%= f.radio_button "a8", "4" %>
-    </div>
+ <div style ="color:grey; font-size: 9pt">
+  <hr>
+    Day 1: 
+    <hr>
+    <br>
+    On a a scale of 1-5  how helpful was the content you learned in the following Day 1 sessions? 
 
-     <div style ="font-size: 9pt">
-      5
-              <br>
-      <%= f.radio_button "a8", "5" %>
-    </div>
-              <br>
+</div>
+<br>
+
+
+
 
 <!-- QUESTION 9 -->
 
@@ -262,37 +262,18 @@ More than 3 Years
 <br>
 
   <div style ="font-size: 9pt">
-     1
+     Yes
             <br>
     <%= f.radio_button "a9", "1"%>
   </div>
 
 
    <div style ="font-size: 9pt">
-    2
+    No
             <br>
     <%= f.radio_button "a9", "2" %>
   </div>
 
-
-    <div style ="font-size: 9pt">
-       3
-              <br>
-      <%= f.radio_button "a9", "3"%>
-    </div>
-
-
-     <div style ="font-size: 9pt">
-      4
-              <br>
-      <%= f.radio_button "a9", "4" %>
-    </div>
-
-     <div style ="font-size: 9pt">
-      5
-              <br>
-      <%= f.radio_button "a9", "5" %>
-    </div>
               <br>
 
 
@@ -897,6 +878,7 @@ More than 3 Years
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, "Submit" %>
   </div>
 <% end %>
+</div>

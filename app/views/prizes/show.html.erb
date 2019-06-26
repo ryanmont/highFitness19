@@ -1,0 +1,24 @@
+<div style = "margin:45px">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @prize.category %>
+</p>
+
+All attendees assigned to this category
+
+<% @picks.each do |p| %><br>
+<%= p.first_name %>
+<%= p.last_name %>
+
+<%end%>
+
+<br>
+<br>
+<br>
+
+<%= link_to 'Edit', edit_prize_path(@prize) %> |
+<%= link_to 'Back', prizes_path %>
+</div>
