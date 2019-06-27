@@ -132,6 +132,25 @@ text-align: center;
   }
 
 
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 75% 25%;
+  padding:0px;
+
+
+}
+
+
+.winner{
+padding:25px;
+background-color: gray;
+color:white;
+border-radius: 6px;
+
+}
+
+
 .question{
 font-size:12pt;
 color: #EC549E;

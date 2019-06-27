@@ -1,66 +1,74 @@
 
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+
 <%#= audio_tag "ready.m4a", class: "audio-play", autoplay: true %>
 <%= audio_tag "all.m4a", class: "audio-play", autoplay: true %>
 
-  <div style = "margin:45px">
-<center>
 
-<h4 style= "color: #EC549E"><%#= @winner.sample.first_name %> <%#= @winner.sample.last_name %></h4>
-<button style= "padding:20px">
-
-
-  &#127925;&nbsp;&nbsp;&nbsp;
-    <%= link_to " PRIZE WINNER GENERATOR ", convention_winner_path %>
-  &nbsp;&nbsp;&#127925;
-</button>
-
-</center>
 
 <hr>
-<br>
-<center>
-<div style= "background-color: #EC549E; color:white; font-size: 50pt; border: 2px solid gray; width:75%; padding: 30px">
+<div class= "container">
 
-<span style = "font-size: 30pt;color:gray">CONGRATULATIONS:&nbsp;</span>
-<br>
+   
+        <center>
+            <div class = "animated flipInX delay-2s" style= "background-color: #EC549E; color:white; font-size: 50pt; border: 2px solid gray; width:75%; padding: 20px;border-radius: 6px;">
 
-<% @grab.each do |y|  %>
-<%= y.first_name.upcase %>
-<%= y.last_name.upcase %>
-<%end%>
+                <span style = "font-size: 30pt;color:gray">CONGRATULATIONS:&nbsp;
+                </span>
+              
+              <br>
+
+                <% @grab.each do |y|  %>
+                <%= y.first_name.upcase %>&nbsp;
+                <%= y.last_name.upcase %>
+                <%end%>
+            </div>
+
+            <br>
+
+                    <button class = "winner">
+
+                      &#127925;&nbsp;&nbsp;&nbsp;
+                        <%= link_to " PRIZE WINNER GENERATOR ", convention_winner_path %>
+                      &nbsp;&nbsp;&#127925;
+                    </button>
+
+        </center>
+
+
+      <div>
+
+            <% @grab.each{ |a| a.update(prize_id: "2")} %>
+
+            <br>
+            <!-- <hr>
+            <br><br>
+            Not picked count <%= @count %> 
+            <br>
+            <br>
+            <hr> -->
+
+
+            <h5 style= "color: #EC549E"> Winners Circle:</h5>
+            <!-- <h5 style= "color: #EC549E"> Already Picked Count: <%= @already_picked_count%> </h5> -->
+            <% @already_picked.each do |already| %><br>
+            <%= already.first_name %>
+            <%= already.last_name %>
+            <%end%>
+            <br>
+            <br>
+    </div>
+
+
+                  <!-- <hr>
+                  <br>
+                  <%# @array.each do |x| %><br>
+                  <%#= x.first_name %> 
+                  <%#= x.last_name %>
+                   <%#end %> -->
+  
 </div>
+
 </center>
-
-<br>
-<hr>
-<br>
-
-
-<% @grab.each{ |a| a.update(prize_id: "2")} %>
-
-<br>
-<!-- <hr>
-<br><br>
-Not picked count <%= @count %> 
-<br>
-<br>
-<hr> -->
-
-
-<h5 style= "color: #EC549E"> Winners Circle:</h5>
-<!-- <h5 style= "color: #EC549E"> Already Picked Count: <%= @already_picked_count%> </h5> -->
-<% @already_picked.each do |already| %><br>
-<%= already.first_name %>
-<%= already.last_name %>
-<%end%>
-<br>
-<br>
-
-<!-- <hr>
-<br>
-<% @array.each do |x| %><br>
-<%= x.first_name %> 
-<%= x.last_name %>
- <%end %> -->
-<br>
-</div>
