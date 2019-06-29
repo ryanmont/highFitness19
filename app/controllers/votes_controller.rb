@@ -15,7 +15,7 @@ class VotesController < ApplicationController
      @vote1 = Vote.where(a1: "Lip Gloss - Toner").count
      @vote2 = Vote.where(a1: "Ocean Avenue -  Cardio").count
      @vote3 = Vote.where(a1: "Wherever you go - Barre").count
-     @vote4 = Vote.where(a1: "I believe in a thing called Love - Push").count
+     @vote4 = Vote.where(a1: "I Believe in a thing called Love - Cardio Push").count
   end
 
   # GET /votes/1
