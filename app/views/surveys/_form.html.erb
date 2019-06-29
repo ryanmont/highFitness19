@@ -23,7 +23,7 @@
 
 
    <div style ="font-size: 9pt">
-36-45
+36-45 
 <br>
     <%= f.radio_button "a1", "36-45" %>
   </div>
@@ -183,7 +183,6 @@ More than 3 Years
   </div>
 
 <br>
-<hr>
 
 <!-- QUESTION 7 -->
 
@@ -227,624 +226,1333 @@ More than 3 Years
 <br>
 
   <div style ="font-size: 9pt">
-     Yes
+     YES
             <br>
-    <%= f.radio_button "a8", "1"%>
+    <%= f.radio_button "a8", "YES"%>
   </div>
 
 <br>
 
    <div style ="font-size: 9pt">
-    No
+    NO
             <br>
-    <%= f.radio_button "a8", "2" %>
+    <%= f.radio_button "a8", "NO" %>
   </div>
 
    <br>
 
 
+<!-- QUESTION 9 -->
+
+<div style="color:#EC549E;font-size: 10pt"> Would you recommend the convention to other HIGH Instructors? </div>
+<br>
+
+  <div style ="font-size: 9pt">
+     YES
+            <br>
+    <%= f.radio_button "a9", "YES"%>
+  </div>
+<br>
+
+   <div style ="font-size: 9pt">
+    NO
+            <br>
+    <%= f.radio_button "a9", "NO" %>
+  </div>
+
+              <br>
+
+
+
+
  <div style ="color:grey; font-size: 9pt">
   <hr>
-    Day 1: 
+  <center>
+    DAY 1: 
+  </center>
     <hr>
-    <br>
-    On a a scale of 1-5  how helpful was the content you learned in the following Day 1 sessions? 
-
+ 
+    Of the sessions "you" were able to attend please rate the following. 
+<hr>
 </div>
 <br>
 
 
 
 
-<!-- QUESTION 9 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q9%> </div>
-<br>
-
-  <div style ="font-size: 9pt">
-     Yes
-            <br>
-    <%= f.radio_button "a9", "1"%>
-  </div>
-
-
-   <div style ="font-size: 9pt">
-    No
-            <br>
-    <%= f.radio_button "a9", "2" %>
-  </div>
-
-              <br>
 
 
 <!-- QUESTION 10 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q10%> </div>
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of the Opening Keynote (Amber & Emily)? </div>
 <br>
-
   <div style ="font-size: 9pt">
      1
-            <br>
     <%= f.radio_button "a10", "1"%>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-   <div style ="font-size: 9pt">
     2
-            <br>
+          
     <%= f.radio_button "a10", "2" %>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-    <div style ="font-size: 9pt">
+   
        3
-              <br>
+           
       <%= f.radio_button "a10", "3"%>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-     <div style ="font-size: 9pt">
+    
       4
-              <br>
+             
       <%= f.radio_button "a10", "4" %>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-     <div style ="font-size: 9pt">
+     
       5
-              <br>
+             
       <%= f.radio_button "a10", "5" %>
-    </div>
+
+              <br>
               <br>
 
 
 <!-- QUESTION 11 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q11%> </div>
-<br>
 
+<br>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
   <div style ="font-size: 9pt">
      1
-            <br>
     <%= f.radio_button "a11", "1"%>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-   <div style ="font-size: 9pt">
     2
-            <br>
+          
     <%= f.radio_button "a11", "2" %>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-    <div style ="font-size: 9pt">
+   
        3
-              <br>
+           
       <%= f.radio_button "a11", "3"%>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-     <div style ="font-size: 9pt">
+    
       4
-              <br>
+             
       <%= f.radio_button "a11", "4" %>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-     <div style ="font-size: 9pt">
+     
       5
-              <br>
+             
       <%= f.radio_button "a11", "5" %>
-    </div>
+
               <br>
+              <br>
+
 
 <!-- QUESTION 12 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q12%> </div>
-<br>
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a12, label: " Comments"%>
 
-  <div style ="font-size: 9pt">
-     1
-            <br>
-    <%= f.radio_button "a12", "1"%>
-  </div>
+<hr>
+   <br>
 
-
-   <div style ="font-size: 9pt">
-    2
-            <br>
-    <%= f.radio_button "a12", "2" %>
-  </div>
-
-
-    <div style ="font-size: 9pt">
-       3
-              <br>
-      <%= f.radio_button "a12", "3"%>
-    </div>
-
-
-     <div style ="font-size: 9pt">
-      4
-              <br>
-      <%= f.radio_button "a12", "4" %>
-    </div>
-
-     <div style ="font-size: 9pt">
-      5
-              <br>
-      <%= f.radio_button "a12", "5" %>
-    </div>
-              <br>
 
 
 <!-- QUESTION 13 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q13%> </div>
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of "Social Media"? </div>
 <br>
-
   <div style ="font-size: 9pt">
      1
-            <br>
     <%= f.radio_button "a13", "1"%>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-   <div style ="font-size: 9pt">
     2
-            <br>
+          
     <%= f.radio_button "a13", "2" %>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-    <div style ="font-size: 9pt">
+   
        3
-              <br>
+           
       <%= f.radio_button "a13", "3"%>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-     <div style ="font-size: 9pt">
+    
       4
-              <br>
+             
       <%= f.radio_button "a13", "4" %>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-     <div style ="font-size: 9pt">
+     
       5
-              <br>
+             
       <%= f.radio_button "a13", "5" %>
-    </div>
+
               <br>
+              <br>
+
 
 <!-- QUESTION 14 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q14%> </div>
-<br>
 
+<br>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
   <div style ="font-size: 9pt">
      1
-            <br>
     <%= f.radio_button "a14", "1"%>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-   <div style ="font-size: 9pt">
     2
-            <br>
+          
     <%= f.radio_button "a14", "2" %>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-    <div style ="font-size: 9pt">
+   
        3
-              <br>
+           
       <%= f.radio_button "a14", "3"%>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-     <div style ="font-size: 9pt">
+    
       4
-              <br>
+             
       <%= f.radio_button "a14", "4" %>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-     <div style ="font-size: 9pt">
+     
       5
-              <br>
+             
       <%= f.radio_button "a14", "5" %>
-    </div>
+
               <br>
+              <br>
+
 
 <!-- QUESTION 15 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q15%> </div>
-<br>
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a15, label: " Comments"%>
 
-  <div style ="font-size: 9pt">
-     1
-            <br>
-    <%= f.radio_button "a15", "1"%>
-  </div>
+<hr>
+   <br>
 
-
-   <div style ="font-size: 9pt">
-    2
-            <br>
-    <%= f.radio_button "a15", "2" %>
-  </div>
-
-
-    <div style ="font-size: 9pt">
-       3
-              <br>
-      <%= f.radio_button "a15", "3"%>
-    </div>
-
-
-     <div style ="font-size: 9pt">
-      4
-              <br>
-      <%= f.radio_button "a15", "4" %>
-    </div>
-
-     <div style ="font-size: 9pt">
-      5
-              <br>
-      <%= f.radio_button "a15", "5" %>
-    </div>
-              <br>
-
-
- <div style ="color:grey; font-size: 9pt">
-    Day 2: 
-    <hr>
-    <br>
-    On a a scale of 1-5  how helpful was the content you learned in the following Day 2 sessions? 
-
-</div>
 
 
 <!-- QUESTION 16 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q16%> </div>
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of "Tips for Building Business"? </div>
 <br>
   <div style ="font-size: 9pt">
      1
-            <br>
     <%= f.radio_button "a16", "1"%>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-   <div style ="font-size: 9pt">
     2
-            <br>
+          
     <%= f.radio_button "a16", "2" %>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-    <div style ="font-size: 9pt">
+   
        3
-              <br>
+           
       <%= f.radio_button "a16", "3"%>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-     <div style ="font-size: 9pt">
+    
       4
-              <br>
+             
       <%= f.radio_button "a16", "4" %>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-     <div style ="font-size: 9pt">
+     
       5
-              <br>
+             
       <%= f.radio_button "a16", "5" %>
-    </div>
+
               <br>
+              <br>
+
 
 <!-- QUESTION 17 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q17%> </div>
-<br>
 
+<br>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
   <div style ="font-size: 9pt">
      1
-            <br>
     <%= f.radio_button "a17", "1"%>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-   <div style ="font-size: 9pt">
     2
-            <br>
+          
     <%= f.radio_button "a17", "2" %>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-    <div style ="font-size: 9pt">
+   
        3
-              <br>
+           
       <%= f.radio_button "a17", "3"%>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-     <div style ="font-size: 9pt">
+    
       4
-              <br>
+             
       <%= f.radio_button "a17", "4" %>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-     <div style ="font-size: 9pt">
+     
       5
-              <br>
+             
       <%= f.radio_button "a17", "5" %>
-    </div>
+
+              <br>
               <br>
 
 
 <!-- QUESTION 18 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q18%> </div>
-<br>
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a18, label: " Comments"%>
 
+<hr>
+   <br>
+
+
+
+
+
+   <!-- QUESTION 19 -->
+
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of "Nourish your body"? </div>
+<br>
   <div style ="font-size: 9pt">
      1
-            <br>
-    <%= f.radio_button "a18", "1"%>
-  </div>
-
-
-   <div style ="font-size: 9pt">
-    2
-            <br>
-    <%= f.radio_button "a18", "2" %>
-  </div>
-
-
-    <div style ="font-size: 9pt">
-       3
-              <br>
-      <%= f.radio_button "a18", "3"%>
-    </div>
-
-
-     <div style ="font-size: 9pt">
-      4
-              <br>
-      <%= f.radio_button "a18", "4" %>
-    </div>
-
-     <div style ="font-size: 9pt">
-      5
-              <br>
-      <%= f.radio_button "a18", "5" %>
-    </div>
-              <br>
-
-
-<!-- QUESTION 19 -->
-
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q19%> </div>
-<br>
-
-  <div style ="font-size: 9pt">
-     1
-            <br>
     <%= f.radio_button "a19", "1"%>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-   <div style ="font-size: 9pt">
     2
-            <br>
+          
     <%= f.radio_button "a19", "2" %>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-    <div style ="font-size: 9pt">
+   
        3
-              <br>
+           
       <%= f.radio_button "a19", "3"%>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-     <div style ="font-size: 9pt">
+    
       4
-              <br>
+             
       <%= f.radio_button "a19", "4" %>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-     <div style ="font-size: 9pt">
+     
       5
-              <br>
+             
       <%= f.radio_button "a19", "5" %>
-    </div>
+
+              <br>
               <br>
 
 
 <!-- QUESTION 20 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q20%> </div>
+
 <br>
-
-
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
   <div style ="font-size: 9pt">
      1
-            <br>
     <%= f.radio_button "a20", "1"%>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-   <div style ="font-size: 9pt">
     2
-            <br>
+          
     <%= f.radio_button "a20", "2" %>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-    <div style ="font-size: 9pt">
+   
        3
-              <br>
+           
       <%= f.radio_button "a20", "3"%>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-     <div style ="font-size: 9pt">
+    
       4
-              <br>
+             
       <%= f.radio_button "a20", "4" %>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-     <div style ="font-size: 9pt">
+     
       5
-              <br>
+             
       <%= f.radio_button "a20", "5" %>
-    </div>
+
+              <br>
               <br>
 
 
 <!-- QUESTION 21 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q21%> </div>
-<br>
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a21, label: " Comments"%>
 
+<hr>
+   <br>
+
+
+
+
+
+   <!-- QUESTION 22 -->
+
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of "High Business goals"? </div>
+<br>
   <div style ="font-size: 9pt">
      1
-            <br>
-    <%= f.radio_button "a21", "1"%>
-  </div>
-
-
-   <div style ="font-size: 9pt">
-    2
-            <br>
-    <%= f.radio_button "a21", "2" %>
-  </div>
-
-
-    <div style ="font-size: 9pt">
-       3
-              <br>
-      <%= f.radio_button "a21", "3"%>
-    </div>
-
-
-     <div style ="font-size: 9pt">
-      4
-              <br>
-      <%= f.radio_button "a21", "4" %>
-    </div>
-
-     <div style ="font-size: 9pt">
-      5
-              <br>
-      <%= f.radio_button "a21", "5" %>
-    </div>
-              <br>
-
-
-<!-- QUESTION 22 -->
-
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q22%> </div>
-<br>
-
-  <div style ="font-size: 9pt">
-     1
-            <br>
     <%= f.radio_button "a22", "1"%>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-   <div style ="font-size: 9pt">
     2
-            <br>
+          
     <%= f.radio_button "a22", "2" %>
-  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-    <div style ="font-size: 9pt">
+   
        3
-              <br>
+           
       <%= f.radio_button "a22", "3"%>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-     <div style ="font-size: 9pt">
+    
       4
-              <br>
+             
       <%= f.radio_button "a22", "4" %>
-    </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-     <div style ="font-size: 9pt">
+     
       5
-              <br>
+             
       <%= f.radio_button "a22", "5" %>
-    </div>
+
+              <br>
               <br>
 
 
 <!-- QUESTION 23 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q23%> </div>
+
 <br>
-    <%= f.input :a23 %>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a23", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
+    2
+          
+    <%= f.radio_button "a23", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <br>
+   
+       3
+           
+      <%= f.radio_button "a23", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a23", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a23", "5" %>
+
+              <br>
+              <br>
 
 
 <!-- QUESTION 24 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q24%> </div>
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a24, label: " Comments"%>
+
+<hr>
+   <br>
+
+
+
+
+
+
+
+   <!-- QUESTION 25 -->
+
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of "Team Teaching"? </div>
 <br>
-    <%= f.input :a24 %>
-  
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a25", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-    <br>
+
+    2
+          
+    <%= f.radio_button "a25", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a25", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a25", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a25", "5" %>
+
+              <br>
+              <br>
 
 
-    <!-- QUESTION 25 -->
+<!-- QUESTION 26 -->
 
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q25%> </div>
+
 <br>
-  <%= f.input :a25 %>
-
-
-    <br>
-
-
-    <!-- QUESTION 26 -->
-
-<div style="color:#EC549E;font-size: 10pt"> <%= Question.q26%> </div>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
 <br>
-  <%= f.input :a26 %>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a26", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a26", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a26", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a26", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a26", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 27 -->
+
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a27, label: " Comments"%>
+
+<hr>
+   <br>
+
+
+
+
+
+
+
+   <!-- QUESTION 28 -->
+
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of "Repeat Participation"? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a28", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a28", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a28", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a28", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a28", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 29 -->
+
 
 <br>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
 <br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a29", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a29", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a29", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a29", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a29", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 30 -->
+
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a30, label: " Comments"%>
+
+<hr>
+   <br>
+
+
+
+
+
+
+
+   <!-- QUESTION 31 -->
+
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of  "F.I.T." </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a31", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a31", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a31", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a31", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a31", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 32 -->
+
+
+<br>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a32", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a32", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a32", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a32", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a32", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 33 -->
+
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a33, label: " Comments"%>
+
+<hr>
+   <br>
+
+
+
+
+
+
+
+   <!-- QUESTION 34 -->
+
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of "Stretch Session"? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a34", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a34", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a34", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a34", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a34", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 35 -->
+
+
+<br>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a35", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a35", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a35", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a35", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a35", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 36 -->
+
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a36, label: " Comments"%>
+
+
+   <br>
+
+
+
+ <div style ="color:grey; font-size: 9pt">
+  <hr>
+  <center>
+    DAY 2: 
+  </center>
+<hr>
+ 
+    Of the sessions "you" were able to attend please rate the following. 
+<hr>
+</div>
 <br>
 
 
-    <br>
+   <!-- QUESTION 54 -->
+
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of Courtney Brown - Opening Keynote </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a54", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a54", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a54", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a54", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a54", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 55 -->
+
+
+<br>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a55", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a55", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a55", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a55", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a55", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 56 -->
+
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a56, label: " Comments"%>
+
+
+   <br>
+
+
+
+
+   <!-- QUESTION 37 -->
+
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of "Understanding the Formula"? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a37", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a37", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a37", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a37", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a37", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 38-->
+
+
+<br>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a38", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a38", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a38", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a38", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a38", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 39 -->
+
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a39, label: " Comments"%>
+
+<hr>
+   <br>
+
+
+
+
+
+
+
+   <!-- QUESTION 40-->
+
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of "Slow Down" ? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a40", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a40", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a40", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a40", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a40", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 41 -->
+
+
+<br>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a41", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a41", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a41", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a41", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a41", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 22 -->
+
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a42, label: " Comments"%>
+
+<hr>
+   <br>
+
+
+
+
+
+
+   <!-- QUESTION 43 -->
+
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of "Instructor Pro Skills" </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a43", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a43", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a43", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a43", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a43", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 44 -->
+
+
+<br>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a44", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a44", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a44", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a44", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a44", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 45 -->
+
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a45, label: " Comments"%>
+
+<hr>
+   <br>
+
+
+
+
+
+
+
+   <!-- QUESTION 46 -->
+
+<div style="color:#EC549E;font-size: 10pt">  On a scale of 1-5, how helpful and/or applicable was the content of "High Hopes Closing Keynote"</div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a46", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a46", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a46", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a46", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a46", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 47 -->
+
+
+<br>
+<div style="color:#EC549E;font-size: 10pt">  How applicable was the content? </div>
+<br>
+  <div style ="font-size: 9pt">
+     1
+    <%= f.radio_button "a47", "1"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    2
+          
+    <%= f.radio_button "a47", "2" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+   
+       3
+           
+      <%= f.radio_button "a47", "3"%>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    
+      4
+             
+      <%= f.radio_button "a47", "4" %>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     
+      5
+             
+      <%= f.radio_button "a11", "5" %>
+
+              <br>
+              <br>
+
+
+<!-- QUESTION 48 -->
+
+<!-- <div style="color:#EC549E;font-size: 10pt"> Comments </div> -->
+   <%= f.input :a48, label: " Comments"%>
+
+<hr>
+   <br>
+
+
+
+
+
+
+   <!-- QUESTION 49 -->
+
+<div style="color:#EC549E;font-size: 10pt">  <%= f.input :a49, label: "Are there topics you'd like to see covered in future events(list them)" %> </div>
+<br>
+
+
+
+<!-- QUESTION 50 -->
+
+
+<div style="color:#EC549E;font-size: 10pt">  <%= f.input :a50, label: "  In one or two words, how did the conference leave you feeling? " %> </div>
+<br>
+
+
+<!-- QUESTION 51 -->
+
+ <div style="color:#EC549E;font-size: 10pt">  <%= f.input :a51, label: "  Share your top two take-aways that you are excited to bring home ? " %> </div>
+<br>
+
+<hr>
+   <br>
+
+
+
+
+   <!-- QUESTION 52 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%=f.input :a52, label: " Generals Suggestions of Comments?" %> </div>
+<br>
+
+<hr>
+   <br>
+
+<!-- QUESTION 53 -->
+
+<div style="color:#EC549E;font-size: 10pt"> <%=f.input :a53, label: "After trying HIGH Glow Collagen, would this prouct be something you would be interested in purchasing?" %> </div>
+<br>
+
+<hr>
+   <br>
+
+
+
+
+
+
 
     <%#= f.input :a2 %>
     <%#= f.input :a3 %>
@@ -877,8 +1585,11 @@ More than 3 Years
     <%#= f.input :a30 %>
   </div>
 
-  <div class="form-actions">
+  <button style ="background-color:#EC549E">
     <%= f.button :submit, "Submit" %>
-  </div>
+  </button>
 <% end %>
+
+<br>
+<br>
 </div>

@@ -5,7 +5,7 @@ extend ActiveSupport::Concern
 
     def self.q1
       "Age group?"
-    end
+    end 
 
 
     def self.q2
@@ -14,7 +14,7 @@ extend ActiveSupport::Concern
 
 
     def self.q3
-     "How long have you been teaching group fitness in general"
+     "How long have you been teaching Group Fitness in general?"
     end
 
 
@@ -45,7 +45,6 @@ extend ActiveSupport::Concern
     def self.q9
       "Would you recommend the convention to other HIGH Instructors?"
     end
-
 
     def self.q10
       "Social Media Tips"
