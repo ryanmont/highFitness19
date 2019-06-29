@@ -12,9 +12,10 @@ class VotesController < ApplicationController
 
      @votecount = Vote&.count
 
-     @vote1 = Vote.where(a1: "Group 1").count
-     @vote2 = Vote.where(a1: "Group 2").count
-     @vote3 = Vote.where(a1: "Group 3").count
+     @vote1 = Vote.where(a1: "Lip Gloss - Toner").count
+     @vote2 = Vote.where(a1: "Ocean Avenue -  Cardio").count
+     @vote3 = Vote.where(a1: "Wherever you go - Barre").count
+     @vote4 = Vote.where(a1: "I believe in a thing called Love - Push").count
   end
 
   # GET /votes/1
