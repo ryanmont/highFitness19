@@ -4,7 +4,7 @@ extend ActiveSupport::Concern
 
 
     def self.q1
-      "Age group?"
+      "Age group"
     end 
 
 
