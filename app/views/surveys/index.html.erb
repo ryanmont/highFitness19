@@ -43,63 +43,25 @@
   
     <br>
     <br>
-    <br>
-  
+
 
       <div style= "color:#EC549E;font-size: 10pt"><%= Question.q7%>:&nbsp;&nbsp;
-        <span style ="color:#48484A" ><%= @total7 %></span>
+   <!--      <span style ="color:#48484A" ><%= @total7 %></span> -->
       </div>
+
+       <%=pie_chart Survey.group(:a7).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
         
       <br>
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q8%>:&nbsp;&nbsp;&nbsp;</div><br>
-
+ <%=pie_chart Survey.group(:a8).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q9%>:&nbsp;&nbsp;&nbsp;</div><br>
 
+ <%=pie_chart Survey.group(:a9).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
 
-
-     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q10%>:&nbsp;&nbsp;&nbsp;</div><br>
-
-
-
-     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q11%>:&nbsp;&nbsp;&nbsp;</div><br>
-
-
-
-     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q12%>:&nbsp;&nbsp;&nbsp;</div><br>
-
-
-
-     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q13%>:&nbsp;&nbsp;&nbsp;</div><br>
-
-
-
-     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q14%>:&nbsp;&nbsp;&nbsp;</div><br>
-
-
-
-     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q15%>:&nbsp;&nbsp;&nbsp;</div><br>
-
-
-
-     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q16%>:&nbsp;&nbsp;&nbsp;</div><br>
-
-
-
-     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q17%>:&nbsp;&nbsp;&nbsp;</div><br>
-
-
-
-     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q18%>:&nbsp;&nbsp;&nbsp;</div><br>
-
-
-
-     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q19%>:&nbsp;&nbsp;&nbsp;</div><br>
-
-
-
-     <div style= "color:#EC549E;font-size: 10pt"><%= Question.q20%>:&nbsp;&nbsp;&nbsp;</div><br>
+<br>
+<br>
 
 
 
@@ -122,43 +84,43 @@
           <th style = "background-color: #EC549E">A8</th>
           <th style = "background-color: #EC549E">A9</th>
           <th style = "background-color: #EC549E">A10</th>
-          <th style = "background-color: #EC549E">A11</th>
+       <!--    <th style = "background-color: #EC549E">A11</th> -->
           <th style = "background-color: #EC549E">A12</th>
           <th style = "background-color: #EC549E">A13</th>
-          <th style = "background-color: #EC549E">A14</th>
+     <!--      <th style = "background-color: #EC549E">A14</th> -->
           <th style = "background-color: #EC549E">A15</th>
           <th style = "background-color: #EC549E">A16</th>
-          <th style = "background-color: #EC549E">A17</th>
+     <!--      <th style = "background-color: #EC549E">A17</th> -->
           <th style = "background-color: #EC549E">A18</th>
           <th style = "background-color: #EC549E">A19</th>
-          <th style = "background-color: #EC549E">A20</th>
+        <!--   <th style = "background-color: #EC549E">A20</th> -->
           <th style = "background-color: #EC549E">A21</th>
           <th style = "background-color: #EC549E">A22</th>
-          <th style = "background-color: #EC549E">A23</th>
+        <!--   <th style = "background-color: #EC549E">A23</th> -->
           <th style = "background-color: #EC549E">A24</th>
           <th style = "background-color: #EC549E">A25</th>
-          <th style = "background-color: #EC549E">A26</th>
+       <!--    <th style = "background-color: #EC549E">A26</th> -->
           <th style = "background-color: #EC549E">A27</th>
           <th style = "background-color: #EC549E">A28</th>
-          <th style = "background-color: #EC549E">A29</th>
+       <!--    <th style = "background-color: #EC549E">A29</th> -->
           <th style = "background-color: #EC549E">A30</th>
           <th style = "background-color: #EC549E">A31</th>
-          <th style = "background-color: #EC549E">A32</th>
+        <!--   <th style = "background-color: #EC549E">A32</th> -->
           <th style = "background-color: #EC549E">A33</th>
           <th style = "background-color: #EC549E">A34</th>
-          <th style = "background-color: #EC549E">A35</th>
+        <!--   <th style = "background-color: #EC549E">A35</th> -->
           <th style = "background-color: #EC549E">A36</th>
           <th style = "background-color: #EC549E">A37</th>
-          <th style = "background-color: #EC549E">A38</th>
+       <!--    <th style = "background-color: #EC549E">A38</th> -->
           <th style = "background-color: #EC549E">A39</th>
           <th style = "background-color: #EC549E">A40</th>
-          <th style = "background-color: #EC549E">A41</th>
+       <!--    <th style = "background-color: #EC549E">A41</th> -->
           <th style = "background-color: #EC549E">A42</th>
           <th style = "background-color: #EC549E">A43</th>
-          <th style = "background-color: #EC549E">A44</th>
+    <!--       <th style = "background-color: #EC549E">A44</th> -->
           <th style = "background-color: #EC549E">A45</th>
           <th style = "background-color: #EC549E">A46</th>
-          <th style = "background-color: #EC549E">A47</th>
+     <!--      <th style = "background-color: #EC549E">A47</th> -->
           <th style = "background-color: #EC549E">A48</th>
           <th style = "background-color: #EC549E">A49</th>
           <th style = "background-color: #EC549E">A50</th>
@@ -166,7 +128,7 @@
           <th style = "background-color: #EC549E">A52</th>
           <th style = "background-color: #EC549E">A53</th>
           <th style = "background-color: #EC549E">A54</th>
-          <th style = "background-color: #EC549E">A55</th>
+      <!--     <th style = "background-color: #EC549E">A55</th> -->
           <th style = "background-color: #EC549E">A56</th>
           <th style = "background-color: #EC549E" colspan="3"></th>
         </tr>
@@ -185,43 +147,43 @@
             <td><%= survey.a8 %></td>
             <td><%= survey.a9 %></td>
             <td><%= survey.a10 %></td>
-            <td><%= survey.a11 %></td>
+        <!--     <td><%= survey.a11 %></td> -->
             <td><%= survey.a12 %></td>
             <td><%= survey.a13 %></td>
-            <td><%= survey.a14 %></td>
+          <!--   <td><%= survey.a14 %></td> -->
             <td><%= survey.a15 %></td>
             <td><%= survey.a16 %></td>
-            <td><%= survey.a17 %></td>
+       <!--      <td><%= survey.a17 %></td> -->
             <td><%= survey.a18 %></td>
             <td><%= survey.a19 %></td>
-            <td><%= survey.a20 %></td>
+         <!--    <td><%= survey.a20 %></td> -->
             <td><%= survey.a21 %></td>
             <td><%= survey.a22 %></td>
-            <td><%= survey.a23 %></td>
+         <!--    <td><%= survey.a23 %></td> -->
             <td><%= survey.a24 %></td>
             <td><%= survey.a25 %></td>
-            <td><%= survey.a26 %></td>
+         <!--    <td><%= survey.a26 %></td> -->
             <td><%= survey.a27 %></td>
             <td><%= survey.a28 %></td>
-            <td><%= survey.a29 %></td>
+           <!--  <td><%= survey.a29 %></td> -->
             <td><%= survey.a30 %></td>
             <td><%= survey.a31 %></td>
-            <td><%= survey.a32 %></td>
+         <!--    <td><%= survey.a32 %></td> -->
             <td><%= survey.a33 %></td>
             <td><%= survey.a34 %></td>
-            <td><%= survey.a35 %></td>
+          <!--   <td><%= survey.a35 %></td> -->
             <td><%= survey.a36 %></td>
             <td><%= survey.a37 %></td>
-            <td><%= survey.a38 %></td>
+          <!--   <td><%= survey.a38 %></td> -->
             <td><%= survey.a39 %></td>
             <td><%= survey.a40 %></td>
-            <td><%= survey.a41 %></td>
+         <!--    <td><%= survey.a41 %></td> -->
             <td><%= survey.a42 %></td>
             <td><%= survey.a43 %></td>
-            <td><%= survey.a44 %></td>
+         <!--    <td><%= survey.a44 %></td> -->
             <td><%= survey.a45 %></td>
             <td><%= survey.a46 %></td>
-            <td><%= survey.a47 %></td>
+         <!--    <td><%= survey.a47 %></td> -->
             <td><%= survey.a48 %></td>
             <td><%= survey.a49 %></td>
             <td><%= survey.a50 %></td>
@@ -229,7 +191,7 @@
             <td><%= survey.a52 %></td>
             <td><%= survey.a53 %></td>
             <td><%= survey.a54 %></td>
-            <td><%= survey.a55 %></td>
+       <!--      <td><%= survey.a55 %></td> -->
             <td><%= survey.a56 %></td>
             <td><%= link_to 'Show', survey %></td>
             <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
