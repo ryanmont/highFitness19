@@ -47,32 +47,15 @@ extend ActiveSupport::Concern
     end
 
     def self.q10
-      "Social Media Tips"
+      "On a scale of 1-5, how helpful and/or applicable was the content of the Opening Keynote (Amber & Emily)?"
     end
 
 
-    def self.q9
-      "Tips for Building you Business"
-    end
-
-
-    def self.q10
-      "Nourishing Your Body"
-    end
-
-
-    def self.q11
-      "High Buinesss Goals"
-    end
-
-
-    def self.q12
-      "Team Teaching 101"
-    end
+  
 
 
     def self.q13
-      "Repeat Participation"
+      " On a scale of 1-5, how helpful and/or applicable was the content of 'Social Media'? "
     end
 
 
@@ -87,13 +70,9 @@ extend ActiveSupport::Concern
 
 
     def self.q16
-      "Confident"
+      "On a scale of 1-5, how helpful and/or applicable was the content of 'Tips for Building Business'?"
     end
 
-
-    def self.q17
-      "Unreleased Choreography"
-    end
 
 
     def self.q18
@@ -102,13 +81,9 @@ extend ActiveSupport::Concern
 
 
     def self.q19
-      "Slow Down- Cool Down"
+      "On a scale of 1-5, how helpful and/or applicable was the content of 'Nourish your body'?"
     end
 
-
-    def self.q20
-      " Instructor Pro Skills"
-    end
 
 
     def self.q21
@@ -117,30 +92,81 @@ extend ActiveSupport::Concern
 
 
     def self.q22
-      "High Hopes"
-    end
-
-
-    def self.q23
-     
-    end
-
-
-    def self.q24
-     
+      "On a scale of 1-5, how helpful and/or applicable was the content of 'High Business goals'? "
     end
 
 
     def self.q25
-    
+    " On a scale of 1-5, how helpful and/or applicable was the content of 'Team Teaching'?"
 
     end
 
 
-    def self.q26
-      "After trying the HIGH Glow Collagen, would this product be something you would be interested in purchasing? Y or N"
+    def self.q28
+   " On a scale of 1-5, how helpful and/or applicable was the content of 'Atmosphere and Awareness'? "
     end
 
+
+
+    def self.q31
+   "On a scale of 1-5, how helpful and/or applicable was the content of  'F.I.T.' ?"
+    end
+
+
+    def self.q34
+   "On a scale of 1-5, how helpful and/or applicable was the content of 'Stretch Session'?"
+    end
+
+
+    def self.q54
+      " On a scale of 1-5, how helpful and/or applicable was the content of Courtney Brown - Opening Keynote ?"
+    end
+
+
+    def self.q37
+   "On a scale of 1-5, how helpful and/or applicable was the content of 'Understanding the Formula'? "
+    end
+
+
+    def self.q40
+    " On a scale of 1-5, how helpful and/or applicable was the content of 'Cool Down'?"
+    end
+
+
+    def self.q43
+    "On a scale of 1-5, how helpful and/or applicable was the content of 'Instructor Pro Skills'? "
+    end
+
+
+    def self.q46
+    "On a scale of 1-5, how helpful and/or applicable was the content of 'High Hopes Closing Keynote'?"
+    end
+
+
+    def self.q49
+    "Are there topics you'd like to see covered in future events(list them)?"
+    end
+
+
+    def self.q50
+    "In one or two words, how did the conference leave you feeling? "
+    end
+
+
+    def self.q51
+    "Share your top two take-aways that you are excited to bring home? "
+    end
+
+
+    def self.q52
+    "General Suggestions or Comments?"
+    end
+
+
+    def self.q53
+    "After trying HIGH Glow Collagen, would this product be something you would be interested in purchasing?"
+    end
+ 
 
   
 

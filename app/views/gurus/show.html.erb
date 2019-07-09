@@ -1,49 +1,74 @@
 <p id="notice"><%= notice %></p>
 
+<div style= "margin:10px">
 <p>
-  <strong>A1:</strong>
+  <i style="color:#EC549E">Being on the inside what do you think went well at the Instructor Convention?</i>
+  <br>
+
   <%= @guru.a1 %>
 </p>
+<hr>
 
 <p>
-  <strong>A2:</strong>
+  <i style="color:#EC549E">What can be improved for the next conference?  (be specific & solutions are appreciated)</i>
+  <br>
+
   <%= @guru.a2 %>
 </p>
+<hr>
 
 <p>
-  <strong>A3:</strong>
+  <i style="color:#EC549E">Do you have any suggestions for break out session topics or general session topics for the next conference?</i>
+  <br>
+
   <%= @guru.a3 %>
 </p>
+<hr>
 
 <p>
-  <strong>A4:</strong>
+  <i style="color:#EC549E">Of the sessions you attended which were the top 3 you think were most beneficial to instructors?  (see agenda in app. to reference sessions again)</i>
+  <br>
+
   <%= @guru.a4 %>
 </p>
+<hr>
 
 <p>
-  <strong>A5:</strong>
+  <i style="color:#EC549E">"Tell us about a few experiences that stuck out to you with instructors at the convention & what feedback they shared with you? (constructive and positive)</i>
+  <br>
   <%= @guru.a5 %>
 </p>
+<hr>
 
 <p>
-  <strong>A6:</strong>
+  <i style="color:#EC549E">What feedback have you been hearing post-convention?</i>
+  <br>
+
   <%= @guru.a6 %>
 </p>
+<hr>
 
 <p>
-  <strong>A7:</strong>
+  <i style="color:#EC549E">What general ideas or suggestions do you have for the next convention?</i>
+  <br>
+  <hr>
+
   <%= @guru.a7 %>
 </p>
 
-<p>
-  <strong>A8:</strong>
+<br>
+<br>
+
+<!-- <p>
+  <i>A8:</i>
   <%= @guru.a8 %>
 </p>
 
 <p>
-  <strong>A9:</strong>
+  <i>A9:</i>
   <%= @guru.a9 %>
-</p>
+</p> -->
 
 <%= link_to 'Edit', edit_guru_path(@guru) %> |
 <%= link_to 'Back', gurus_path %>
+</div>
