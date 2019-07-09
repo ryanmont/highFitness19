@@ -22,6 +22,13 @@ class SurveysController < ApplicationController
     @avgno8 =  @no8.to_f  / @count8.to_f
 
 
+#Q9
+
+    @count9 = Survey.count(:a9)
+    @yes9 = Survey.where(a9: "YES").count
+    @no9 = Survey.where(a9: "NO").count
+    @avgyes9 =  @yes9.to_f  / @count9.to_f
+    @avgno9 =  @no9.to_f  / @count9.to_f
 
 
   # Q10

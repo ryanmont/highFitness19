@@ -82,10 +82,11 @@
  <%=pie_chart Survey.group(:a8).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
-   total count  <%=  @count8  %><br>
-  YES's  <%=  @yes8  %><br>
-  No's <%=  @no8 %><br>
-  Average of Yes's  <%= @avgyes8 %><br>
+      <div style= "background-color:#EC549E;width:300px;color:white;padding:10px;margin:10px">
+
+ Percentage of Yes's  <%= @avgyes8 *100 %>%<br>
+ Percent No's  <%= @avgno8*100  %>%<br>
+</div>
 
 
     <hr>
@@ -97,6 +98,14 @@
      </div>
 
  <%=pie_chart Survey.group(:a9).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
+
+
+<br>
+      <div style= "background-color:#EC549E;width:300px;color:white;padding:10px;margin:10px">
+
+ Percentage of Yes's  <%= @avgyes9 *100 %>%<br>
+ Percent No's  <%= @avgno9*100  %>%<br>
+</div>
 
 <br>
 <hr>
