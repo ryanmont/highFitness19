@@ -1,0 +1,49 @@
+<%= simple_form_for(@guru) do |f| %>
+  <%= f.error_notification %>
+<div style ="margin:10px">
+
+  <div class="form-inputs">
+    
+
+    <!-- Q1 -->
+    <%= f.input :a1, :as => :text, :input_html => { :rows => 8}, label: "Being on the inside what do you think went well at the Instructor Convention?" %>
+    <br>
+
+    <!-- Q2 -->
+    <%= f.input :a2, :as => :text, :input_html => { :rows => 8}, label: "What can be improved for the next conference?  (be specific & solutions are appreciated)"%>
+    <br>
+    
+    <!-- Q3 -->
+
+    <%= f.input :a3, :as => :text, :input_html => { :rows => 8}, label: "Do you have any suggestions for break out session topics or general session topics for the next conference?"%>
+    <br>
+
+    <!-- Q4 -->
+    <%= f.input :a4, :as => :text, :input_html => { :rows => 8}, label: "Of the sessions you attended which were the top 3 you think were most beneficial to instructors?  (see agenda in app. to reference sessions again)"%>
+    <br>
+
+    <!-- Q5 -->
+    <%= f.input :a5, :as => :text, :input_html => { :rows => 8}, label: "Tell us about a few experiences that stuck out to you with instructors at the convention & what feedback they shared with you (constructive and positive)." %>
+    <br>
+
+    <!-- Q6 -->
+    <%= f.input :a6, :as => :text, :input_html => { :rows => 8}, label: "What feedback have you been hearing post-convention? " %>
+    <br>
+
+    <!-- Q7 -->
+    <%= f.input :a7, :as => :text, :input_html => { :rows => 8}, label: "What general ideas or suggestions do you have for the next convention? "%>
+    <br>
+
+
+
+
+<!--     <%= f.input :a8, label: "* Name(s)", input_html: {style: 'height:100px;'} %>
+    <%= f.input :a9, label: "* Name(s)", input_html: {style: 'height:100px;'} %> -->
+  </div>
+
+ <button style ="background-color: #EC549E">
+    <%= f.button :submit, "Submit" %>
+  </button>
+<% end %>
+
+</div>

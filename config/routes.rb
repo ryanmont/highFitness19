@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :gurus
   resources :prizes
   resources :picks do
     collection { post :import}

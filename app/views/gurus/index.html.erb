@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+<div style = "margin:20px">
+<center>
+  <br>
+  <h4 style="color:#EC549E"> Guru Survey </h4>
+</center>
+<br>
+
+
+<table style = "color:#EC549E">
+  <thead>
+    <tr>
+      <th>Survey</th>
+<!--       <th>A2</th>
+      <th>A3</th>
+      <th>A4</th>
+      <th>A5</th>
+      <th>A6</th>
+      <th>A7</th> -->
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gurus.each do |guru| %>
+      <tr>
+        <td><%= guru.id %></td>
+<!--         <td><%= guru.a2 %></td>
+        <td><%= guru.a3 %></td>
+        <td><%= guru.a4 %></td>
+        <td><%= guru.a5 %></td>
+        <td><%= guru.a6 %></td>
+        <td><%= guru.a7 %></td>  -->
+<!--         <td><%= guru.a8 %></td>
+        <td><%= guru.a9 %></td> -->
+        <td><%= link_to 'Show', guru %></td>
+        <td><%= link_to 'Edit', edit_guru_path(guru) %></td>
+        <td><%= link_to 'Destroy', guru, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Survey', new_guru_path %>
+</div>
