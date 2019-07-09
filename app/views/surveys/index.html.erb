@@ -82,10 +82,10 @@
  <%=pie_chart Survey.group(:a8).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
-
-
-  Percent Yes's  <%= @avgyes8 %><br>
-  Percent No's  <%= @avgyes8 %><br>
+   total count  <%=  @count8  %><br>
+  YES's  <%=  @yes8  %><br>
+  No's <%=  @no8 %><br>
+  Average of Yes's  <%= @avgyes8 %><br>
 
 
     <hr>
