@@ -41,32 +41,23 @@ extend ActiveSupport::Concern
     def self.q8
       "Would you register again next year?"
     end 
+    
 
     def self.q9
       "Would you recommend the convention to other HIGH Instructors?"
     end
+
 
     def self.q10
       "On a scale of 1-5, how helpful and/or applicable was the content of the Opening Keynote (Amber & Emily)?"
     end
 
 
-  
-
 
     def self.q13
       " On a scale of 1-5, how helpful and/or applicable was the content of 'Social Media'? "
     end
 
-
-    def self.q14
-      "Form Intensity Technique"
-    end
-
-
-    def self.q15
-      "Stretch Session"
-    end
 
 
     def self.q16
@@ -75,21 +66,12 @@ extend ActiveSupport::Concern
 
 
 
-    def self.q18
-      "Understanding the Formula"
-    end
-
 
     def self.q19
       "On a scale of 1-5, how helpful and/or applicable was the content of 'Nourish your body'?"
     end
 
-
-
-    def self.q21
-      " Questions and Answers"
-    end
-
+ 
 
     def self.q22
       "On a scale of 1-5, how helpful and/or applicable was the content of 'High Business goals'? "

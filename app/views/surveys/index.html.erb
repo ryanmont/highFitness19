@@ -11,7 +11,7 @@
   <div style= "color:#EC549E;font-size: 10pt"><%= Question.q1%>:&nbsp;&nbsp;&nbsp;
   </div>
 
-    <%=pie_chart Survey.group(:a1).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <%=pie_chart Survey.group(:a1).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
     <hr>
 
 
@@ -20,7 +20,7 @@
   <div style= "color:#EC549E;font-size: 10pt"><%= Question.q2%>:&nbsp;&nbsp;&nbsp;
   </div>
 
-    <%=pie_chart Survey.group(:a2).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <%=pie_chart Survey.group(:a2).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
     <hr>
  
 
@@ -30,7 +30,7 @@
       <div style= "color:#EC549E;font-size: 10pt"><%= Question.q3%>:&nbsp;&nbsp;&nbsp;
       </div>
 
-    <%=pie_chart Survey.group(:a3).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <%=pie_chart Survey.group(:a3).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
     <hr>
  
 
@@ -39,7 +39,7 @@
       <div style= "color:#EC549E;font-size: 10pt"><%= Question.q4%>:&nbsp;&nbsp;&nbsp;
       </div>
 
-    <%=pie_chart Survey.group(:a4).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <%=pie_chart Survey.group(:a4).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
     <hr>
 
 
@@ -47,7 +47,7 @@
       <div style= "color:#EC549E;font-size: 10pt"><%= Question.q5%>:&nbsp;&nbsp;&nbsp;
       </div>
 
-    <%=pie_chart Survey.group(:a5).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <%=pie_chart Survey.group(:a5).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
     <hr>
  
 
@@ -55,7 +55,7 @@
       <div style= "color:#EC549E;font-size: 10pt"><%= Question.q6%>:&nbsp;&nbsp;&nbsp;
       </div>
 
-    <%=pie_chart Survey.group(:a6).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+    <%=pie_chart Survey.group(:a6).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
     <hr>
    
 
@@ -64,7 +64,7 @@
    <!--      <span style ="color:#48484A" ><%= @total7 %></span> -->
       </div>
 
-       <%=pie_chart Survey.group(:a7).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+       <%=pie_chart Survey.group(:a7).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
         
       <hr>
  
@@ -72,7 +72,7 @@
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q8%>:&nbsp;&nbsp;&nbsp;
      </div>
 
- <%=pie_chart Survey.group(:a8).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+ <%=pie_chart Survey.group(:a8).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
     <hr>
 
 
@@ -80,18 +80,27 @@
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q9%>:&nbsp;&nbsp;&nbsp;
      </div>
 
- <%=pie_chart Survey.group(:a9).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+ <%=pie_chart Survey.group(:a9).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 <hr>
 <h5> Sessions </h5>
 <hr>
 
+
+
  <!-- Q10 -->
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q10%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a10).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+ 
+       <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+    
+         Average Score: &nbsp;&nbsp;<%= @avg10.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a10).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -113,7 +122,14 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q13%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a13).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+
+  <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg13.round(2) %>
+
+    </div>
+
+ <%=pie_chart Survey.group(:a13).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -137,7 +153,13 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q16%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a16).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+       <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg16.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a16).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -161,7 +183,15 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q19%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a19).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+
+
+       <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg19.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a19).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -184,7 +214,15 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q22%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a22).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+
+
+       <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg22.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a22).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -207,7 +245,15 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q25%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a25).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+
+
+       <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg25.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a25).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -231,7 +277,14 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q28%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a28).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+
+            <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg28.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a28).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -255,7 +308,14 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q31%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a31).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+
+            <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg31.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a31).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -279,7 +339,14 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q34%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a34).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+
+            <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg34.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a34).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -300,7 +367,14 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q54%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a54).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+
+            <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg54.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a54).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -322,7 +396,14 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q37%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a37).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+
+            <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg37.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a37).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -346,7 +427,14 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q40%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a40).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+
+            <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg40.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a40).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -368,7 +456,14 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q43%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a43).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+
+            <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg43.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a43).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
@@ -392,7 +487,13 @@
 
      <div style= "color:#EC549E;font-size: 10pt"><%= Question.q46%>:&nbsp;&nbsp;&nbsp;</div>
 
- <%=pie_chart Survey.group(:a46).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "200px", legend: "bottom", donut: "true" %>
+            <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg46.round(2) %>
+          
+    </div>
+
+ <%=pie_chart Survey.group(:a46).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
 
 <br>
 
