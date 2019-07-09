@@ -61,8 +61,15 @@
 
 
       <div style= "color:#EC549E;font-size: 10pt"><%= Question.q7%>:&nbsp;&nbsp;
-   <!--      <span style ="color:#48484A" ><%= @total7 %></span> -->
       </div>
+
+        <div style= "background-color:#EC549E;height:45px;width:200px;color:white;padding:10px;margin:10px">
+
+         Average Score: &nbsp;&nbsp;<%= @avg7.round(2) %>
+
+    </div>
+
+
 
        <%=pie_chart Survey.group(:a7).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
         
@@ -73,7 +80,16 @@
      </div>
 
  <%=pie_chart Survey.group(:a8).count, colors: ["yellow","#EC549E","#48484A", "blue", "orange"], width: "150px", legend: "bottom", donut: "true" %>
+
+<br>
+
+
+  Percent Yes's  <%= @avgyes8 %><br>
+  Percent No's  <%= @avgyes8 %><br>
+
+
     <hr>
+
 
 
 
@@ -106,9 +122,13 @@
 
 <!-- Q12 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a12.present? %>
           ~ <%= survey.a12 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -135,9 +155,13 @@
 
 <!-- Q15 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a15.present? %>
           ~ <%= survey.a15 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -165,9 +189,13 @@
 
 <!-- Q18 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a18.present? %>
           ~ <%= survey.a18 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -197,10 +225,14 @@
 
 <!-- Q21 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a21.present? %>
           ~ <%= survey.a21 %><br>
         <%end%>
-      </div>
+    <%end%>
+       
+</div>
 
 <hr>
 
@@ -228,9 +260,13 @@
 
 <!-- Q24 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a24.present? %>
           ~ <%= survey.a24 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -259,9 +295,13 @@
 
 <!-- Q27 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a27.present? %>
           ~ <%= survey.a27 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -290,9 +330,13 @@
 
 <!-- Q30 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a30.present? %>
           ~ <%= survey.a30 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -321,9 +365,13 @@
 
 <!-- Q33 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a33.present? %>
           ~ <%= survey.a33 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -352,9 +400,13 @@
 
 <!-- Q36 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a36.present? %>
           ~ <%= survey.a36 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -379,10 +431,14 @@
 <br>
 
 <!-- Q56 -->
- <div style= "color:grey;font-size: 10pt">
+  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a56.present? %>
           ~ <%= survey.a56 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -409,9 +465,13 @@
 
 <!-- Q39-->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a39.present? %>
           ~ <%= survey.a39 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -440,9 +500,13 @@
 
 <!-- Q42 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a42.present? %>
           ~ <%= survey.a42 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -469,9 +533,13 @@
 
 <!-- Q45 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a45.present? %>
           ~ <%= survey.a45 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -499,10 +567,14 @@
 
 <!-- Q48 -->
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a48.present? %>
           ~ <%= survey.a48 %><br>
         <%end%>
-      </div>
+    <%end%>
+       
+</div>
 
 
 <hr>
@@ -526,8 +598,11 @@
  <div style= "color:grey;font-size: 10pt">
 
         <% @surveys.each do |survey| %>
+        <%if survey.a49.present? %>
           ~ <%= survey.a49 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 <hr>
 
@@ -550,9 +625,13 @@
 <br>
 
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a50.present? %>
           ~ <%= survey.a50 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 <hr>
 
@@ -575,9 +654,13 @@
 <br>
 
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a51.present? %>
           ~ <%= survey.a51 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
@@ -600,15 +683,16 @@
 <br>
 
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a52.present? %>
           ~ <%= survey.a52 %><br>
         <%end%>
+    <%end%>
+       
 </div>
 
 <hr>
-
-
-
 
 
 
@@ -626,13 +710,16 @@
 <br>
 
  <div style= "color:grey;font-size: 10pt">
+
         <% @surveys.each do |survey| %>
+        <%if survey.a53.present? %>
           ~ <%= survey.a53 %><br>
         <%end%>
+    <%end%>
+       
 </div>
-
 <hr>
-<br>
+<hr>
 
 
 
