@@ -62,7 +62,7 @@ GEM
       sassc-rails (>= 2.0.0)
     builder (3.2.3)
     byebug (9.0.6)
-    chartkick (3.2.0)
+    chartkick (3.3.0)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -223,7 +223,7 @@ DEPENDENCIES
   axlsx_rails (~> 0.5.1)
   bootstrap (~> 4.2, >= 4.2.1)
   byebug
-  chartkick (~> 3.2)
+  chartkick (~> 3.3)
   coffee-rails (~> 4.2)
   dotenv-rails (~> 2.5)
   dragonfly (~> 1.1, >= 1.1.3)
